@@ -1,0 +1,51 @@
+.project-item-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.project-description,
+.project-lists {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	gap: 1rem;
+	margin: 1rem 0;
+	width: 100%;
+
+	.project-list-ul {
+		flex-wrap: wrap;
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-start;
+		gap: 1rem;
+	}
+}
+
+.project-media {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	margin: 1rem 0;
+	width: 100%;
+
+	.project-links {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		width: 100%;
+	}
+
+	.project-media {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-width: 320px;
+		height: 200px;
+	}
+}

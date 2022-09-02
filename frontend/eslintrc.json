@@ -1,0 +1,84 @@
+{
+	"env": {
+		"browser": true,
+		"es2021": true
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"airbnb-typescript"
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"project": "tsconfig.eslint.json",
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	},
+	"ignorePatterns": ["/*.*", ".eslintrc.js"],
+	"plugins": [
+		"react",
+		"@typescript-eslint",
+		"import",
+		"prettier",
+		"react-hooks"
+	],
+	"rules": {
+		"no-shadow": 0,
+		"@typescript-eslint/no-shadow": [2],
+		"react/jsx-filename-extension": ["warn", { "extensions": [".tsx"] }],
+		"@typescript-eslint/no-use-before-define": 0,
+		"react/react-in-jsx-scope": 0,
+		"import/extensions": [
+			2,
+			"ignorePackages",
+			{
+				"js": "never",
+				"jsx": "never",
+				"ts": "never",
+				"tsx": "never"
+			}
+		],
+		"@typescript-eslint/explicit-function-return-type": [
+			2,
+			{
+				"allowExpressions": true
+			}
+		],
+		"max-len": ["warn", { "code": 80 }],
+		"react-hooks/rules-of-hooks": 2,
+		"react-hooks/exhaustive-deps": "warn",
+		"import/prefer-default-export": 0,
+		"react/prop-types": 0,
+		"prettier/prettier": [
+			"error",
+			{
+				"printWidth": 100,
+				"trailingComma": "all",
+				"tabWidth": 2,
+				"semi": true,
+				"singleQuote": true,
+				"bracketSpacing": true,
+				"arrowParens": "always",
+				"endOfLine": "auto"
+			}
+		]
+	},
+	"settings": {
+		"react": {
+			"version": "detect"
+		},
+		"import/extensions": [".js", ".mjs", ".jsx", ".ts", ".tsx"],
+		"import/parsers": {
+			"@typescript-eslint/parser": [".ts", ".tsx"]
+		},
+		"import/resolver": {
+			"node": {
+				"extensions": [".js", ".jsx", ".ts", ".tsx"]
+			},
+			"typescript": {}
+		}
+	}
+}

@@ -1,0 +1,32 @@
+.about-container,
+.skills-container,
+.skills-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.frontend-container,
+.backend-container,
+.misc-container,
+.languages-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	margin: 1rem 0;
+}
+
+.languages-container {
+	gap: 2rem;
+}
+
+.skills-icons {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+}

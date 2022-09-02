@@ -1,0 +1,17 @@
+html {
+	// background-color: variables.$primaryBG;
+	// color: variables.$primaryFont;
+	// font-family: variables.$roboto;
+	font-size: 62.5%;
+	letter-spacing: 0.05rem;
+	color: rgba($color: #ffff, $alpha: 1);
+	font-family: 'Montserrat', sans-serif;
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: rgba(66, 66, 69, 1);
+}
