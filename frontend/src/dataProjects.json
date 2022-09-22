@@ -1,89 +1,42 @@
 [
-	{
-		"id": 0,
-		"name": "Verisim Gaming App",
-		"description": "Progressive web app for news of tactical/realistic/simulation PC games",
-		"features": ["Web design", "API calls", "Mobile first"],
-		"tech": ["Typescript", "React", "Redux", "Figma", "Vite", "SASS"],
-		"github": "https://github.com/VerisimGaming/verisim-frontend",
-		"url": "",
-		"media": ""
-	},
-	{
-		"id": 1,
-		"name": "Saint Patrick Online Homebanking",
-		"description": "Online Homebanking where users can check their accounts and make transfers",
-		"features": ["API calls", "Responsive", "Animations"],
-		"tech": [
-			"Javascript",
-			"React",
-			"Context API",
-			"Styled-Components",
-			"Jira",
-			"Postman"
-		],
-		"github": "https://github.com/Equipo78/saintpatrick-homebanking",
-		"url": "https://saint-patrick-test-f-antonelli.vercel.app/login",
-		"media": ""
-	},
-	{
-		"id": 2,
-		"name": "Personal Portfolio",
-		"description": "My own personal portfolio that shows the about, skills and projects",
-		"features": ["Contact Form", "Mobile First", "Web design"],
-		"tech": ["Typescript", "React", "Vite", "Animations", "Adobe XD"],
-		"github": "",
-		"url": "http://www.felipebascou.com",
-		"media": ""
-	},
-	{
-		"id": 3,
-		"name": "NASA API Cosmic Events",
-		"description": "Website that displays multiple cosmic events from different NASA APIs",
-		"features": ["API Calls"],
-		"tech": ["Javascript", "React", "Vite", "Context API", "Regex"],
-		"github": "https://github.com/FBascou/nasa-api-events",
-		"url": "",
-		"media": ""
-	},
-	{
-		"id": 4,
-		"name": "Green Smart Tech",
-		"description": "Company website for Green Smart Tech",
-		"features": ["Responsive", "Animations"],
-		"tech": ["Javascript", "HTML", "CSS"],
-		"github": "https://github.com/FBascou/GST",
-		"url": "http://www.greensmarttech.net/",
-		"media": ""
-	},
-	{
-		"id": 5,
-		"name": "Client Portfolio Website",
-		"description": "Photo gallery website of client",
-		"features": ["Responsive"],
-		"tech": ["Javascript", "HTML", "CSS"],
-		"github": "https://github.com/FBascou/chris-portfolio",
-		"url": "",
-		"media": ""
-	},
-	{
-		"id": 6,
-		"name": "Startup News Searcher",
-		"description": "Program that uses Salesforce API to search Startups on Naver News using the Naver API",
-		"features": ["API calls"],
-		"tech": ["Python 3", "Salesforce API", "Naver API"],
-		"github": "",
-		"url": "",
-		"media": ""
-	},
-	{
-		"id": 7,
-		"name": "Discord Bot",
-		"description": "Discord bot for small community that includes multiple features",
-		"features": ["API calls", "Guessing Game", "Timezone Converter"],
-		"tech": ["Python 3"],
-		"github": "https://github.com/FBascou/discord_bot",
-		"url": "",
-		"media": ""
-	}
+  {
+    "id": 0,
+    "name": "Born2Global Website",
+    "description": "Born2Global frontend teamleader for the main website. Worked on the Careers, Job Application, Events, and News page. I co-worked on the design of the page.",
+    "features": ["API calls", "Responsive", "Forms"],
+    "tech": ["React", "Typescript", "SCSS", "Axios", "MaterialUI", "Formik", "AdobeXD"],
+    "github": "",
+    "url": "",
+    "media": ""
+  },
+  {
+    "id": 1,
+    "name": "Digital Marketing Dashboard",
+    "description": "Dashboard to track performance of website, social media, traffic, budget",
+    "features": ["API calls", "Responsive"],
+    "tech": ["ReactJS", "CSS", "D3JS"],
+    "github": "",
+    "url": "",
+    "media": ""
+  },
+  {
+    "id": 2,
+    "name": "Saint Patrick Online Homebanking",
+    "description": "Online Homebanking where users can check their accounts and make transfers",
+    "features": ["API calls", "Responsive", "Animations"],
+    "tech": ["Javascript", "React", "Context API", "Styled-Components", "Jira", "Postman"],
+    "github": "https://github.com/Equipo78/saintpatrick-homebanking",
+    "url": "https://saint-patrick-test-f-antonelli.vercel.app/login",
+    "media": ""
+  },
+  {
+    "id": 3,
+    "name": "NASA API Cosmic Events",
+    "description": "Website that displays multiple cosmic events from different NASA APIs",
+    "features": ["API Calls"],
+    "tech": ["Javascript", "React", "Context API", "Regex"],
+    "github": "https://github.com/FBascou/nasa-api-events",
+    "url": "",
+    "media": ""
+  }
 ]

@@ -1,3 +1,3 @@
 export type BoxType = {
-	item: string;
-};
+  item: string
+}
