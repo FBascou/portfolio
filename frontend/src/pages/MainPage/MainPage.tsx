@@ -3,50 +3,20 @@ import HeadingTwo from '../../components/HeadingTwo/HeadingTwo'
 import HeadingThree from '../../components/HeadingThree/HeadingThree'
 import Box from '../../components/Box/Box'
 import ProjectsPage from '../../pages/ProjectsPage/ProjectsPage'
+import Header from '../../components/Header/Header'
 
 const MainPage = (): JSX.Element => {
   return (
-    <div className="main-container">
-      <header className="header-container">
-        <div className="header-content">
-          <div className="header-title">
-            <h1>
-              Hi, I'm{' '}
-              <span id="header-span" className="header-span">
-                Felipe
-              </span>
-            </h1>
-          </div>
-          {/* <div className="header-subtitle">
-            <HeadingTwo title="Frontend Software Developer" />
-          </div> */}
-        </div>
-        <nav>
-          <ul className="navbar">
-            <li>
-              <h4>Projects</h4>
-            </li>
-            <li>
-              <h4>Resume</h4>
-            </li>
-            <li>
-              <h4>Contact</h4>
-            </li>
-            <li>
-              <h4>LinkedIn</h4>
-            </li>
-            <li>
-              <h4>Github</h4>
-            </li>
-            <li>
-              <h4>Dark Mode</h4>
-            </li>
-          </ul>
-        </nav>
-      </header>
+    <div className="main-page-container">
+      <Header />
+      {/* <main className="main-container"> */}
       <section className="about-container">
         <div className="section-content">
-          <h4>Looking to work on projects with Javascript, Typescript and React</h4>
+          <h4>
+            Looking to work on projects with
+            <br />
+            <span>Javascript</span>, <span>Typescript</span>, and <span> React</span>
+          </h4>
         </div>
       </section>
       <section className="skills-container">
@@ -151,12 +121,15 @@ const MainPage = (): JSX.Element => {
         </div>
       </section>
       <section className="experience-container">
-        <div className="projects">
+        <div className="projects experience-group">
+          <div className="section-title">
+            <HeadingTwo title="Work Experience" />
+          </div>
           <div className="section-content">
             <ProjectsPage />
           </div>
         </div>
-        <div className="resume">
+        <div className="resume experience-group">
           {/* <div className="section-content">
             <div className="resume-section">
               <div className="resume-title">
@@ -179,6 +152,7 @@ const MainPage = (): JSX.Element => {
           </div> */}
         </div>
       </section>
+      {/* </main> */}
     </div>
   )
 }

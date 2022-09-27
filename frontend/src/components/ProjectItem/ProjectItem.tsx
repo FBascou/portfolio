@@ -20,6 +20,7 @@ const ProjectItem = ({
   }
 
   // add smooth animation when clicking show/hide details
+  // hide all items when only one is selected
   return (
     <div className="project-item-container">
       <div className="project-header">
