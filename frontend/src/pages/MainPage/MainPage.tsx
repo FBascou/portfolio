@@ -10,26 +10,17 @@ const MainPage = (): JSX.Element => {
     <div className="main-page-container">
       <Header />
       {/* <main className="main-container"> */}
-      <section className="about-container">
-        <div className="section-content">
-          <h4>
-            Looking to work on projects with
-            <br />
-            <span>Javascript</span>, <span>Typescript</span>, and <span> React</span>
-          </h4>
-        </div>
-      </section>
       <section className="skills-container">
         <div className="section-title">
           <HeadingTwo title="Skills" />
         </div>
-        <div className="section-content">
+        <div className="section-content" id="skills-section">
           <div className="skill-section">
             <div className="skill-title">
               <HeadingThree title="Frontend" />
             </div>
             <div className="skill-content">
-              <ul>
+              <ul className="skill-list">
                 <li>
                   <Box item={'Javascript'} />
                 </li>
@@ -48,6 +39,12 @@ const MainPage = (): JSX.Element => {
                 <li>
                   <Box item={'SASS'} />
                 </li>
+                <li>
+                  <Box item={'Styled-Components'} />
+                </li>
+                <li>
+                  <Box item={'MaterialUI'} />
+                </li>
               </ul>
             </div>
           </div>
@@ -56,7 +53,7 @@ const MainPage = (): JSX.Element => {
               <HeadingThree title="Backend" />
             </div>
             <div className="skill-content">
-              <ul>
+              <ul className="skill-list">
                 <li>
                   <Box item={'Python 3'} />
                 </li>
@@ -74,7 +71,7 @@ const MainPage = (): JSX.Element => {
               <HeadingThree title="Tools" />
             </div>
             <div className="skill-content">
-              <ul>
+              <ul className="skill-list">
                 <li>
                   <Box item={'GIT'} />
                 </li>
@@ -90,6 +87,9 @@ const MainPage = (): JSX.Element => {
                 <li>
                   <Box item={'AdobeXD'} />
                 </li>
+                <li>
+                  <Box item={'Postman'} />
+                </li>
               </ul>
             </div>
           </div>
@@ -98,7 +98,7 @@ const MainPage = (): JSX.Element => {
               <HeadingThree title="Languages" />
             </div>
             <div className="skill-content">
-              <ul>
+              <ul className="skill-list">
                 <li>
                   <Box item={'English (Native)'} />
                   {/* <IconSkills icon={gb} /> */}
@@ -123,7 +123,7 @@ const MainPage = (): JSX.Element => {
       <section className="experience-container">
         <div className="projects experience-group">
           <div className="section-title">
-            <HeadingTwo title="Work Experience" />
+            <HeadingTwo title="Projects" />
           </div>
           <div className="section-content">
             <ProjectsPage />

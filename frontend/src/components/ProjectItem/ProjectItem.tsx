@@ -26,7 +26,7 @@ const ProjectItem = ({
       <div className="project-header">
         <h4>{name}</h4>
         <div className="project-details-btn" onClick={toggleDetails}>
-          {showDetails ? <p>Hide details</p> : <p>Show details</p>}
+          {showDetails ? <p>Hide details -</p> : <p>Show details +</p>}
         </div>
       </div>
       {showDetails ? (
