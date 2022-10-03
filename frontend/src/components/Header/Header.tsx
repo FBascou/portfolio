@@ -7,12 +7,7 @@ const Header = () => {
     <header className="header-container">
       <div className="header-content">
         <div className="header-title">
-          <h1>
-            Hi, I'm{' '}
-            <span id="header-span" className="header-span">
-              Felipe
-            </span>
-          </h1>
+          <h1>Felipe Bascou</h1>
         </div>
         {/* <div className="header-subtitle">
           <HeadingTwo title="Frontend Software Developer" />

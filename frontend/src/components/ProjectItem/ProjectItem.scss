@@ -15,8 +15,9 @@
   gap: 3rem;
 }
 
-.project-details-btn {
+.project-details-container {
   cursor: pointer;
+  padding: 1rem;
 }
 
 .project-info {
@@ -48,4 +49,11 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+  padding: 0 0.3rem;
+}
+
+@media screen and (max-width: 600px) {
+  .project-info {
+    flex-direction: column;
+  }
 }

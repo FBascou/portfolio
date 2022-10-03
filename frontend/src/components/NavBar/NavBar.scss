@@ -14,3 +14,9 @@
 .navbar-mode {
   transition: all 0.3s;
 }
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    display: none;
+  }
+}

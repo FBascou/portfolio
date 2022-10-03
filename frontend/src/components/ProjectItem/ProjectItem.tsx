@@ -2,7 +2,7 @@ import './ProjectItem.scss'
 import HeadingThree from '../HeadingThree/HeadingThree'
 import { ProjectItemInterface } from '../../utilities/interfaces/projects-item.interface'
 import Box from '../../components/Box/Box'
-import { MouseEventHandler, useState } from 'react'
+import { useState } from 'react'
 
 const ProjectItem = ({
   name,
@@ -21,12 +21,15 @@ const ProjectItem = ({
 
   // add smooth animation when clicking show/hide details
   // hide all items when only one is selected
+  // should I add the image/media before the project content?
   return (
     <div className="project-item-container">
       <div className="project-header">
-        <h4>{name}</h4>
-        <div className="project-details-btn" onClick={toggleDetails}>
-          {showDetails ? <p>Hide details -</p> : <p>Show details +</p>}
+        <div className="project-title">
+          <h4>{name}</h4>
+        </div>
+        <div className="project-details-container" onClick={toggleDetails}>
+          {showDetails ? <div className="icon">^</div> : <div className="icon">v</div>}
         </div>
       </div>
       {showDetails ? (
@@ -57,7 +60,7 @@ const ProjectItem = ({
               </ul>
             </div>
           </div>
-          {/* <div className="project-column project-media">
+          <div className="project-column project-media">
             <div className="project-links">
               <a target="_blank" href={github} className="project-url">
                 Github
@@ -67,7 +70,7 @@ const ProjectItem = ({
               </a>
             </div>
             <img className="project-img" src={media} alt={name} />
-          </div> */}
+          </div>
         </div>
       ) : null}
     </div>

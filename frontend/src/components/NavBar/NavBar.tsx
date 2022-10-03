@@ -33,6 +33,9 @@ const NavBar = () => {
         <li className="navbar-mode">
           <button onClick={toggleTheme}>{theme ? 'Dark Mode' : 'Light Mode'}</button>
         </li>
+        <li className="navbar-toggle">
+          <button>X</button>
+        </li>
       </ul>
     </nav>
   )
