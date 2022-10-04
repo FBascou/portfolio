@@ -1,12 +1,18 @@
 import './NavBar.scss'
-import Icon from '../Icon/Icon'
-import GithubIcon from '../../../assets/icons/GithubNav.png'
-import LinkedInIcon from '../../../assets/icons/LinkedInNav.png'
 import { ThemeContext } from '../../utilities/context/themeContext'
-import { useContext } from 'react'
+import { useState, useContext } from 'react'
+import CloseIcon from '@mui/icons-material/Close'
+import MenuIcon from '@mui/icons-material/Menu'
+import DarkModeIcon from '@mui/icons-material/DarkMode'
+import LightModeIcon from '@mui/icons-material/LightMode'
 
 const NavBar = () => {
   const { theme, toggleTheme } = useContext(ThemeContext)
+  const [menu, setMenu] = useState<boolean>(false)
+
+  const toggleMenu = () => {
+    setMenu((prev) => !prev)
+  }
 
   return (
     <nav>
@@ -22,19 +28,19 @@ const NavBar = () => {
         </li>
         <li className="navbar-link">
           <a href="https://github.com/FBascou">
-            <Icon icon={GithubIcon} />
+            <h5>Github</h5>
           </a>
         </li>
         <li className="navbar-link">
           <a href="https://www.linkedin.com/in/felipebascou/">
-            <Icon icon={LinkedInIcon} />
+            <h5>LinkedIn</h5>
           </a>
         </li>
-        <li className="navbar-mode">
-          <button onClick={toggleTheme}>{theme ? 'Dark Mode' : 'Light Mode'}</button>
+        <li className="navbar-mode" onClick={toggleTheme}>
+          {theme ? <LightModeIcon fontSize="large" /> : <DarkModeIcon fontSize="large" />}
         </li>
-        <li className="navbar-toggle">
-          <button>X</button>
+        <li className="navbar-toggle" onClick={toggleMenu}>
+          {menu ? <CloseIcon fontSize="large" /> : <MenuIcon fontSize="large" />}
         </li>
       </ul>
     </nav>

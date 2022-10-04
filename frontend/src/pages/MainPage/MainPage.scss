@@ -30,6 +30,15 @@ section {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  // width: 100%;
+}
+
+.skills-container {
+  max-width: 25%;
+}
+
+.experience-container {
+  width: 100%;
 }
 
 .section-content {
@@ -68,8 +77,16 @@ section {
 }
 
 @media screen and (max-width: 600px) {
+  .main-page-container {
+    padding: 1.5rem;
+  }
+
   main {
     display: flex;
     flex-direction: column;
+  }
+
+  .skills-container {
+    max-width: 100%;
   }
 }

@@ -50,7 +50,7 @@ const MainPage = (): JSX.Element => {
             </div>
             <div className="skill-section">
               <div className="skill-title">
-                <HeadingThree title="Backend" />
+                <HeadingThree title="Tools" />
               </div>
               <div className="skill-content">
                 <ul className="skill-list">
@@ -63,15 +63,6 @@ const MainPage = (): JSX.Element => {
                   <li>
                     <Box item={'MongoDB'} />
                   </li>
-                </ul>
-              </div>
-            </div>
-            <div className="skill-section">
-              <div className="skill-title">
-                <HeadingThree title="Tools" />
-              </div>
-              <div className="skill-content">
-                <ul className="skill-list">
                   <li>
                     <Box item={'GIT'} />
                   </li>

@@ -7,8 +7,14 @@
 }
 
 .navbar-link,
-.navbar-mode {
+.navbar-mode,
+.navbar-toggle {
   cursor: pointer;
+}
+
+.navbar-link a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .navbar-mode {

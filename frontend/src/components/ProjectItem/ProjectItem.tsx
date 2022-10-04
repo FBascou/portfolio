@@ -3,6 +3,8 @@ import HeadingThree from '../HeadingThree/HeadingThree'
 import { ProjectItemInterface } from '../../utilities/interfaces/projects-item.interface'
 import Box from '../../components/Box/Box'
 import { useState } from 'react'
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
+import ExpandLessIcon from '@mui/icons-material/ExpandLess'
 
 const ProjectItem = ({
   name,
@@ -29,7 +31,11 @@ const ProjectItem = ({
           <h4>{name}</h4>
         </div>
         <div className="project-details-container" onClick={toggleDetails}>
-          {showDetails ? <div className="icon">^</div> : <div className="icon">v</div>}
+          {showDetails ? (
+            <Box item={<ExpandLessIcon fontSize="large" />} />
+          ) : (
+            <Box item={<ExpandMoreIcon fontSize="large" />} />
+          )}
         </div>
       </div>
       {showDetails ? (
