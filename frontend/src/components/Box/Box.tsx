@@ -4,13 +4,16 @@ import { useContext } from 'react'
 
 export interface BoxInterface {
   item: any
+  color: string
 }
 
-const Box = ({ item }: BoxInterface): JSX.Element => {
+const Box = ({ item, color }: BoxInterface): JSX.Element => {
   const { theme } = useContext(ThemeContext)
 
   return (
-    <div className={`box-container ${theme ? 'box-dark-theme' : 'box-light-theme'}`}>{item}</div>
+    <div className={`box-container ${theme ? `box-dark-theme box-${color}` : `box-light-theme`} `}>
+      {item}
+    </div>
   )
 }
 

@@ -23,28 +23,28 @@ const MainPage = (): JSX.Element => {
               <div className="skill-content">
                 <ul className="skill-list">
                   <li>
-                    <Box item={'Javascript'} />
+                    <Box color="blue" item={'Javascript'} />
                   </li>
                   <li>
-                    <Box item={'Typescript'} />
+                    <Box color="blue" item={'Typescript'} />
                   </li>
                   <li>
-                    <Box item={'React'} />
+                    <Box color="blue" item={'React'} />
                   </li>
                   <li>
-                    <Box item={'HTML'} />
+                    <Box color="blue" item={'HTML'} />
                   </li>
                   <li>
-                    <Box item={'CSS'} />
+                    <Box color="blue" item={'CSS'} />
                   </li>
                   <li>
-                    <Box item={'SASS'} />
+                    <Box color="blue" item={'SASS'} />
                   </li>
                   {/* <li>
-                    <Box item={'Styled-Components'} />
+                    <Box color='blue' item={'Styled-Components'} />
                   </li>
                   <li>
-                    <Box item={'MaterialUI'} />
+                    <Box color='blue' item={'MaterialUI'} />
                   </li> */}
                 </ul>
               </div>
@@ -56,31 +56,31 @@ const MainPage = (): JSX.Element => {
               <div className="skill-content">
                 <ul className="skill-list">
                   <li>
-                    <Box item={'Python 3'} />
+                    <Box color="blue" item={'Python 3'} />
                   </li>
                   <li>
-                    <Box item={'MySQL'} />
+                    <Box color="blue" item={'MySQL'} />
                   </li>
                   <li>
-                    <Box item={'MongoDB'} />
+                    <Box color="blue" item={'MongoDB'} />
                   </li>
                   <li>
-                    <Box item={'GIT'} />
+                    <Box color="blue" item={'GIT'} />
                   </li>
                   <li>
-                    <Box item={'JIRA'} />
+                    <Box color="blue" item={'JIRA'} />
                   </li>
                   <li>
-                    <Box item={'Salesforce'} />
+                    <Box color="blue" item={'Salesforce'} />
                   </li>
                   <li>
-                    <Box item={'Figma'} />
+                    <Box color="blue" item={'Figma'} />
                   </li>
                   <li>
-                    <Box item={'AdobeXD'} />
+                    <Box color="blue" item={'AdobeXD'} />
                   </li>
                   <li>
-                    <Box item={'Postman'} />
+                    <Box color="blue" item={'Postman'} />
                   </li>
                 </ul>
               </div>
@@ -92,19 +92,19 @@ const MainPage = (): JSX.Element => {
               <div className="skill-content">
                 <ul className="skill-list">
                   <li>
-                    <Box item={'English (Native)'} />
+                    <Box color="blue" item={'English (Native)'} />
                     {/* <IconSkills icon={gb} /> */}
                   </li>
                   <li>
-                    <Box item={'Spanish (Native)'} />
+                    <Box color="blue" item={'Spanish (Native)'} />
                     {/* <IconSkills icon={es} /> */}
                   </li>
                   <li>
-                    <Box item={'French (Fluent)'} />
+                    <Box color="blue" item={'French (Fluent)'} />
                     {/* <IconSkills icon={fr} /> */}
                   </li>
                   <li>
-                    <Box item={'Chinese (Intermediate)'} />
+                    <Box color="blue" item={'Chinese (Intermediate)'} />
                     {/* <IconSkills icon={cn} /> */}
                   </li>
                 </ul>

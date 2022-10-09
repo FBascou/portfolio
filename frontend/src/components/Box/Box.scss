@@ -7,9 +7,7 @@
   padding: 1.7rem;
 }
 
-.box-dark-theme {
-  // box-shadow: 0 0 0.2rem rgb(255,255,255,1), 0 0 0.2rem rgb(255,255,255,1), 0 0 1rem #bc13fe, 0 0 0.1rem #bc13fe,
-  //   0 0 0.2rem #bc13fe, inset 0 0 1rem #bc13fe;
+.box-blue {
   box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1),
     0 0 1rem rgb(10, 155, 191), 0 0 0.1rem rgb(10, 155, 191), 0 0 0.2rem rgb(10, 155, 191),
     inset 0 0 1rem rgb(10, 155, 191);
@@ -17,6 +15,11 @@
   // -webkit-box-shadow: 0px 0px 6px 1px rgb(10, 155, 191), inset 0px 0px 1px 1px rgb(10, 155, 191);
   // -moz-box-shadow: 0px 0px 6px 1px rgb(10, 155, 191), inset 0px 0px 1px 1px rgb(10, 155, 191);
   // box-shadow: 0px 0px 6px 1px rgb(10, 155, 191), inset 0px 0px 1px 1px rgb(10, 155, 191);
+}
+
+.box-purple {
+  box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 1rem #bc13fe,
+    0 0 0.1rem #bc13fe, 0 0 0.2rem #bc13fe, inset 0 0 1rem #bc13fe;
 }
 
 .box-dark-theme:hover {
@@ -29,72 +32,54 @@
 
 @-webkit-keyframes blink-dark-theme {
   0% {
-    box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1),
-      0 0 1rem rgb(10, 155, 191), 0 0 0.1rem rgb(10, 155, 191), 0 0 0.2rem rgb(10, 155, 191),
-      inset 0 0 1rem rgb(10, 155, 191);
+    box-shadow: 0 0 0.2 rgba(255, 255, 255, 1);
   }
   10% {
     box-shadow: 0 0 0.2 rgba(255, 255, 255, 0.5);
   }
   80% {
-    box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1),
-      0 0 1rem rgb(10, 155, 191), 0 0 0.1rem rgb(10, 155, 191), 0 0 0.2rem rgb(10, 155, 191),
-      inset 0 0 1rem rgb(10, 155, 191);
+    box-shadow: 0 0 0.2 rgba(255, 255, 255, 1);
   }
   90% {
     box-shadow: 0 0 0.2 rgba(255, 255, 255, 0.3);
   }
   100% {
-    box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1),
-      0 0 1rem rgb(10, 155, 191), 0 0 0.1rem rgb(10, 155, 191), 0 0 0.2rem rgb(10, 155, 191),
-      inset 0 0 1rem rgb(10, 155, 191);
+    box-shadow: 0 0 0.2 rgba(255, 255, 255, 1);
   }
 }
 
 @-moz-keyframes blink-dark-theme {
   0% {
-    box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1),
-      0 0 1rem rgb(10, 155, 191), 0 0 0.1rem rgb(10, 155, 191), 0 0 0.2rem rgb(10, 155, 191),
-      inset 0 0 1rem rgb(10, 155, 191);
+    box-shadow: 0 0 0.2 rgba(255, 255, 255, 1);
   }
   10% {
     box-shadow: 0 0 0.2 rgba(255, 255, 255, 0.3);
   }
   80% {
-    box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1),
-      0 0 1rem rgb(10, 155, 191), 0 0 0.1rem rgb(10, 155, 191), 0 0 0.2rem rgb(10, 155, 191),
-      inset 0 0 1rem rgb(10, 155, 191);
+    box-shadow: 0 0 0.2 rgba(255, 255, 255, 1);
   }
   90% {
     box-shadow: 0 0 0.2 rgba(255, 255, 255, 0.3);
   }
   100% {
-    box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1),
-      0 0 1rem rgb(10, 155, 191), 0 0 0.1rem rgb(10, 155, 191), 0 0 0.2rem rgb(10, 155, 191),
-      inset 0 0 1rem rgb(10, 155, 191);
+    box-shadow: 0 0 0.2 rgba(255, 255, 255, 1);
   }
 }
 @keyframes blink-dark-theme {
   0% {
-    box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1),
-      0 0 1rem rgb(10, 155, 191), 0 0 0.1rem rgb(10, 155, 191), 0 0 0.2rem rgb(10, 155, 191),
-      inset 0 0 1rem rgb(10, 155, 191);
+    box-shadow: 0 0 0.2 rgba(255, 255, 255, 1);
   }
   10% {
     box-shadow: 0 0 0.2rem rgba(255, 255, 255, 0.5);
   }
   80% {
-    box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1),
-      0 0 1rem rgb(10, 155, 191), 0 0 0.1rem rgb(10, 155, 191), 0 0 0.2rem rgb(10, 155, 191),
-      inset 0 0 1rem rgb(10, 155, 191);
+    box-shadow: 0 0 0.2 rgba(255, 255, 255, 1);
   }
   90% {
     box-shadow: 0 0 0.2 rgba(255, 255, 255, 0.5);
   }
   100% {
-    box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1),
-      0 0 1rem rgb(10, 155, 191), 0 0 0.1rem rgb(10, 155, 191), 0 0 0.2rem rgb(10, 155, 191),
-      inset 0 0 1rem rgb(10, 155, 191);
+    box-shadow: 0 0 0.2 rgba(255, 255, 255, 1);
   }
 }
 

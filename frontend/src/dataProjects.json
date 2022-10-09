@@ -2,11 +2,11 @@
   {
     "id": 0,
     "name": "Born2Global Website",
-    "description": "Born2Global frontend teamleader for the main website. Worked on the Careers, Job Application, Events, and News page. I co-worked on the design of the page.",
+    "description": "Frontend teamleader for the main website. Worked on the Careers, Job Application, Events, and News page. I co-worked on the design of the page.",
     "features": ["API calls", "Responsive", "Forms"],
     "tech": ["React", "Typescript", "SCSS", "Axios", "MaterialUI", "Formik", "AdobeXD"],
     "github": "",
-    "url": "",
+    "url": "https://www.service.born2global.com/",
     "media": ""
   },
   {
@@ -32,7 +32,7 @@
   {
     "id": 3,
     "name": "NASA API Cosmic Events",
-    "description": "Website that displays multiple cosmic events from different NASA APIs",
+    "description": "Website that displays multiple cosmic events from different NASA APIs on a tabular format",
     "features": ["API Calls"],
     "tech": ["Javascript", "React", "Context API", "Regex"],
     "github": "https://github.com/FBascou/nasa-api-events",

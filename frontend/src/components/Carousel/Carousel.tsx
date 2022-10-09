@@ -52,7 +52,7 @@ const Carousel = (): JSX.Element => {
                       <ul className="carousel-content-item-section-content">
                         {item.features?.map((item) => (
                           <li key={item}>
-                            <Box item={item} />
+                            <Box item={item} color="purple" />
                           </li>
                         ))}
                       </ul>
@@ -66,7 +66,7 @@ const Carousel = (): JSX.Element => {
                       <ul className="carousel-content-item-section-content">
                         {item.tech?.map((item) => (
                           <li key={item}>
-                            <Box item={item} />
+                            <Box item={item} color="purple" />
                           </li>
                         ))}
                       </ul>
