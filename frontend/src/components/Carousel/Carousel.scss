@@ -99,3 +99,37 @@
   position: absolute;
   right: 0;
 }
+
+@media screen and (max-width: 600px) {
+  .carousel-header {
+    display: none;
+  }
+
+  section {
+    width: 100%;
+  }
+
+  .carousel-content,
+  .carousel-content-items,
+  .carousel-content-item,
+  .carousel-content-item-overview {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+  }
+
+  .carousel-content-item {
+    flex: none;
+    white-space: normal;
+  }
+
+  .carousel-content-item-overview {
+    overflow-x: none;
+    overflow-y: none;
+  }
+
+  .carousel-content-btn-left,
+  .carousel-content-btn-right {
+    display: none;
+  }
+}

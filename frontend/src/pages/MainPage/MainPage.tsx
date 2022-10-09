@@ -2,9 +2,10 @@ import './MainPage.scss'
 import HeadingTwo from '../../components/HeadingTwo/HeadingTwo'
 import HeadingThree from '../../components/HeadingThree/HeadingThree'
 import Box from '../../components/Box/Box'
-import ProjectsPage from '../../pages/ProjectsPage/ProjectsPage'
 import Header from '../../components/Header/Header'
 import Carousel from '../../components/Carousel/Carousel'
+
+// have a button that takes you to a crazy page (crazy art)
 
 const MainPage = (): JSX.Element => {
   return (
