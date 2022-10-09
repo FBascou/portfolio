@@ -2,10 +2,10 @@ import { useState } from 'react'
 import dataProjects from '../../dataProjects.json'
 import ProjectItem from '../../components/ProjectItem/ProjectItem'
 import './ProjectsPage.scss'
-import { IProjectsPage } from 'utilities/interfaces/projects-page.interface'
+import { ProjectsPageInterface } from 'utilities/interfaces/projects-page.interface'
 
 const ProjectsPage = (): JSX.Element => {
-  const [data, setData] = useState<IProjectsPage[]>(dataProjects)
+  const [data, setData] = useState<ProjectsPageInterface[]>(dataProjects)
 
   return (
     <div className="projects-container">

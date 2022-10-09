@@ -1,0 +1,101 @@
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  margin: 2rem 0;
+}
+
+.carousel-header-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.carousel-header-item {
+  cursor: pointer;
+}
+
+.carousel-header-item:hover {
+  color: rgb(150, 150, 150);
+}
+
+.carousel-header-item:active,
+.carousel-header-item:visited {
+  color: rgb(0, 204, 255);
+}
+
+.carousel-content {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.carousel-content-items {
+  width: 100rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scrollbar-width: none;
+  overflow: -moz-scrollbars-none; /* Firefox */
+}
+
+.carousel-content-items::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+.carousel-content-item {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  gap: 3rem;
+  width: 100rem;
+  height: auto;
+  white-space: pre-wrap;
+  padding: 0 5rem;
+}
+
+.carousel-content-item-overview {
+  display: flex;
+  gap: 3rem;
+}
+
+.carousel-content-item-overview-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2rem;
+  width: 50%;
+}
+
+.carousel-content-item-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.carousel-content-item-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3rem;
+}
+
+.carousel-content-btn-left {
+  position: absolute;
+  left: 0;
+}
+
+.carousel-content-btn-right {
+  position: absolute;
+  right: 0;
+}

@@ -4,6 +4,7 @@ import HeadingThree from '../../components/HeadingThree/HeadingThree'
 import Box from '../../components/Box/Box'
 import ProjectsPage from '../../pages/ProjectsPage/ProjectsPage'
 import Header from '../../components/Header/Header'
+import Carousel from '../../components/Carousel/Carousel'
 
 const MainPage = (): JSX.Element => {
   return (
@@ -117,31 +118,32 @@ const MainPage = (): JSX.Element => {
               <HeadingTwo title="Projects" />
             </div>
             <div className="section-content">
-              <ProjectsPage />
+              {/* <ProjectsPage /> */}
+              <Carousel />
             </div>
           </div>
-          <div className="resume experience-group">
-            {/* <div className="section-content">
-            <div className="resume-section">
-              <div className="resume-title">
-                <h2>Work Experience</h2>
+          {/* <div className="resume experience-group">
+            <div className="section-content">
+              <div className="resume-section">
+                <div className="resume-title">
+                  <h2>Work Experience</h2>
+                </div>
+                <div className="resume-content"></div>
               </div>
-              <div className="resume-content"></div>
-            </div>
-            <div className="resume-section">
-              <div className="resume-title">
-                <h2>Education</h2>
+              <div className="resume-section">
+                <div className="resume-title">
+                  <h2>Education</h2>
+                </div>
+                <div className="resume-content"></div>
               </div>
-              <div className="resume-content"></div>
-            </div>
-            <div className="resume-section">
-              <div className="resume-title">
-                <h2>Volunteering</h2>
+              <div className="resume-section">
+                <div className="resume-title">
+                  <h2>Volunteering</h2>
+                </div>
+                <div className="resume-content"></div>
               </div>
-              <div className="resume-content"></div>
             </div>
           </div> */}
-          </div>
         </section>
       </main>
     </div>

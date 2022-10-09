@@ -6,6 +6,10 @@ import MenuIcon from '@mui/icons-material/Menu'
 import DarkModeIcon from '@mui/icons-material/DarkMode'
 import LightModeIcon from '@mui/icons-material/LightMode'
 
+// Animate theme so it goes from daylight to night with different colors
+// IE: Light > Yellow > Orange > Purple > Dark
+// Smooth transition, gradient style (?)
+
 const NavBar = () => {
   const { theme, toggleTheme } = useContext(ThemeContext)
   const [menu, setMenu] = useState<boolean>(false)
