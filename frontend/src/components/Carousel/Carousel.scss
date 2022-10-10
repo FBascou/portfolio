@@ -1,8 +1,13 @@
 .carousel-container {
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 3rem;
   margin: 2rem 0;
+}
+
+.carousel-header {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgb(150, 150, 150);
 }
 
 .carousel-header-items {
@@ -12,18 +17,18 @@
   gap: 2rem;
 }
 
-.carousel-header-item {
-  cursor: pointer;
-}
+// .carousel-header-item {
+//   cursor: pointer;
+// }
 
-.carousel-header-item:hover {
-  color: rgb(150, 150, 150);
-}
+// .carousel-header-item:hover {
+//   color: rgb(150, 150, 150);
+// }
 
-.carousel-header-item:active,
-.carousel-header-item:visited {
-  color: rgb(0, 204, 255);
-}
+// .carousel-header-item:active,
+// .carousel-header-item:visited {
+//   color: rgb(0, 204, 255);
+// }
 
 .carousel-content {
   position: relative;
@@ -61,7 +66,7 @@
   width: 100rem;
   height: auto;
   white-space: pre-wrap;
-  padding: 0 5rem;
+  padding: 0 1rem;
 }
 
 .carousel-content-item-overview {

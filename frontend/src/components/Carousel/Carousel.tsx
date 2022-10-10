@@ -90,10 +90,10 @@ const Carousel = (): JSX.Element => {
             </div>
           ))}
         </div>
-        <div className="carousel-content-btns">
+        {/* <div className="carousel-content-btns">
           <button className="carousel-content-btn-left">{'<'}</button>
           <button className="carousel-content-btn-right">{'>'}</button>
-        </div>
+        </div> */}
       </div>
     </div>
   )

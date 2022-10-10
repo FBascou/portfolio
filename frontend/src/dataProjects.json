@@ -3,7 +3,7 @@
     "id": 0,
     "name": "Born2Global Website",
     "description": "Frontend teamleader for the main website. Worked on the Careers, Job Application, Events, and News page. I co-worked on the design of the page.",
-    "features": ["API calls", "Responsive", "Forms"],
+    "features": ["API calls", "Responsive", "Forms", "Search"],
     "tech": ["React", "Typescript", "SCSS", "Axios", "MaterialUI", "Formik", "AdobeXD"],
     "github": "",
     "url": "https://www.service.born2global.com/",

@@ -30,11 +30,27 @@ p {
   line-height: 2rem;
 }
 
-li {
-  font-size: 1.2rem;
-}
+// li {
+//   font-size: 1.2rem;
+// }
 
 span {
   color: rgb(0, 204, 255);
   font-weight: 500;
+}
+
+a {
+  text-decoration-style: none;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+a:hover {
+  color: rgb(150, 150, 150);
+}
+
+// a:visited,
+a:active {
+  color: rgb(0, 204, 255);
 }
