@@ -1,35 +1,35 @@
 [
   {
-    "about": {
-      "id": 0,
-      "name": "Felipe Bascou",
-      "position": "Frontend Software Developer",
-      "description": "Looking to work on projects with Javascript, Typescript, and React.",
-      "email": "felipe_bascou@hotmail.com",
-      "mobile": "+82-010-3101-4449 or +49-157-3946-6066",
-      "website": "http(s)://www.felipebascou.com",
-      "github:": "https://github.com/FBascou",
-      "linkedin": "https://www.linkedin.com/in/felipebascou/"
-    }
+    "id": 0,
+    "header": "About",
+    "name": "Felipe Bascou",
+    "position": "Frontend Software Developer",
+    "description": "Looking to work on projects with Javascript, Typescript, and React.",
+    "email": "felipe_bascou@hotmail.com",
+    "mobile": "+90-(534)-268-87-95",
+    "website": "http(s)://www.felipebascou.com",
+    "github:": "https://github.com/FBascou",
+    "linkedin": "https://www.linkedin.com/in/felipebascou/"
   },
   {
-    "skills": {
-      "id": 1,
-      "frontend": ["Javascript", "Typescript", "ReactJS", "HTML/CSS/SASS"],
-      "backend": ["Python 3", "MySQL", "MongoDB"],
-      "tools": ["Salesforce", "GIT", "Jira", "AdobeXD", "Figma"],
-      "languages": [
-        "English (Native)",
-        "Spanish (Native)",
-        "French (Fluent)",
-        "Chinese Mandarin (Intermediate)"
-      ]
-    }
+    "id": 1,
+    "header": "Skills",
+    "frontend": ["Javascript", "Typescript", "ReactJS", "HTML/CSS/SASS"],
+    "backend": ["Python 3", "MySQL", "MongoDB"],
+    "tools": ["Salesforce", "GIT", "Jira", "AdobeXD", "Figma"],
+    "languages": [
+      "English (Native)",
+      "Spanish (Native)",
+      "French (Fluent)",
+      "Chinese Mandarin (Intermediate)"
+    ]
   },
   {
-    "work": [
+    "id": 2,
+    "header": "Work",
+    "workList": [
       {
-        "id": 2,
+        "id": 0,
         "company": "Born2Global Centre",
         "date": "04/2021 - Present",
         "location": "Seoul, South Korea",
@@ -56,7 +56,7 @@
         ]
       },
       {
-        "id": 3,
+        "id": 1,
         "company": "Applause GmbH",
         "date": "03/2020 - 09/2020",
         "location": "Berlin, Germany",
@@ -69,7 +69,7 @@
         ]
       },
       {
-        "id": 4,
+        "id": 2,
         "company": "KW-Commerce GmbH",
         "date": "12/2018 - 09/2019",
         "location": "Berlin, Germany",
@@ -81,7 +81,7 @@
         ]
       },
       {
-        "id": 5,
+        "id": 3,
         "company": "PowerChina LTD.",
         "date": "10/2015 - 09/2017",
         "location": "Beijing, China & Buenos Aires, Argentina",
@@ -96,9 +96,12 @@
     ]
   },
   {
-    "education": [
+    "id": 3,
+    "header": "Education",
+    "educationList": [
       {
-        "id": 6,
+        "id": 0,
+        "header": "Education",
         "university": "Arden University",
         "date": "04/2018 - 09/2019",
         "location": "Berlin, Germany",
@@ -106,7 +109,7 @@
         "completed": "Yes"
       },
       {
-        "id": 7,
+        "id": 1,
         "university": "Beijing Foreign Studies University",
         "date": "09/2011 - 07/2015",
         "location": "Beijing, China",
@@ -116,16 +119,19 @@
     ]
   },
   {
-    "volunteering": [
+    "id": 4,
+    "header": "Volunteering",
+    "volunteeringList": [
       {
-        "id": 8,
+        "id": 0,
+        "header": "Volunteering",
         "entity": "BFSU International Business School Union",
         "date": "2012 - 2013",
         "location": "Beijing, China",
         "role": "Marketing Assistant Manager"
       },
       {
-        "id": 9,
+        "id": 1,
         "entity": "Empowered Student Partnership",
         "date": "2007 - 2009",
         "location": "Toronto, Canada",

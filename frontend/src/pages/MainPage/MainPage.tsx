@@ -41,12 +41,6 @@ const MainPage = (): JSX.Element => {
                   <li>
                     <Box color="blue" item={'SASS'} />
                   </li>
-                  {/* <li>
-                    <Box color='blue' item={'Styled-Components'} />
-                  </li>
-                  <li>
-                    <Box color='blue' item={'MaterialUI'} />
-                  </li> */}
                 </ul>
               </div>
             </div>

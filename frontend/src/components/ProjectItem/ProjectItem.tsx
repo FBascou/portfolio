@@ -1,10 +1,6 @@
 import './ProjectItem.scss'
-import HeadingThree from '../HeadingThree/HeadingThree'
 import { ProjectItemInterface } from '../../utilities/interfaces/projects-item.interface'
-import Box from '../../components/Box/Box'
-import { useState } from 'react'
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
-import ExpandLessIcon from '@mui/icons-material/ExpandLess'
+import Box from '../Box/Box'
 
 const ProjectItem = ({
   name,
@@ -15,70 +11,64 @@ const ProjectItem = ({
   url,
   media,
 }: ProjectItemInterface): JSX.Element => {
-  const [showDetails, setShowDetails] = useState<boolean>(false)
-
-  const toggleDetails: React.MouseEventHandler<HTMLElement> = (): void => {
-    setShowDetails((showDetails) => !showDetails)
-  }
-
-  // add smooth animation when clicking show/hide details
-  // hide all items when only one is selected
-  // should I add the image/media before the project content?
   return (
-    <div className="project-item-container">
-      <div className="project-header">
-        <div className="project-title">
-          <h4>{name}</h4>
-        </div>
-        <div className="project-details-container" onClick={toggleDetails}>
-          {showDetails ? (
-            <Box item={<ExpandLessIcon fontSize="large" />} />
-          ) : (
-            <Box item={<ExpandMoreIcon fontSize="large" />} />
-          )}
-        </div>
+    <div className="project-item-container" id={name}>
+      <div className="project-item-title">
+        <h4>{name}</h4>
       </div>
-      {showDetails ? (
-        <div className={`project-info`}>
-          <div className="project-column project-overview">
-            <div className="project-section project-description">
-              <HeadingThree title="Description" />
+      <div className="project-item-overview">
+        <div className="project-item-overview-section project-item-info">
+          <div className="project-item-section">
+            <div className="project-item-section-header">
+              <h3>Description</h3>
+            </div>
+            <div className="project-item-section-content">
               <p>{description}</p>
             </div>
-            <div className="project-section project-features">
-              <HeadingThree title="Features" />
-              <ul className="project-list-ul">
-                {features?.map((item) => (
-                  <li key={item} className="project-list-item">
-                    <Box item={item} />
-                  </li>
-                ))}
-              </ul>
+          </div>
+          <div className="project-item-section">
+            <div className="project-item-section-header">
+              <h3>Features</h3>
             </div>
-            <div className="project-section project-tech">
-              <HeadingThree title="Tech" />
-              <ul className="project-list-ul">
-                {tech?.map((item) => (
-                  <li key={item} className="project-list-item">
-                    <Box item={item} />
+            <div className="project-item-section-content">
+              <ul className="project-item-section-content">
+                {features?.map((item) => (
+                  <li key={item}>
+                    <Box item={item} color="purple" />
                   </li>
                 ))}
               </ul>
             </div>
           </div>
-          <div className="project-column project-media">
-            <div className="project-links">
-              <a target="_blank" href={github} className="project-url">
-                Github
-              </a>
-              <a target="_blank" href={url} className="project-url">
-                Website
-              </a>
+          <div className="project-item-section">
+            <div className="project-item-section-header">
+              <h3>Tech</h3>
             </div>
+            <div className="project-item-section-content">
+              <ul className="project-item-section-content">
+                {tech?.map((item) => (
+                  <li key={item}>
+                    <Box item={item} color="purple" />
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="project-item-overview-section project-item-media">
+          <div className="project-item-links">
+            <a target="_blank" href={github} className="project-url">
+              <p>Github</p>
+            </a>
+            <a target="_blank" href={url} className="project-url">
+              <p>Website</p>
+            </a>
+          </div>
+          <div className="project-item-img">
             <img className="project-img" src={media} alt={name} />
           </div>
         </div>
-      ) : null}
+      </div>
     </div>
   )
 }

@@ -27,20 +27,20 @@ const NavBar = () => {
         <li>
           <h5>Resume</h5>
         </li>
-        <li>
-          <h5>Contact</h5>
-        </li>
         <li className="navbar-link">
-          <a href="https://github.com/FBascou">
+          <a target="_blank" href="https://github.com/FBascou">
             <h5>Github</h5>
           </a>
         </li>
         <li className="navbar-link">
-          <a href="https://www.linkedin.com/in/felipebascou/">
+          <a target="_blank" href="https://www.linkedin.com/in/felipebascou/">
             <h5>LinkedIn</h5>
           </a>
         </li>
-        <li className="navbar-mode" onClick={toggleTheme}>
+        <li>
+          <h5>Contact</h5>
+        </li>
+        <li className="navbar-theme" onClick={toggleTheme}>
           {theme ? <LightModeIcon fontSize="large" /> : <DarkModeIcon fontSize="large" />}
         </li>
         <li className="navbar-toggle" onClick={toggleMenu}>

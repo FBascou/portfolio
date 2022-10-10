@@ -17,19 +17,6 @@
   gap: 2rem;
 }
 
-// .carousel-header-item {
-//   cursor: pointer;
-// }
-
-// .carousel-header-item:hover {
-//   color: rgb(150, 150, 150);
-// }
-
-// .carousel-header-item:active,
-// .carousel-header-item:visited {
-//   color: rgb(0, 204, 255);
-// }
-
 .carousel-content {
   position: relative;
   display: flex;
@@ -58,43 +45,6 @@
   display: none; /* Safari and Chrome */
 }
 
-.carousel-content-item {
-  display: flex;
-  flex-direction: column;
-  flex: 0 0 auto;
-  gap: 3rem;
-  width: 100rem;
-  height: auto;
-  white-space: pre-wrap;
-  padding: 0 1rem;
-}
-
-.carousel-content-item-overview {
-  display: flex;
-  gap: 3rem;
-}
-
-.carousel-content-item-overview-section {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 2rem;
-  width: 50%;
-}
-
-.carousel-content-item-section {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.carousel-content-item-links {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 3rem;
-}
-
 .carousel-content-btn-left {
   position: absolute;
   left: 0;
@@ -115,22 +65,10 @@
   }
 
   .carousel-content,
-  .carousel-content-items,
-  .carousel-content-item,
-  .carousel-content-item-overview {
+  .carousel-content-items {
     flex-direction: column;
     width: 100%;
     padding: 0;
-  }
-
-  .carousel-content-item {
-    flex: none;
-    white-space: normal;
-  }
-
-  .carousel-content-item-overview {
-    overflow-x: none;
-    overflow-y: none;
   }
 
   .carousel-content-btn-left,

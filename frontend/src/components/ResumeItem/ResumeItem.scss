@@ -1,4 +1,4 @@
-.project-item-container {
+.resume-item-container {
   display: flex;
   flex-direction: column;
   flex: 0 0 auto;
@@ -9,12 +9,12 @@
   padding: 0 1rem;
 }
 
-.project-item-overview {
+.resume-item-overview {
   display: flex;
   gap: 3rem;
 }
 
-.project-item-overview-section {
+.resume-item-overview-section {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -22,33 +22,26 @@
   width: 50%;
 }
 
-.project-item-section {
+.resume-item-section {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.project-item-links {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 3rem;
-}
-
 @media screen and (max-width: 600px) {
-  .project-item-contianer,
-  .project-item-overview {
+  .resume-item-contianer,
+  .resume-item-overview {
     flex-direction: column;
     width: 100%;
     padding: 0;
   }
 
-  .project-item-container {
+  .resume-item-container {
     flex: none;
     white-space: normal;
   }
 
-  .project-item-overview {
+  .resume-item-overview {
     overflow-x: none;
     overflow-y: none;
   }
