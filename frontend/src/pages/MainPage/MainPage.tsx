@@ -4,6 +4,9 @@ import HeadingThree from '../../components/HeadingThree/HeadingThree'
 import Box from '../../components/Box/Box'
 import Header from '../../components/Header/Header'
 import Carousel from '../../components/Carousel/Carousel'
+import ResumePage from '../../pages/ResumePage/ResumePage'
+import dataCV from '../../dataCV.json'
+import ResumeItem from '../../components/ResumeItem/ResumeItem'
 
 // have a button that takes you to a crazy page (crazy art)
 
@@ -108,15 +111,15 @@ const MainPage = (): JSX.Element => {
           </div>
         </section>
         <section className="experience-container">
-          <div className="projects experience-group">
-            <div className="section-title">
-              <HeadingTwo title="Projects" />
-            </div>
-            <div className="section-content">
-              {/* <ProjectsPage /> */}
-              <Carousel />
-            </div>
+          {/* <div className="projects experience-group"> */}
+          <div className="section-title">
+            <HeadingTwo title="Resume" />
           </div>
+          <div className="section-content">
+            {/* <ProjectsPage /> */}
+            <ResumePage data={dataCV.slice(2)} component={<ResumeItem data={dataCV.slice(2)} />} />
+          </div>
+          {/* </div> */}
           {/* <div className="resume experience-group">
             <div className="section-content">
               <div className="resume-section">

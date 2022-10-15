@@ -2,63 +2,75 @@
   {
     "id": 0,
     "header": "About",
-    "name": "Felipe Bascou",
-    "position": "Frontend Software Developer",
-    "description": "Looking to work on projects with Javascript, Typescript, and React.",
-    "email": "felipe_bascou@hotmail.com",
-    "mobile": "+90-(534)-268-87-95",
-    "website": "http(s)://www.felipebascou.com",
-    "github:": "https://github.com/FBascou",
-    "linkedin": "https://www.linkedin.com/in/felipebascou/"
+    "list": [
+      {
+        "id": 0,
+        "name": "Felipe Bascou",
+        "position": "Frontend Software Developer",
+        "description": "Looking to work on projects with Javascript, Typescript, and React.",
+        "email": "felipe_bascou@hotmail.com",
+        "mobile": "+90-(534)-268-87-95",
+        "website": "http(s)://www.felipebascou.com",
+        "github": "https://github.com/FBascou",
+        "linkedin": "https://www.linkedin.com/in/felipebascou/"
+      }
+    ]
   },
   {
     "id": 1,
     "header": "Skills",
-    "frontend": ["Javascript", "Typescript", "ReactJS", "HTML/CSS/SASS"],
-    "backend": ["Python 3", "MySQL", "MongoDB"],
-    "tools": ["Salesforce", "GIT", "Jira", "AdobeXD", "Figma"],
-    "languages": [
-      "English (Native)",
-      "Spanish (Native)",
-      "French (Fluent)",
-      "Chinese Mandarin (Intermediate)"
+    "list": [
+      { "id": 0, "frontend": ["Javascript", "Typescript", "ReactJS", "HTML/CSS/SASS"] },
+      { "id": 1, "backend": ["Python 3", "MySQL", "MongoDB"] },
+      { "id": 2, "tools": ["Salesforce", "GIT", "Jira", "AdobeXD", "Figma"] },
+      {
+        "id": 3,
+        "languages": [
+          "English (Native)",
+          "Spanish (Native)",
+          "French (Fluent)",
+          "Chinese Mandarin (Intermediate)"
+        ]
+      }
     ]
   },
   {
     "id": 2,
     "header": "Work",
-    "workList": [
+    "list": [
       {
         "id": 0,
-        "company": "Born2Global Centre",
-        "date": "04/2021 - Present",
+        "name": "Born2Global Centre",
+        "date": "2022/01 - 2022/09",
         "location": "Seoul, South Korea",
         "position": "Digital Transformation Manager (Frontend Developer & Marketing Team Leader)",
         "tasks": [
-          {
-            "Global Business Alliance Manager": [
-              "Organized and  administered offline and online global events with Colombia, Chile, GIGF, Seoul National University Program and AKVCC",
-              "Conducted Deep Tech South Korean and Latin American Market reports and analysis",
-              "Supported the creation of 5 joint-ventures between South Korean and foreign companies",
-              "Created and maintained a database with Google Sheets (Javascript/Google Script) and Salesforce (NoSQL)",
-              "Salesforce admin",
-              "Automated tasks with Python and Google Sheets Macros (Javascript/Google Script)"
-            ]
-          },
-          {
-            "Digital Transformation Manager": [
-              "Wordpress admin",
-              "Created a marketing campaign and strategy. Created and analysed Facebook, LinkedIn, Youtube, and MailChimp ads, Surveys, Customer Buyer Personas, Customer Journeys, Content, Data Analysis & Reports",
-              "Frontend Developer (ReactJS/SASS)",
-              "Automated tasks with Python and Google Sheets Macros (Javascript/Google Script)"
-            ]
-          }
+          "Wordpress admin and content creator",
+          "Created a marketing campaign and strategy. Created and analysed Facebook, LinkedIn, Youtube, and MailChimp ads, Surveys, Customer Buyer Personas, Customer Journeys, Content, Data Analysis & Reports",
+          "Frontend Developer (Typescript, React, SCSS, Formik, Github). Created Careers, Events, News, and Job Application pages",
+          "Automated tasks with Python and Google Sheets Macros (Javascript/Google Script)"
         ]
       },
       {
         "id": 1,
-        "company": "Applause GmbH",
-        "date": "03/2020 - 09/2020",
+        "name": "Born2Global Centre",
+        "date": "2021/04 - 2021/12",
+        "location": "Seoul, South Korea",
+        "position": "Global Business Alliance Manager",
+        "tasks": [
+          "Organized and  administered offline and online global events with Colombia, Chile, GIGF, Seoul National University Program and AKVCC",
+          "Conducted Deep Tech South Korean and Latin American Market reports and analysis",
+          "Supported the creation of 5 joint-ventures between South Korean and foreign companies",
+          "Created and maintained a database with Google Sheets (Javascript/Google Script) and Salesforce (NoSQL)",
+          "Salesforce admin",
+          "Automated tasks with Python and Google Sheets Macros (Javascript/Google Script)"
+        ]
+      },
+
+      {
+        "id": 2,
+        "name": "Applause GmbH",
+        "date": "2020/03 - 2020/09",
         "location": "Berlin, Germany",
         "position": "Sales Analyst Intern",
         "tasks": [
@@ -69,9 +81,9 @@
         ]
       },
       {
-        "id": 2,
-        "company": "KW-Commerce GmbH",
-        "date": "12/2018 - 09/2019",
+        "id": 3,
+        "name": "KW-Commerce GmbH",
+        "date": "2018/12 - 2019/09",
         "location": "Berlin, Germany",
         "position": "Product Data Management Intern",
         "tasks": [
@@ -81,16 +93,16 @@
         ]
       },
       {
-        "id": 3,
-        "company": "PowerChina LTD.",
-        "date": "10/2015 - 09/2017",
+        "id": 4,
+        "name": "PowerChina LTD.",
+        "date": "2015/10 - 2017/09",
         "location": "Beijing, China & Buenos Aires, Argentina",
         "position": "Commercial Manager",
         "tasks": [
           "Communicated with local and foreign companies, and all levels of government authorities regarding infrastructure and energy projects",
           "Wrote market reports",
           "Created a database of all the company's clients",
-          "Administered the financial/bank account of the company"
+          "Managed the financial bank account and its operations (account creation, transactions, etc.)"
         ]
       }
     ]
@@ -98,20 +110,19 @@
   {
     "id": 3,
     "header": "Education",
-    "educationList": [
+    "list": [
       {
         "id": 0,
-        "header": "Education",
-        "university": "Arden University",
-        "date": "04/2018 - 09/2019",
+        "name": "Arden University",
+        "date": "2018/04 - 2019/09",
         "location": "Berlin, Germany",
         "degree": "MSc. Data Analysis & Marketing",
         "completed": "Yes"
       },
       {
         "id": 1,
-        "university": "Beijing Foreign Studies University",
-        "date": "09/2011 - 07/2015",
+        "name": "Beijing Foreign Studies University",
+        "date": "2011/09 - 2015/07",
         "location": "Beijing, China",
         "degree": "B.B.A. International Marketing",
         "completed": "Yes"
@@ -121,21 +132,20 @@
   {
     "id": 4,
     "header": "Volunteering",
-    "volunteeringList": [
+    "list": [
       {
         "id": 0,
-        "header": "Volunteering",
-        "entity": "BFSU International Business School Union",
-        "date": "2012 - 2013",
+        "name": "BFSU International Business School Union",
+        "date": "2011 - 2013",
         "location": "Beijing, China",
-        "role": "Marketing Assistant Manager"
+        "position": "Marketing Assistant Manager"
       },
       {
         "id": 1,
-        "entity": "Empowered Student Partnership",
-        "date": "2007 - 2009",
+        "name": "Empowered Student Partnership",
+        "date": "2006 - 2008",
         "location": "Toronto, Canada",
-        "role": "Volunteer"
+        "position": "Student Volunteer"
       }
     ]
   }

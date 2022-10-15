@@ -1,38 +1,58 @@
 .resume-item-container {
   display: flex;
-  flex-direction: column;
-  flex: 0 0 auto;
+  // flex-direction: column;
+  // flex: 0 0 auto;
   gap: 3rem;
-  width: 100rem;
+  // width: 80rem;
   height: auto;
-  white-space: pre-wrap;
-  padding: 0 1rem;
+  padding: 2rem 0;
+}
+
+.resume-item-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 80rem;
+  gap: 2rem;
 }
 
 .resume-item-overview {
   display: flex;
-  gap: 3rem;
-}
-
-.resume-item-overview-section {
-  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 2rem;
-  width: 50%;
+  gap: 1rem;
 }
 
 .resume-item-section {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+}
+
+.resume-item-location {
+  font-style: italic;
+}
+
+.resume-item-description {
+  font-weight: 600;
+}
+
+.resume-item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-left: 1.5rem;
+}
+
+.resume-item-list-item {
+  display: list-item;
+  white-space: pre-wrap;
+  list-style: initial;
+  list-style-type: initial;
 }
 
 @media screen and (max-width: 600px) {
   .resume-item-contianer,
   .resume-item-overview {
     flex-direction: column;
-    width: 100%;
     padding: 0;
   }
 

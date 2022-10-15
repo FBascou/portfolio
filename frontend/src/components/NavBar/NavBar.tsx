@@ -21,10 +21,10 @@ const NavBar = () => {
   return (
     <nav>
       <ul className="navbar">
-        <li>
+        <li className="navbar-link">
           <h5>Projects</h5>
         </li>
-        <li>
+        <li className="navbar-link">
           <h5>Resume</h5>
         </li>
         <li className="navbar-link">
@@ -37,15 +37,15 @@ const NavBar = () => {
             <h5>LinkedIn</h5>
           </a>
         </li>
-        <li>
+        <li className="navbar-link">
           <h5>Contact</h5>
         </li>
         <li className="navbar-theme" onClick={toggleTheme}>
           {theme ? <LightModeIcon fontSize="large" /> : <DarkModeIcon fontSize="large" />}
         </li>
-        <li className="navbar-toggle" onClick={toggleMenu}>
+        {/* <li className="navbar-toggle" onClick={toggleMenu}>
           {menu ? <CloseIcon fontSize="large" /> : <MenuIcon fontSize="large" />}
-        </li>
+        </li> */}
       </ul>
     </nav>
   )

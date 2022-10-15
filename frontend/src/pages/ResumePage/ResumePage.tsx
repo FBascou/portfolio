@@ -1,13 +1,16 @@
-import dataCV from '../../dataCV.json'
 import ResumeItem from '../../components/ResumeItem/ResumeItem'
 import './ResumePage.scss'
+import Carousel from '../../components/Carousel/Carousel'
 
-const ResumePage = (): JSX.Element => {
+interface ResumePageInterface {
+  data: any[]
+  component?: JSX.Element
+}
+
+const ResumePage = ({ data, component }: ResumePageInterface): JSX.Element => {
   return (
     <div className="resume-container">
-      {dataCV.map((item) => (
-        <ResumeItem key={item.id} {...item} />
-      ))}
+      <Carousel data={data} component={component} />
     </div>
   )
 }

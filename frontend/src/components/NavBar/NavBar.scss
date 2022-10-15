@@ -8,7 +8,8 @@
 
 .navbar-link,
 .navbar-mode,
-.navbar-toggle {
+.navbar-toggle,
+.navbar-theme {
   cursor: pointer;
 }
 
@@ -18,7 +19,7 @@
 }
 
 .navbar-theme {
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 
 @media screen and (max-width: 600px) {

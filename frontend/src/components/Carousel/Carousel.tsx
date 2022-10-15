@@ -1,21 +1,37 @@
 import './Carousel.scss'
-import dataProjects from '../../dataProjects.json'
 import { useHorizontalScroll } from '../../utilities/hooks/useHorizontalScroll'
-import ProjectsPage from '../../pages/ProjectsPage/ProjectsPage'
 
-const Carousel = (): JSX.Element => {
+interface CarouselInterface {
+  data: any[]
+  component?: JSX.Element
+}
+
+const yearsArray: any[] = [
+  { id: 0, year: 2006 },
+  { id: 1, year: 2011 },
+  { id: 2, year: 2015 },
+  { id: 3, year: 2017 },
+  { id: 4, year: 2018 },
+  { id: 5, year: 2019 },
+  { id: 6, year: 2020 },
+  { id: 7, year: 2021 },
+]
+
+const Carousel = ({ data, component }: CarouselInterface): JSX.Element => {
   const scrollRef = useHorizontalScroll()
 
-  //Carousel is a component, so Carousel should be inside the pages (Project, Resume)
+  //Carousel header should be years - 2010 - 2011 - 2012 - ... - 2022
+  //Issue with carousel header
+  //maybe will have to separate everything
 
   return (
     <div className="carousel-container">
       <div className="carousel-header">
         <ul className="carousel-header-items">
-          {dataProjects.map((item) => (
+          {data.map((item) => (
             <li key={item.id} className="carousel-header-item">
-              <a href={`#${item.name}`}>
-                <p>{item.name}</p>{' '}
+              <a href={`#${item.header}`}>
+                <p>{item.header}</p>{' '}
               </a>
             </li>
           ))}
@@ -23,12 +39,8 @@ const Carousel = (): JSX.Element => {
       </div>
       <div className="carousel-content">
         <div className="carousel-content-items" ref={scrollRef}>
-          <ProjectsPage />
+          {component}
         </div>
-        {/* <div className="carousel-content-btns">
-          <button className="carousel-content-btn-left">{'<'}</button>
-          <button className="carousel-content-btn-right">{'>'}</button>
-        </div> */}
       </div>
     </div>
   )

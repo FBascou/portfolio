@@ -1,36 +1,61 @@
 interface AboutInterface {
   name: string
-  position: string
+  currentPosition: string
   description: string
-  email: string
-  mobile: string
-  website: string
-  github: string
-  linkedin: string
+  email?: string
+  mobile?: string
+  website?: string
+  github?: string
+  linkedin?: string
 }
 
 interface SkillsInterface {
-  frontend: string[]
-  backend: string[]
+  frontend?: string[]
+  backend?: string[]
   tools: string[]
-  languages: string[]
+  languages?: string[]
+}
+
+interface WorkListInterface {
+  id: number
+  entity: string
+  date: string
+  location: string
+  position: string
+  tasks: any[]
 }
 
 interface WorkInterface {
-  workList: any[]
+  workList: WorkListInterface[]
+}
+
+interface EducationListInterface {
+  id: number
+  entity: string
+  date: string
+  location: string
+  degree: string
+  completed: string
 }
 
 interface EducationInterface {
-  educationList: any[]
+  educationList: EducationListInterface[]
+}
+
+interface VolunteeringListInterface {
+  id: number
+  entity: string
+  date: string
+  location: string
+  role: string
 }
 
 interface VolunteeringInterface {
-  volunteeringList: any[]
+  volunteeringList: VolunteeringListInterface[]
 }
 
 export interface ResumeItemInterface
   extends AboutInterface,
-    SkillsInterface,
     WorkInterface,
     EducationInterface,
     VolunteeringInterface {
