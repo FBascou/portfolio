@@ -55,10 +55,12 @@
 }
 
 @media screen and (max-width: 600px) {
-  .resume-item-contianer,
-  .resume-item-overview {
+  .resume-item-container,
+  .resume-item-overview,
+  .resume-item-container {
     flex-direction: column;
     padding: 0;
+    width: 100%;
   }
 
   .resume-item-container {

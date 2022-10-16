@@ -6,7 +6,7 @@
   width: 100rem;
   height: auto;
   white-space: pre-wrap;
-  padding: 0 1rem;
+  // padding: 0 1rem;
 }
 
 .project-item-overview {
@@ -28,6 +28,12 @@
   gap: 2rem;
 }
 
+.project-item-list {
+  display: flex;
+  gap: 2rem;
+  margin-left: 1.5rem;
+}
+
 .project-item-links {
   display: flex;
   align-items: center;
@@ -36,8 +42,9 @@
 }
 
 @media screen and (max-width: 600px) {
-  .project-item-contianer,
-  .project-item-overview {
+  .project-item-container,
+  .project-item-overview,
+  .project-item-overview-section {
     flex-direction: column;
     width: 100%;
     padding: 0;

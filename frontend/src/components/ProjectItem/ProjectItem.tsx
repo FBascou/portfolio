@@ -1,8 +1,11 @@
 import './ProjectItem.scss'
-import { ProjectItemInterface } from '../../utilities/interfaces/projects-item.interface'
 import Box from '../Box/Box'
 
-const ProjectItem = ({ data }: any): JSX.Element => {
+interface ProjectItemInterface {
+  data: any[]
+}
+
+const ProjectItem = ({ data }: ProjectItemInterface): JSX.Element => {
   return (
     <>
       {data.map((item: any) => (
@@ -25,7 +28,7 @@ const ProjectItem = ({ data }: any): JSX.Element => {
                   <h3>Features</h3>
                 </div>
                 <div className="project-item-section-content">
-                  <ul className="project-item-section-content">
+                  <ul className="project-item-list">
                     {item.features.map((item: string) => (
                       <li key={item}>
                         <Box item={item} color="purple" />
@@ -39,7 +42,7 @@ const ProjectItem = ({ data }: any): JSX.Element => {
                   <h3>Tech</h3>
                 </div>
                 <div className="project-item-section-content">
-                  <ul className="project-item-section-content">
+                  <ul className="project-item-list">
                     {item.tech.map((item: string) => (
                       <li key={item}>
                         <Box item={item} color="purple" />

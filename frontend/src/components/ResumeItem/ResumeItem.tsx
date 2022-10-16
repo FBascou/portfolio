@@ -1,14 +1,17 @@
 import './ResumeItem.scss'
-import { ResumeItemInterface } from '../../utilities/interfaces/resume-item.interface'
 
-const ResumeItem = ({ data }: any): JSX.Element => {
+interface ResumeItemInterface {
+  data: any[]
+}
+
+const ResumeItem = ({ data }: ResumeItemInterface): JSX.Element => {
   //year timeline with sorting to latest and earliest years
 
   return (
     <>
       {data.map((item: any) => (
         <div className="resume-item-container" key={item.id} id={item.header}>
-          {item.list.map((el: any, index: number) => (
+          {item.list.map((el: any) => (
             <div className="resume-item-wrapper" key={el.id}>
               {el.date ? (
                 <div className="resume-item-title">
