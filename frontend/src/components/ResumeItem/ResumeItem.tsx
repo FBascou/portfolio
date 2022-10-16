@@ -1,7 +1,7 @@
 import './ResumeItem.scss'
 import { ResumeItemInterface } from '../../utilities/interfaces/resume-item.interface'
 
-const ResumeItem = ({ data, header, list }: any): JSX.Element => {
+const ResumeItem = ({ data }: any): JSX.Element => {
   //year timeline with sorting to latest and earliest years
 
   return (

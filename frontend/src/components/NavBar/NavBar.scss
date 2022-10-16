@@ -18,6 +18,13 @@
   color: inherit;
 }
 
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+}
+
 .navbar-theme {
   transition: all 0.5s;
 }

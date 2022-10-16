@@ -7,6 +7,7 @@ import Carousel from '../../components/Carousel/Carousel'
 import ResumePage from '../../pages/ResumePage/ResumePage'
 import dataCV from '../../dataCV.json'
 import ResumeItem from '../../components/ResumeItem/ResumeItem'
+import ProjectsPage from '../../pages/ProjectsPage/ProjectsPage'
 
 // have a button that takes you to a crazy page (crazy art)
 
