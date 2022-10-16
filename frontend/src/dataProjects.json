@@ -1,6 +1,7 @@
 [
   {
     "id": 0,
+    "header": "Born2Global Website",
     "name": "Born2Global Website",
     "description": "Frontend teamleader for the main website. Worked on the Careers, Job Application, Events, and News page. I co-worked on the design of the page.",
     "features": ["API calls", "Responsive", "Forms", "Search Bar"],
@@ -11,6 +12,7 @@
   },
   {
     "id": 1,
+    "header": "Digital Marketing Dashboard",
     "name": "Digital Marketing Dashboard",
     "description": "Dashboard to track performance of website, social media, traffic, budget",
     "features": ["API calls", "Responsive"],
@@ -21,6 +23,7 @@
   },
   {
     "id": 2,
+    "header": "Saint Patrick Online Homebanking",
     "name": "Saint Patrick Online Homebanking",
     "description": "Online Homebanking where users can check their accounts and make transfers",
     "features": ["API calls", "Responsive", "Animations"],
@@ -31,6 +34,7 @@
   },
   {
     "id": 3,
+    "header": "NASA API Cosmic Events",
     "name": "NASA API Cosmic Events",
     "description": "Website that displays multiple cosmic events from different NASA APIs on a tabular format",
     "features": ["API Calls"],

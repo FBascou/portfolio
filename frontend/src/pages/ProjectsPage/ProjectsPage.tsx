@@ -1,13 +1,15 @@
-import dataProjects from '../../dataProjects.json'
-import ProjectItem from '../../components/ProjectItem/ProjectItem'
+import Carousel from '../../components/Carousel/Carousel'
 import './ProjectsPage.scss'
 
-const ProjectsPage = (): JSX.Element => {
+interface ProjectsPageInterface {
+  data: any[]
+  component?: JSX.Element
+}
+
+const ProjectsPage = ({ data, component }: ProjectsPageInterface): JSX.Element => {
   return (
     <div className="projects-container">
-      {dataProjects.map((item) => (
-        <ProjectItem key={item.id} {...item} />
-      ))}
+      <Carousel data={data} component={component} />
     </div>
   )
 }

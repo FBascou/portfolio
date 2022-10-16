@@ -1,6 +1,5 @@
-import ResumeItem from '../../components/ResumeItem/ResumeItem'
-import './ResumePage.scss'
 import Carousel from '../../components/Carousel/Carousel'
+import './ResumePage.scss'
 
 interface ResumePageInterface {
   data: any[]
