@@ -113,37 +113,10 @@ const MainPage = (): JSX.Element => {
           </div>
         </section>
         <section className="experience-container">
-          {/* <div className="projects experience-group"> */}
-          <div className="section-title">
-            <HeadingTwo title="Resume" />
-          </div>
           <div className="section-content">
             <ProjectsPage data={dataProjects} component={<ProjectItem data={dataProjects} />} />
             {/* <ResumePage data={dataCV.slice(2)} component={<ResumeItem data={dataCV.slice(2)} />} /> */}
           </div>
-          {/* </div> */}
-          {/* <div className="resume experience-group">
-            <div className="section-content">
-              <div className="resume-section">
-                <div className="resume-title">
-                  <h2>Work Experience</h2>
-                </div>
-                <div className="resume-content"></div>
-              </div>
-              <div className="resume-section">
-                <div className="resume-title">
-                  <h2>Education</h2>
-                </div>
-                <div className="resume-content"></div>
-              </div>
-              <div className="resume-section">
-                <div className="resume-title">
-                  <h2>Volunteering</h2>
-                </div>
-                <div className="resume-content"></div>
-              </div>
-            </div>
-          </div> */}
         </section>
       </main>
     </div>

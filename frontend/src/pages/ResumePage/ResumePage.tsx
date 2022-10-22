@@ -9,6 +9,9 @@ interface ResumePageInterface {
 const ResumePage = ({ data, component }: ResumePageInterface): JSX.Element => {
   return (
     <div className="resume-container">
+      <div className="resume-title">
+        <h2>Resume</h2>
+      </div>
       <Carousel data={data} component={component} />
     </div>
   )

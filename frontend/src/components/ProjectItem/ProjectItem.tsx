@@ -9,7 +9,7 @@ const ProjectItem = ({ data }: ProjectItemInterface): JSX.Element => {
   return (
     <>
       {data.map((item: any) => (
-        <div className="project-item-container" key={item.id} id={item.header}>
+        <article className="project-item-container" key={item.id} id={item.header}>
           <div className="project-item-title">
             <h4>{item.name}</h4>
           </div>
@@ -66,7 +66,7 @@ const ProjectItem = ({ data }: ProjectItemInterface): JSX.Element => {
               </div>
             </div>
           </div>
-        </div>
+        </article>
       ))}
     </>
   )

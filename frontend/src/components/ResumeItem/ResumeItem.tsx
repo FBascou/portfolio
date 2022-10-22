@@ -10,7 +10,7 @@ const ResumeItem = ({ data }: ResumeItemInterface): JSX.Element => {
   return (
     <>
       {data.map((item: any) => (
-        <div className="resume-item-container" key={item.id} id={item.header}>
+        <article className="resume-item-container" key={item.id} id={item.header}>
           {item.list.map((el: any) => (
             <div className="resume-item-wrapper" key={el.id}>
               {el.date ? (
@@ -48,7 +48,7 @@ const ResumeItem = ({ data }: ResumeItemInterface): JSX.Element => {
               </div>
             </div>
           ))}
-        </div>
+        </article>
       ))}
     </>
   )

@@ -7,6 +7,9 @@
   height: auto;
   white-space: pre-wrap;
   // padding: 0 1rem;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  -webkit-overflow-scrolling: touch;
 }
 
 .project-item-overview {
@@ -31,7 +34,7 @@
 .project-item-list {
   display: flex;
   gap: 2rem;
-  margin-left: 1.5rem;
+  margin-left: 0.5rem;
 }
 
 .project-item-links {

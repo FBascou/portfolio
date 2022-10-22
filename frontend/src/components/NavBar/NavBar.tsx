@@ -38,16 +38,19 @@ const NavBar = () => {
         </li>
         <li className="navbar-link">
           <a target="_blank" href="https://github.com/FBascou">
-            <div className="icon-container">
+            <h5>Github</h5>
+
+            {/* <div className="icon-container">
               <img className="icon" src={GithubNav} alt="Github Profile" />
-            </div>
+            </div> */}
           </a>
         </li>
         <li className="navbar-link">
           <a target="_blank" href="https://www.linkedin.com/in/felipebascou/">
-            <div className="icon-container">
+            <h5>LinkedIn</h5>
+            {/* <div className="icon-container">
               <img className="icon" src={LinkedInNav} alt="LinkedIn Profile" />
-            </div>
+            </div> */}
           </a>
         </li>
         <li className="navbar-theme" onClick={toggleTheme}>

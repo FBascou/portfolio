@@ -9,6 +9,9 @@ interface ProjectsPageInterface {
 const ProjectsPage = ({ data, component }: ProjectsPageInterface): JSX.Element => {
   return (
     <div className="projects-container">
+      <div className="projects-title">
+        <h2>Projects</h2>
+      </div>
       <Carousel data={data} component={component} />
     </div>
   )
