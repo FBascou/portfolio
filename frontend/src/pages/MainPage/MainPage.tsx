@@ -3,9 +3,9 @@ import HeadingTwo from '../../components/HeadingTwo/HeadingTwo'
 import HeadingThree from '../../components/HeadingThree/HeadingThree'
 import Box from '../../components/Box/Box'
 import Header from '../../components/Header/Header'
-import ResumePage from '../../pages/ResumePage/ResumePage'
 import dataCV from '../../dataCV.json'
 import dataProjects from '../../dataProjects.json'
+import ResumePage from '../../pages/ResumePage/ResumePage'
 import ResumeItem from '../../components/ResumeItem/ResumeItem'
 import ProjectsPage from '../../pages/ProjectsPage/ProjectsPage'
 import ProjectItem from '../../components/ProjectItem/ProjectItem'
@@ -16,7 +16,7 @@ const MainPage = (): JSX.Element => {
   return (
     <div className="main-page-container">
       <Header />
-      <main className="main-container">
+      <main className="main-container" id="main-content">
         <section className="skills-container">
           <div className="section-title">
             <HeadingTwo title="Skills" />

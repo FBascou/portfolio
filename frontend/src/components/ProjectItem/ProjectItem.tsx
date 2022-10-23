@@ -62,7 +62,7 @@ const ProjectItem = ({ data }: ProjectItemInterface): JSX.Element => {
                 </a>
               </div>
               <div className="project-item-img">
-                <img className="project-img" src={item.media} alt={item.name} />
+                <video src={item.media} controls></video>
               </div>
             </div>
           </div>

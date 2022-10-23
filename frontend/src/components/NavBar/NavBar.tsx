@@ -1,12 +1,16 @@
 import './NavBar.scss'
 import { ThemeContext } from '../../utilities/context/themeContext'
 import { useState, useContext } from 'react'
+import { Link } from 'react-router-dom'
 import CloseIcon from '@mui/icons-material/Close'
 import MenuIcon from '@mui/icons-material/Menu'
 import DarkModeIcon from '@mui/icons-material/DarkMode'
 import LightModeIcon from '@mui/icons-material/LightMode'
 import GithubNav from '../../../assets/icons/GithubNav.png'
 import LinkedInNav from '../../../assets/icons/LinkedInNav.png'
+import MainPage from '../../pages/MainPage/MainPage'
+import ProjectsPage from '../../pages/ProjectsPage/ProjectsPage'
+import ResumePage from '../../pages/ResumePage/ResumePage'
 
 // Animate theme so it goes from daylight to night with different colors
 // IE: Light > Yellow > Orange > Purple > Dark
@@ -21,25 +25,31 @@ const NavBar = () => {
   }
 
   return (
-    <nav>
-      <ul className="navbar">
+    <nav className="navbar-container">
+      <div className="navbar-logo">
+        <Link to="/">
+          <h4>Felipe Bascou</h4>
+        </Link>
+      </div>
+      <ul className="navbar-links">
         <li className="navbar-link">
-          <a href="">
+          <Link to="projects">
             <h5>Projects</h5>
-          </a>
+          </Link>
         </li>
         <li className="navbar-link">
-          <a href="">
+          <Link to="resume">
             <h5>Resume</h5>
-          </a>
+          </Link>
         </li>
         <li className="navbar-link">
-          <h5>Contact</h5>
+          <Link to="contact">
+            <h5>Contact</h5>
+          </Link>
         </li>
         <li className="navbar-link">
           <a target="_blank" href="https://github.com/FBascou">
             <h5>Github</h5>
-
             {/* <div className="icon-container">
               <img className="icon" src={GithubNav} alt="Github Profile" />
             </div> */}

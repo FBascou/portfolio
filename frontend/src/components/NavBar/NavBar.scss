@@ -1,4 +1,11 @@
-.navbar {
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar-links {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -30,7 +37,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .navbar {
+  .navbar-links {
     display: none;
   }
 }
