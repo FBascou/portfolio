@@ -5,14 +5,65 @@ html {
   font-size: 62.5%;
   letter-spacing: 0.05rem;
   font-family: 'Montserrat', sans-serif;
+  // scroll-behavior: smooth;
 }
 
 body {
+  display: flex;
   flex-direction: column;
 }
 
 .App {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 2rem;
+  padding: 0 2rem;
   height: 100vh;
+}
+
+.header-container {
+  grid-area: 1 / 1 / 2 / 7;
+}
+.aside-container {
+  grid-area: 2 / 1 / 7 / 3;
+}
+.main-container {
+  grid-area: 2 / 3 / 7 / 7;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skip-link {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: aqua;
+  padding: 1rem;
+  translate: 0 -100%;
+  transition: translate 150ms ease-in-out;
+}
+
+.skip-link:focus {
+  translate: 0;
+}
+
+main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .dark-theme {
@@ -107,3 +158,10 @@ ul {
 //     background-color: rgba(66, 66, 69, 1);
 //   }
 // }
+
+@media screen and (max-width: 600px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+}

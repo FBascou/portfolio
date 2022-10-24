@@ -1,47 +1,9 @@
 .main-page-container {
   display: flex;
-  flex-direction: column;
-  padding: 1rem 4rem;
   gap: 2rem;
+  // overflow-x: scroll;
+  width: 100%;
 }
-
-main {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 12rem;
-}
-
-section {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-.section-content {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-}
-
-.skills-container {
-  width: 30%;
-}
-
-.experience-container {
-  width: 70%;
-}
-
-.skill-section {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-// .skill-list {
-//   display: flex;
-//   flex-direction: column;
-// }
 
 .experience-group {
   display: flex;
@@ -49,24 +11,11 @@ section {
   gap: 2rem;
 }
 
-.card-list {
-  display: flex;
-  flex-direction: column;
-  // justify-content: flex-start;
-  gap: 5rem;
-}
-
 @media screen and (max-width: 600px) {
   .main-page-container {
     padding: 1.5rem;
   }
 
-  main {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .skills-container,
   .experience-container {
     width: 100%;
   }

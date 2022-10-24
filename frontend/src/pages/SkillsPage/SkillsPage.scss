@@ -1,0 +1,20 @@
+// .skills-container {
+//   width: 100%;
+// }
+
+.skill-section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+// .skill-list {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+@media screen and (max-width: 600px) {
+  .skills-container {
+    width: 100%;
+  }
+}

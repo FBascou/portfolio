@@ -11,12 +11,13 @@ import LinkedInNav from '../../../assets/icons/LinkedInNav.png'
 import MainPage from '../../pages/MainPage/MainPage'
 import ProjectsPage from '../../pages/ProjectsPage/ProjectsPage'
 import ResumePage from '../../pages/ResumePage/ResumePage'
+import { PageTitleInterface } from '../../utilities/interfaces/page-title.interface'
 
 // Animate theme so it goes from daylight to night with different colors
 // IE: Light > Yellow > Orange > Purple > Dark
 // Smooth transition, gradient style (?)
 
-const NavBar = () => {
+const NavBar = ({ pageTitle }: PageTitleInterface) => {
   const { theme, toggleTheme } = useContext(ThemeContext)
   const [menu, setMenu] = useState<boolean>(false)
 
@@ -28,7 +29,7 @@ const NavBar = () => {
     <nav className="navbar-container">
       <div className="navbar-logo">
         <Link to="/">
-          <h4>Felipe Bascou</h4>
+          <h4>{pageTitle}</h4>
         </Link>
       </div>
       <ul className="navbar-links">
