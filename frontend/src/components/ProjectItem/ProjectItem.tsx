@@ -55,10 +55,10 @@ const ProjectItem = ({ data }: ProjectItemInterface): JSX.Element => {
             <div className="project-item-overview-section project-item-media">
               <div className="project-item-links">
                 <a target="_blank" href={item.github} className="project-url">
-                  <p>Github</p>
+                  <h3>Github</h3>
                 </a>
                 <a target="_blank" href={item.url} className="project-url">
-                  <p>Website</p>
+                  <h3>Website</h3>
                 </a>
               </div>
               <div className="project-item-img">

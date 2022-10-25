@@ -15,21 +15,23 @@ body {
 
 .App {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(6, 1fr);
-  gap: 2rem;
-  padding: 0 2rem;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  column-gap: 8rem;
+  row-gap: 2rem;
+  // gap: 2rem;
+  padding: 0 4rem;
   height: 100vh;
 }
 
 .header-container {
-  grid-area: 1 / 1 / 2 / 7;
+  grid-area: 1 / 1 / 2 / 9;
 }
 .aside-container {
-  grid-area: 2 / 1 / 7 / 3;
+  grid-area: 2 / 1 / 9 / 3;
 }
 .main-container {
-  grid-area: 2 / 3 / 7 / 7;
+  grid-area: 2 / 3 / 9 / 9;
 }
 
 header {
