@@ -68,6 +68,8 @@ main {
   gap: 3rem;
 }
 
+// when switching to dark mode, the neon boxes could flash as if they were turning on
+
 .dark-theme {
   background-color: rgba(66, 66, 69, 1);
   color: rgba($color: rgb(255, 255, 255), $alpha: 1);
@@ -162,6 +164,12 @@ ul {
 // }
 
 @media screen and (max-width: 600px) {
+  .App {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
   main {
     display: flex;
     flex-direction: column;

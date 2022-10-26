@@ -6,6 +6,7 @@ import ResumePage from '../../pages/ResumePage/ResumePage'
 import ResumeItem from '../../components/ResumeItem/ResumeItem'
 import ProjectsPage from '../../pages/ProjectsPage/ProjectsPage'
 import ProjectItem from '../../components/ProjectItem/ProjectItem'
+import ContactPage from '../../pages/ContactPage/ContactPage'
 
 // have a button that takes you to a crazy page (crazy art)
 
@@ -26,6 +27,7 @@ const MainPage = (): JSX.Element => {
             <ResumePage data={dataCV.slice(2)} component={<ResumeItem data={dataCV.slice(2)} />} />
           }
         />
+        <Route path="contact" element={<ContactPage />} />
       </Routes>
     </div>
   )
