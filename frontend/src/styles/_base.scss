@@ -76,18 +76,22 @@ main {
   transition: all 0.3s;
 
   button {
-    border: 1px solid rgb(150, 150, 150);
-    color: rgba($color: rgb(255, 255, 255), $alpha: 1);
-    padding: 1rem;
-    font-size: 1.8rem;
+    // border: 1px solid rgb(150, 150, 150);
+    // color: rgba($color: rgb(255, 255, 255), $alpha: 1);
+    // padding: 1rem;
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: inherit;
+    // font-size: 1.8rem;
     cursor: pointer;
   }
 
-  button:hover {
-    background-color: rgb(255, 255, 255);
-    color: rgba($color: rgb(0, 0, 0), $alpha: 1);
-    transition: all 0.3s;
-  }
+  // button:hover {
+  //   background-color: rgb(255, 255, 255);
+  //   color: rgba($color: rgb(0, 0, 0), $alpha: 1);
+  //   transition: all 0.3s;
+  // }
 
   .icon {
     width: 3.5rem;
@@ -108,18 +112,21 @@ main {
   transition: all 0.3s;
 
   button {
-    border: 1px solid rgb(150, 150, 150);
-    color: rgba($color: rgb(0, 0, 0), $alpha: 1);
-    padding: 1rem;
-    font-size: 1.8rem;
+    // border: 1px solid rgb(150, 150, 150);
+    // color: rgba($color: rgb(0, 0, 0), $alpha: 1);
+    // padding: 1rem;
+    border: none;
+    padding: 0;
+    margin: 0;
+    // font-size: 1.8rem;
     cursor: pointer;
   }
 
-  button:hover {
-    background-color: rgb(66, 66, 69);
-    color: rgba($color: rgb(255, 255, 255), $alpha: 1);
-    transition: all 0.3s;
-  }
+  // button:hover {
+  //   background-color: rgb(66, 66, 69);
+  //   color: rgba($color: rgb(255, 255, 255), $alpha: 1);
+  //   transition: all 0.3s;
+  // }
 
   .icon {
     width: 3.5rem;

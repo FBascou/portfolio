@@ -1,6 +1,7 @@
 import ContentCopyIcon from '@mui/icons-material/ContentCopy'
+import Box from '../../components/Box/Box'
 import { useState } from 'react'
-import { preview } from 'vite'
+import './ContactPage.scss'
 
 interface InputValueInterface {
   name: string
@@ -19,9 +20,13 @@ const initialInputValue: InputValueInterface = {
 const ContactPage = () => {
   const [inputValue, setInputValue] = useState(initialInputValue)
 
-  // focus color: purple
-  // correct color: green
-  // incorrect color: red
+  // Dark Mode // Light Mode
+  // normal color: white / black shadow
+  // focus color: purple / purple shadow
+  // correct color: green / green shadow
+  // incorrect color: red / red shadow
+  // submit color: blue? white? white fill? blue fill?
+  // clear color: yellow/orange?
 
   const handleInputValue = (
     event: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>,
@@ -92,14 +97,18 @@ const ContactPage = () => {
             name="message"
             id="message"
             cols={30}
-            rows={10}
+            rows={5}
             required
             onChange={handleInputValue}
           ></textarea>
         </div>
-        <div className="btn-group">
-          <button type="submit">Send</button>
-          <button type="reset">Clear</button>
+        <div className="form-btn-group">
+          <button type="submit">
+            <Box item={'Submit'} color={'purple'} />
+          </button>
+          <button type="reset">
+            <Box item={'Clear'} color={'blue'} />
+          </button>
         </div>
       </form>
       <div className="contact-extra-info">
