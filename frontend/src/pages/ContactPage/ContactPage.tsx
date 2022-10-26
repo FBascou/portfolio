@@ -28,7 +28,16 @@ const ContactPage = () => {
   ): void => {
     const { name, value } = event.currentTarget
     setInputValue((prev) => ({ ...prev, [name]: value }))
+  }
+
+  const handleClickSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
+    event.preventDefault()
     console.log(inputValue)
+    handleClickClear()
+  }
+
+  const handleClickClear = (): void => {
+    setInputValue(initialInputValue)
   }
 
   return (
@@ -36,7 +45,7 @@ const ContactPage = () => {
       <div className="contact-title">
         <h2>Get in touch!</h2>
       </div>
-      <form className="contact-content">
+      <form className="contact-content" onSubmit={handleClickSubmit} onReset={handleClickClear}>
         <div className="form-group">
           <label htmlFor="name">
             <p>Name</p>
