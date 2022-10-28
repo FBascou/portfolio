@@ -118,25 +118,50 @@ button {
       0 0 0.1rem #b7b7b7, 0 0 0.2rem #b7b7b7, inset 0 0 1rem #b7b7b7;
   }
 
-  input:not(:placeholder-shown),
-  textarea:not(:placeholder-shown) {
-    box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 1rem #b7b7b7,
-      0 0 0.1rem #b7b7b7, 0 0 0.2rem #b7b7b7, inset 0 0 1rem #b7b7b7;
-  }
-
   input:focus-visible,
   textarea:focus-visible {
     box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 1rem #bc13fe,
       0 0 0.1rem #bc13fe, 0 0 0.2rem #bc13fe, inset 0 0 1rem #bc13fe;
   }
 
-  // input:invalid,
-  // textarea:invalid,
-  input:has(:invalid),
-  textarea:has(:invalid) {
+  input:invalid,
+  textarea:invalid {
     box-shadow: 0 0 0.2rem rgb(255, 255, 255, 0.5), 0 0 0.2rem rgb(255, 255, 255, 0.5),
       0 0 1rem #ff0000, 0 0 0.1rem #ff0000, 0 0 0.2rem #ff0000, inset 0 0 1rem #ff0000;
+  }
+
+  input:invalid:not(:focus),
+  textarea:invalid:not(:focus) {
     animation: shake 0.65s;
+  }
+
+  // input:focus-visible,
+  // textarea:focus-visible {
+  //   box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 1rem #bc13fe,
+  //     0 0 0.1rem #bc13fe, 0 0 0.2rem #bc13fe, inset 0 0 1rem #bc13fe;
+  // }
+
+  input:focus,
+  textarea:focus {
+    box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 1rem #ffff00,
+      0 0 0.1rem #ffff00, 0 0 0.2rem #ffff00, inset 0 0 1rem #ffff00;
+  }
+
+  input:valid,
+  textarea:valid {
+    box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 1rem #01fe09,
+      0 0 0.1rem #01fe09, 0 0 0.2rem #01fe09, inset 0 0 1rem #01fe09;
+  }
+
+  input:placeholder-shown,
+  textarea:placeholder-shown {
+    box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 1rem #b7b7b7,
+      0 0 0.1rem #b7b7b7, 0 0 0.2rem #b7b7b7, inset 0 0 1rem #b7b7b7;
+  }
+
+  input:placeholder-shown:not(:focus),
+  textarea:placeholder-shown:not(:focus) {
+    animation: none;
   }
 
   @keyframes shake {
@@ -160,12 +185,6 @@ button {
     60% {
       transform: translate3d(4px, 0, 0);
     }
-  }
-
-  input:valid,
-  textarea:valid {
-    box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 1rem #01fe09,
-      0 0 0.1rem #01fe09, 0 0 0.2rem #01fe09, inset 0 0 1rem #01fe09;
   }
 
   .icon {

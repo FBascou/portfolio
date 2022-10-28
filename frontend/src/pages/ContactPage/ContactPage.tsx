@@ -27,6 +27,8 @@ const ContactPage = () => {
   // incorrect color: red / red shadow
   // submit color: blue? white? white fill? blue fill?
   // clear color: yellow/orange?
+  // Add min and max chars length for all inputs
+  // Button disabled if all inputs are not correct or filled
 
   const handleInputValue = (
     event: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>,
@@ -99,6 +101,7 @@ const ContactPage = () => {
             cols={30}
             rows={3}
             required
+            placeholder="Enter your message"
             onChange={handleInputValue}
           ></textarea>
         </div>
