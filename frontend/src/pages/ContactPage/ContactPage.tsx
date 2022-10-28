@@ -53,7 +53,7 @@ const ContactPage = () => {
       <form className="contact-content" onSubmit={handleClickSubmit} onReset={handleClickClear}>
         <div className="form-group">
           <label htmlFor="name">
-            <p>Name</p>
+            <h3>Name</h3>
           </label>
           <input
             type="text"
@@ -66,7 +66,7 @@ const ContactPage = () => {
         </div>
         <div className="form-group">
           <label htmlFor="email">
-            <p>Email</p>
+            <h3>Email</h3>
           </label>
           <input
             type="email"
@@ -79,7 +79,7 @@ const ContactPage = () => {
         </div>
         <div className="form-group">
           <label htmlFor="company">
-            <p>Company</p>
+            <h3>Company</h3>
           </label>
           <input
             type="text"
@@ -91,23 +91,23 @@ const ContactPage = () => {
         </div>
         <div className="form-group">
           <label htmlFor="message">
-            <p>Message</p>
+            <h3>Message</h3>
           </label>
           <textarea
             name="message"
             id="message"
             cols={30}
-            rows={5}
+            rows={3}
             required
             onChange={handleInputValue}
           ></textarea>
         </div>
         <div className="form-btn-group">
-          <button type="submit">
-            <Box item={'Submit'} color={'purple'} />
+          <button type="submit" className="button-purple">
+            <p>Submit</p>
           </button>
           <button type="reset">
-            <Box item={'Clear'} color={'blue'} />
+            <p>Clear</p>
           </button>
         </div>
       </form>

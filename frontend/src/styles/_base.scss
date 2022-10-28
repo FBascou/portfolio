@@ -70,28 +70,103 @@ main {
 
 // when switching to dark mode, the neon boxes could flash as if they were turning on
 
+label,
+input,
+textarea,
+button {
+  font-family: inherit;
+  color: inherit;
+}
+
 .dark-theme {
   background-color: rgba(66, 66, 69, 1);
   color: rgba($color: rgb(255, 255, 255), $alpha: 1);
   transition: all 0.3s;
 
   button {
-    // border: 1px solid rgb(150, 150, 150);
-    // color: rgba($color: rgb(255, 255, 255), $alpha: 1);
-    // padding: 1rem;
-    border: none;
-    padding: 0;
-    margin: 0;
-    color: inherit;
-    // font-size: 1.8rem;
+    min-width: 50px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.7rem;
     cursor: pointer;
   }
 
-  // button:hover {
-  //   background-color: rgb(255, 255, 255);
-  //   color: rgba($color: rgb(0, 0, 0), $alpha: 1);
-  //   transition: all 0.3s;
+  .button-purple {
+    box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 1rem #bc13fe,
+      0 0 0.1rem #bc13fe, 0 0 0.2rem #bc13fe, inset 0 0 1rem #bc13fe;
+  }
+
+  // .button-yellow {
+  //   box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 1rem #fff,
+  //     0 0 0.1rem #fff, 0 0 0.2rem #fff, inset 0 0 1rem #fff;
   // }
+
+  input {
+    padding: 1.7rem;
+    min-width: 50px;
+    height: 20px;
+    box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 1rem #b7b7b7,
+      0 0 0.1rem #b7b7b7, 0 0 0.2rem #b7b7b7, inset 0 0 1rem #b7b7b7;
+  }
+
+  textarea {
+    padding: 1.7rem;
+    min-width: 50px;
+    box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 1rem #b7b7b7,
+      0 0 0.1rem #b7b7b7, 0 0 0.2rem #b7b7b7, inset 0 0 1rem #b7b7b7;
+  }
+
+  input:not(:placeholder-shown),
+  textarea:not(:placeholder-shown) {
+    box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 1rem #b7b7b7,
+      0 0 0.1rem #b7b7b7, 0 0 0.2rem #b7b7b7, inset 0 0 1rem #b7b7b7;
+  }
+
+  input:focus-visible,
+  textarea:focus-visible {
+    box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 1rem #bc13fe,
+      0 0 0.1rem #bc13fe, 0 0 0.2rem #bc13fe, inset 0 0 1rem #bc13fe;
+  }
+
+  // input:invalid,
+  // textarea:invalid,
+  input:has(:invalid),
+  textarea:has(:invalid) {
+    box-shadow: 0 0 0.2rem rgb(255, 255, 255, 0.5), 0 0 0.2rem rgb(255, 255, 255, 0.5),
+      0 0 1rem #ff0000, 0 0 0.1rem #ff0000, 0 0 0.2rem #ff0000, inset 0 0 1rem #ff0000;
+    animation: shake 0.65s;
+  }
+
+  @keyframes shake {
+    10%,
+    90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+      transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
+
+  input:valid,
+  textarea:valid {
+    box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 1rem #01fe09,
+      0 0 0.1rem #01fe09, 0 0 0.2rem #01fe09, inset 0 0 1rem #01fe09;
+  }
 
   .icon {
     width: 3.5rem;
@@ -110,23 +185,6 @@ main {
   background-color: rgb(255, 255, 255);
   color: rgba($color: rgb(0, 0, 0), $alpha: 1);
   transition: all 0.3s;
-
-  button {
-    // border: 1px solid rgb(150, 150, 150);
-    // color: rgba($color: rgb(0, 0, 0), $alpha: 1);
-    // padding: 1rem;
-    border: none;
-    padding: 0;
-    margin: 0;
-    // font-size: 1.8rem;
-    cursor: pointer;
-  }
-
-  // button:hover {
-  //   background-color: rgb(66, 66, 69);
-  //   color: rgba($color: rgb(255, 255, 255), $alpha: 1);
-  //   transition: all 0.3s;
-  // }
 
   .icon {
     width: 3.5rem;
