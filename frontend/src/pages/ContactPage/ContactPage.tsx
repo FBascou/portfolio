@@ -27,8 +27,6 @@ const ContactPage = () => {
   // incorrect color: red / red shadow
   // submit color: blue? white? white fill? blue fill?
   // clear color: yellow/orange?
-  // Add min and max chars length for all inputs
-  // Button disabled if all inputs are not correct or filled
 
   const handleInputValue = (
     event: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>,
@@ -63,6 +61,8 @@ const ContactPage = () => {
             id="name"
             required
             placeholder="Felipe Bascou"
+            minLength={2}
+            maxLength={30}
             onChange={handleInputValue}
           />
         </div>
@@ -76,6 +76,8 @@ const ContactPage = () => {
             id="email"
             required
             placeholder="felipe.bascou@gmail.com"
+            minLength={3}
+            maxLength={50}
             onChange={handleInputValue}
           />
         </div>
@@ -88,6 +90,8 @@ const ContactPage = () => {
             name="company"
             id="company"
             placeholder="X Company"
+            minLength={2}
+            maxLength={20}
             onChange={handleInputValue}
           />
         </div>
@@ -102,6 +106,8 @@ const ContactPage = () => {
             rows={3}
             required
             placeholder="Enter your message"
+            minLength={3}
+            maxLength={3000}
             onChange={handleInputValue}
           ></textarea>
         </div>

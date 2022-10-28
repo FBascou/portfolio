@@ -164,27 +164,13 @@ button {
     animation: none;
   }
 
-  @keyframes shake {
-    10%,
-    90% {
-      transform: translate3d(-1px, 0, 0);
-    }
+  form:invalid [type='submit'] {
+    cursor: not-allowed;
+  }
 
-    20%,
-    80% {
-      transform: translate3d(2px, 0, 0);
-    }
-
-    30%,
-    50%,
-    70% {
-      transform: translate3d(-4px, 0, 0);
-    }
-
-    40%,
-    60% {
-      transform: translate3d(4px, 0, 0);
-    }
+  form:valid [type='submit'] {
+    box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 1rem #01fe09,
+      0 0 0.1rem #01fe09, 0 0 0.2rem #01fe09, inset 0 0 1rem #01fe09;
   }
 
   .icon {
@@ -246,6 +232,29 @@ ul {
 //     background-color: rgba(66, 66, 69, 1);
 //   }
 // }
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
 
 @media screen and (max-width: 600px) {
   .App {
