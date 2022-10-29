@@ -70,12 +70,21 @@ main {
 
 // when switching to dark mode, the neon boxes could flash as if they were turning on
 
-label,
 input,
 textarea,
 button {
   font-family: inherit;
   color: inherit;
+  max-width: 100rem;
+  height: 20px;
+  padding: 1.7rem;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .dark-theme {
@@ -83,19 +92,10 @@ button {
   color: rgba($color: rgb(255, 255, 255), $alpha: 1);
   transition: all 0.3s;
 
-  button {
-    min-width: 50px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1.7rem;
-    cursor: pointer;
-  }
-
-  .button-purple {
-    box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 1rem #bc13fe,
-      0 0 0.1rem #bc13fe, 0 0 0.2rem #bc13fe, inset 0 0 1rem #bc13fe;
+  .button-primary {
+    box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1),
+      0 0 1rem rgba(188, 19, 254, 1), 0 0 0.1rem rgba(188, 19, 254, 1),
+      0 0 0.2rem rgba(188, 19, 254, 1), inset 0 0 1rem rgba(188, 19, 254, 1);
   }
 
   // .button-yellow {
@@ -104,30 +104,28 @@ button {
   // }
 
   input {
-    padding: 1.7rem;
-    min-width: 50px;
-    height: 20px;
     box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 1rem #b7b7b7,
       0 0 0.1rem #b7b7b7, 0 0 0.2rem #b7b7b7, inset 0 0 1rem #b7b7b7;
   }
 
   textarea {
-    padding: 1.7rem;
-    min-width: 50px;
+    height: auto;
     box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 1rem #b7b7b7,
       0 0 0.1rem #b7b7b7, 0 0 0.2rem #b7b7b7, inset 0 0 1rem #b7b7b7;
   }
 
   input:focus-visible,
   textarea:focus-visible {
-    box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 1rem #bc13fe,
-      0 0 0.1rem #bc13fe, 0 0 0.2rem #bc13fe, inset 0 0 1rem #bc13fe;
+    box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1),
+      0 0 1rem rgba(188, 19, 254, 1), 0 0 0.1rem rgba(188, 19, 254, 1),
+      0 0 0.2rem rgba(188, 19, 254, 1), inset 0 0 1rem rgba(188, 19, 254, 1);
   }
 
   input:invalid,
   textarea:invalid {
     box-shadow: 0 0 0.2rem rgb(255, 255, 255, 0.5), 0 0 0.2rem rgb(255, 255, 255, 0.5),
-      0 0 1rem #ff0000, 0 0 0.1rem #ff0000, 0 0 0.2rem #ff0000, inset 0 0 1rem #ff0000;
+      0 0 1rem rgba(255, 0, 0, 1), 0 0 0.1rem rgba(255, 0, 0, 1), 0 0 0.2rem rgba(255, 0, 0, 1),
+      inset 0 0 1rem rgba(255, 0, 0, 1);
   }
 
   input:invalid:not(:focus),
@@ -137,20 +135,22 @@ button {
 
   // input:focus-visible,
   // textarea:focus-visible {
-  //   box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 1rem #bc13fe,
-  //     0 0 0.1rem #bc13fe, 0 0 0.2rem #bc13fe, inset 0 0 1rem #bc13fe;
+  //   box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 1rem rgba(188, 19, 254, 1),
+  //     0 0 0.1rem rgba(188, 19, 254, 1), 0 0 0.2rem rgba(188, 19, 254, 1), inset 0 0 1rem rgba(188, 19, 254, 1);
   // }
 
   input:focus,
   textarea:focus {
-    box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 1rem #ffff00,
-      0 0 0.1rem #ffff00, 0 0 0.2rem #ffff00, inset 0 0 1rem #ffff00;
+    box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1),
+      0 0 1rem rgba(255, 255, 0, 1), 0 0 0.1rem rgba(255, 255, 0, 1),
+      0 0 0.2rem rgba(255, 255, 0, 1), inset 0 0 1rem rgba(255, 255, 0, 1);
   }
 
   input:valid,
   textarea:valid {
-    box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 1rem #01fe09,
-      0 0 0.1rem #01fe09, 0 0 0.2rem #01fe09, inset 0 0 1rem #01fe09;
+    box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1),
+      0 0 1rem rgba(1, 254, 9, 1), 0 0 0.1rem rgba(1, 254, 9, 1), 0 0 0.2rem rgba(1, 254, 9, 1),
+      inset 0 0 1rem rgba(1, 254, 9, 1);
   }
 
   input:placeholder-shown,
@@ -169,8 +169,10 @@ button {
   }
 
   form:valid [type='submit'] {
-    box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 1rem #01fe09,
-      0 0 0.1rem #01fe09, 0 0 0.2rem #01fe09, inset 0 0 1rem #01fe09;
+    box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1),
+      0 0 1rem rgba(1, 254, 9, 1), 0 0 0.1rem rgba(1, 254, 9, 1), 0 0 0.2rem rgba(1, 254, 9, 1),
+      inset 0 0 1rem rgba(1, 254, 9, 1);
+    // background-color: rgba(1, 254, 9, 1);
   }
 
   .icon {
@@ -191,6 +193,93 @@ button {
   color: rgba($color: rgb(0, 0, 0), $alpha: 1);
   transition: all 0.3s;
 
+  .button-primary,
+  .button-reset {
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  // .button-yellow {
+  //   box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 1rem #fff,
+  //     0 0 0.1rem #fff, 0 0 0.2rem #fff, inset 0 0 1rem #fff;
+  // }
+
+  input {
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  textarea {
+    height: auto;
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  input:focus-visible,
+  textarea:focus-visible {
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(188, 19, 254, 1);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(188, 19, 254, 1);
+    box-shadow: 0px 0px 6px 0px rgba(188, 19, 254, 1);
+  }
+
+  input:invalid,
+  textarea:invalid {
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(255, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(255, 0, 0, 1);
+    box-shadow: 0px 0px 6px 0px rgba(255, 0, 0, 1);
+  }
+
+  input:invalid:not(:focus),
+  textarea:invalid:not(:focus) {
+    animation: shake 0.65s;
+  }
+
+  // input:focus-visible,
+  // textarea:focus-visible {
+  //   box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 1rem rgba(188, 19, 254, 1),
+  //     0 0 0.1rem rgba(188, 19, 254, 1), 0 0 0.2rem rgba(188, 19, 254, 1), inset 0 0 1rem rgba(188, 19, 254, 1);
+  // }
+
+  input:focus,
+  textarea:focus {
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(255, 255, 0, 1);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(255, 255, 0, 1);
+    box-shadow: 0px 0px 6px 0px rgba(255, 255, 0, 1);
+  }
+
+  input:valid,
+  textarea:valid {
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(1, 254, 9, 1);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(1, 254, 9, 1);
+    box-shadow: 0px 0px 6px 0px rgba(1, 254, 9, 1);
+  }
+
+  input:placeholder-shown,
+  textarea:placeholder-shown {
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  input:placeholder-shown:not(:focus),
+  textarea:placeholder-shown:not(:focus) {
+    animation: none;
+  }
+
+  form:invalid [type='submit'] {
+    cursor: not-allowed;
+  }
+
+  form:valid [type='submit'] {
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(1, 254, 9, 1);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(1, 254, 9, 1);
+    box-shadow: 0px 0px 6px 0px rgba(1, 254, 9, 1);
+    background-color: rgba(1, 254, 9, 1);
+  }
+
   .icon {
     width: 3.5rem;
     height: 3.5rem;
@@ -209,7 +298,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-  padding: 1rem 0;
+  // padding: 1rem 0;
 }
 
 // @keyframes lightToDarkTheme {
@@ -261,6 +350,7 @@ ul {
     display: flex;
     flex-direction: column;
     height: 100%;
+    padding: 2rem;
   }
 
   main {
