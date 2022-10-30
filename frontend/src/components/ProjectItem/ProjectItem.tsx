@@ -54,8 +54,12 @@ const ProjectItem = ({ data }: ProjectItemInterface): JSX.Element => {
             </div>
             <div className="project-item-overview-section project-item-media">
               <div className="project-item-links">
-                <a target="_blank" href={item.github} className="project-url">
-                  <h3>Github</h3>
+                <a
+                  target="_blank"
+                  href={item.github}
+                  className={`project-url ${item.github ? null : 'link-disabled'}`}
+                >
+                  <h3>Github {item.github ? null : <span className="error">(Private)</span>}</h3>
                 </a>
                 <a target="_blank" href={item.url} className="project-url">
                   <h3>Website</h3>

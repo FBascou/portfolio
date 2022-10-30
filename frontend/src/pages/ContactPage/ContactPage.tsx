@@ -1,6 +1,6 @@
 import ContentCopyIcon from '@mui/icons-material/ContentCopy'
-import Box from '../../components/Box/Box'
-import { useState } from 'react'
+import InfiniteSquare from '../../components/InfiniteSquare/InfiniteSquare'
+import React, { useRef, useState } from 'react'
 import './ContactPage.scss'
 
 interface InputValueInterface {
@@ -19,6 +19,8 @@ const initialInputValue: InputValueInterface = {
 
 const ContactPage = () => {
   const [inputValue, setInputValue] = useState(initialInputValue)
+  const [copySuccess, setCopySuccess] = useState('')
+  const emailRef = useRef<HTMLHeadingElement>(null)
 
   // Dark Mode // Light Mode
   // normal color: white / black shadow
@@ -43,6 +45,20 @@ const ContactPage = () => {
 
   const handleClickClear = (): void => {
     setInputValue(initialInputValue)
+  }
+
+  const handleCopyToClipboard = async () => {
+    const currentEmail = emailRef.current
+    if (currentEmail == null) return
+    try {
+      await navigator.clipboard.writeText(currentEmail.innerText)
+      setCopySuccess('Copied!')
+    } catch {
+      setCopySuccess('Failed to copy!')
+    }
+    setTimeout(() => {
+      setCopySuccess('')
+    }, 2000)
   }
 
   return (
@@ -81,7 +97,7 @@ const ContactPage = () => {
               id="email"
               required
               placeholder="felipe.bascou@gmail.com"
-              minLength={3}
+              minLength={5}
               maxLength={50}
               onChange={handleInputValue}
             />
@@ -111,7 +127,7 @@ const ContactPage = () => {
               rows={3}
               required
               placeholder="Enter your message"
-              minLength={3}
+              minLength={5}
               maxLength={3000}
               onChange={handleInputValue}
             ></textarea>
@@ -126,13 +142,20 @@ const ContactPage = () => {
           </div>
         </form>
         <div className="contact-extra-info">
-          <p>Or just copy my mail below:</p>
+          <p>Or you can send me an email to:</p>
           <div className="contact-email-container">
-            <h3>felipe_bascou@hotmail.com</h3>
-            <div className="contact-icon">
-              <ContentCopyIcon />
+            <h3 ref={emailRef}>felipe_bascou@hotmail.com</h3>
+            <div className="contact-icon" onClick={handleCopyToClipboard}>
+              <ContentCopyIcon
+                className={`${copySuccess !== '' ? 'active' : null}`}
+                fontSize="large"
+              />
+              <div className="contact-copy-tooltip">
+                <p>{copySuccess}</p>
+              </div>
             </div>
           </div>
+          <InfiniteSquare />
         </div>
       </div>
     </div>

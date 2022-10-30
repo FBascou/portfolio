@@ -3,7 +3,7 @@
     "id": 0,
     "header": "Born2Global Website",
     "name": "Born2Global Website",
-    "description": "Frontend teamleader for the main website. Worked on the Careers, Job Application, Events, and News page. I co-worked on the design of the page.",
+    "description": "Frontend teamleader for the main website. Worked on the Careers, Job Application, Events, and News page.",
     "features": ["API calls", "Responsive", "Forms", "Search Bar"],
     "tech": ["React", "Typescript", "SCSS", "Axios", "MaterialUI", "Formik", "AdobeXD"],
     "github": "",
@@ -17,7 +17,7 @@
     "description": "Dashboard to track performance of website, social media, traffic, budget",
     "features": ["API calls", "Responsive"],
     "tech": ["ReactJS", "CSS", "D3JS"],
-    "github": "",
+    "github": "https://github.com/FBascou/marketing-dashboard",
     "url": "",
     "media": ""
   },

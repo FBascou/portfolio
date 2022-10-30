@@ -29,28 +29,70 @@
 }
 
 .contact-extra-info {
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  width: 50%;
 }
 
 .contact-email-container {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   gap: 2rem;
 }
 
 .contact-icon {
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  position: relative;
 }
+
+.contact-icon .active {
+  color: rgba(1, 254, 9, 1);
+  animation: scaled 2000ms ease;
+}
+
+.contact-copy-tooltip {
+  // animation: 3s infinite ease slidein;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+}
+
+@keyframes scaled {
+  0% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+
+// @keyframes slidein {
+//   from {
+//     width: 0%;
+//   }
+
+//   to {
+//     width: 100%;
+//   }
+// }
 
 @media screen and (max-width: 600px) {
   .contact-container {
     gap: 4rem;
-    width: 100%;
   }
   .contact-content {
     flex-direction: column;
