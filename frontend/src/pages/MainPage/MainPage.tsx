@@ -7,10 +7,16 @@ import ResumeItem from '../../components/ResumeItem/ResumeItem'
 import ProjectsPage from '../../pages/ProjectsPage/ProjectsPage'
 import ProjectItem from '../../components/ProjectItem/ProjectItem'
 import ContactPage from '../../pages/ContactPage/ContactPage'
+import { yearsArraySorted } from '../../utilities/helper/helper'
 
 // have a button that takes you to a crazy page (crazy art)
 
 const MainPage = (): JSX.Element => {
+  const dataCVSliced = dataCV.slice(2)
+  const dataArrayMapped = dataCVSliced.map((item) => item.list)
+  const dataArrayMerged = dataArrayMapped.flat(1)
+  const dataArraySorted = dataArrayMerged.sort((a: any, b: any) => b.year - a.year)
+
   return (
     <div className="main-page-container">
       <Routes>
@@ -24,7 +30,7 @@ const MainPage = (): JSX.Element => {
         <Route
           path="resume"
           element={
-            <ResumePage data={dataCV.slice(2)} component={<ResumeItem data={dataCV.slice(2)} />} />
+            <ResumePage data={yearsArraySorted} component={<ResumeItem data={dataArraySorted} />} />
           }
         />
         <Route path="contact" element={<ContactPage />} />

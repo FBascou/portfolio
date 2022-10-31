@@ -9,16 +9,14 @@ interface CarouselInterface {
 const Carousel = ({ data, component }: CarouselInterface): JSX.Element => {
   const scrollRef = useHorizontalScroll()
 
-  //Carousel header should be years - 2010 - 2011 - 2012 - ... - 2022
-
   return (
     <div className="carousel-container">
       <div className="carousel-header">
         <ul className="carousel-header-items">
           {data.map((item) => (
             <li key={item.id} className="carousel-header-item">
-              <a href={`#${item.header}`}>
-                <p>{item.header}</p>{' '}
+              <a href={`#${item.year}`}>
+                <p>{item.year}</p>{' '}
               </a>
             </li>
           ))}
