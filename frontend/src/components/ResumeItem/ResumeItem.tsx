@@ -8,7 +8,7 @@ const ResumeItem = ({ data }: ResumeItemInterface): JSX.Element => {
   return (
     <>
       {data.map((item: any) => (
-        <article className="resume-item-container" key={item.id} id={item.year}>
+        <article className="resume-item-container" key={item.id} id={item.header}>
           <div className="resume-item-wrapper" key={item.id}>
             {item.date ? (
               <div className="resume-item-title">

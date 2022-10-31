@@ -15,8 +15,8 @@ const Carousel = ({ data, component }: CarouselInterface): JSX.Element => {
         <ul className="carousel-header-items">
           {data.map((item) => (
             <li key={item.id} className="carousel-header-item">
-              <a href={`#${item.year}`}>
-                <p>{item.year}</p>{' '}
+              <a href={`#${item.header}`}>
+                <p>{item.header}</p>{' '}
               </a>
             </li>
           ))}

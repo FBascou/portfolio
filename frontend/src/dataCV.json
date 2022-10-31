@@ -1,7 +1,7 @@
 [
   {
     "id": 0,
-    "header": "About",
+    "category": "About",
     "list": [
       {
         "id": 0,
@@ -18,7 +18,7 @@
   },
   {
     "id": 1,
-    "header": "Skills",
+    "category": "Skills",
     "list": [
       { "id": 0, "frontend": ["Javascript", "Typescript", "ReactJS", "HTML/CSS/SASS"] },
       { "id": 1, "backend": ["Python 3", "MySQL", "MongoDB"] },
@@ -36,12 +36,12 @@
   },
   {
     "id": 2,
-    "header": "Work",
+    "category": "Work",
     "list": [
       {
         "id": 0,
         "name": "Born2Global Centre",
-        "year": 2022,
+        "header": 2022,
         "date": "2022/01 - 2022/09",
         "location": "Seoul, South Korea",
         "position": "Digital Transformation Manager (Frontend Developer & Marketing Team Leader)",
@@ -55,7 +55,7 @@
       {
         "id": 1,
         "name": "Born2Global Centre",
-        "year": 2021,
+        "header": 2021,
         "date": "2021/04 - 2021/12",
         "location": "Seoul, South Korea",
         "position": "Global Business Alliance Manager",
@@ -72,7 +72,7 @@
       {
         "id": 2,
         "name": "Applause GmbH",
-        "year": 2020,
+        "header": 2020,
         "date": "2020/03 - 2020/09",
         "location": "Berlin, Germany",
         "position": "Sales Analyst Intern",
@@ -86,7 +86,7 @@
       {
         "id": 3,
         "name": "KW-Commerce GmbH",
-        "year": 2018,
+        "header": 2018,
         "date": "2018/12 - 2019/09",
         "location": "Berlin, Germany",
         "position": "Product Data Management Intern",
@@ -99,7 +99,7 @@
       {
         "id": 4,
         "name": "PowerChina LTD.",
-        "year": 2015,
+        "header": 2015,
         "date": "2015/10 - 2017/09",
         "location": "Beijing, China & Buenos Aires, Argentina",
         "position": "Commercial Manager",
@@ -114,12 +114,12 @@
   },
   {
     "id": 3,
-    "header": "Education",
+    "category": "Education",
     "list": [
       {
         "id": 5,
         "name": "Arden University",
-        "year": 2018,
+        "header": 2018,
         "date": "2018/04 - 2019/09",
         "location": "Berlin, Germany",
         "degree": "MSc. Data Analysis & Marketing",
@@ -128,7 +128,7 @@
       {
         "id": 6,
         "name": "Beijing Foreign Studies University",
-        "year": 2011,
+        "header": 2011,
         "date": "2011/09 - 2015/07",
         "location": "Beijing, China",
         "degree": "B.B.A. International Marketing",
@@ -138,13 +138,13 @@
   },
   {
     "id": 4,
-    "header": "Volunteering",
+    "category": "Volunteering",
     "list": [
       {
         "id": 7,
         "name": "BFSU International Business School Union",
-        "year": 2011,
-        "date": "2011 - 2013",
+        "header": 2012,
+        "date": "2012 - 2013",
         "location": "Beijing, China",
         "position": "Marketing Assistant Manager"
       }

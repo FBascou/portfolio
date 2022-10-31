@@ -1,10 +1,11 @@
 export const yearsArray: any[] = [
-  { id: 0, year: 2011 },
-  { id: 1, year: 2015 },
-  { id: 2, year: 2018 },
-  { id: 3, year: 2020 },
-  { id: 4, year: 2021 },
-  { id: 5, year: 2022 },
+  { id: 0, header: 2011 },
+  { id: 1, header: 2012 },
+  { id: 2, header: 2015 },
+  { id: 3, header: 2018 },
+  { id: 4, header: 2020 },
+  { id: 5, header: 2021 },
+  { id: 6, header: 2022 },
 ]
 
-export const yearsArraySorted = yearsArray.sort((a, b) => b.year - a.year)
+export const yearsArraySorted = yearsArray.sort((a, b) => b.header - a.header)

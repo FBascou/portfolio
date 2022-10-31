@@ -15,7 +15,7 @@ const MainPage = (): JSX.Element => {
   const dataCVSliced = dataCV.slice(2)
   const dataArrayMapped = dataCVSliced.map((item) => item.list)
   const dataArrayMerged = dataArrayMapped.flat(1)
-  const dataArraySorted = dataArrayMerged.sort((a: any, b: any) => b.year - a.year)
+  const dataArraySorted = dataArrayMerged.sort((a: any, b: any) => b.header - a.header)
 
   return (
     <div className="main-page-container">
