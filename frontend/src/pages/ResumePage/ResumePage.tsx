@@ -8,6 +8,7 @@ interface ResumePageInterface {
 }
 
 //Download is not well aligned, maybe ResumePage gap must be changed?
+// DownloadResume has yellow focus button:focus
 
 const ResumePage = ({ data, component }: ResumePageInterface): JSX.Element => {
   return (

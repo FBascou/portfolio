@@ -4,6 +4,8 @@ interface ResumeItemInterface {
   data: any[]
 }
 
+// Have the bullet list style types to be square
+
 const ResumeItem = ({ data }: ResumeItemInterface): JSX.Element => {
   return (
     <>

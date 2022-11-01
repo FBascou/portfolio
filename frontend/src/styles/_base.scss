@@ -91,12 +91,13 @@ button {
 }
 
 .dark-theme {
-  background-color: rgb(33, 33, 33, 1);
-  // background: rgb(7, 8, 31);
-  // background: -moz-linear-gradient(90deg, rgba(7, 8, 31, 1) 0%, rgba(40, 11, 42, 1) 100%);
-  // background: -webkit-linear-gradient(90deg, rgba(7, 8, 31, 1) 0%, rgba(40, 11, 42, 1) 100%);
-  // background: linear-gradient(90deg, rgba(7, 8, 31, 1) 0%, rgba(40, 11, 42, 1) 100%);
-  // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#07081f",endColorstr="#280b2a",GradientType=1);
+  // background-color: rgb(16, 13, 30);
+  // background-color: rgb(33, 33, 33, 1);
+  background: rgb(7, 8, 31);
+  background: -moz-linear-gradient(90deg, rgba(7, 8, 31, 1) 0%, rgba(40, 11, 42, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(7, 8, 31, 1) 0%, rgba(40, 11, 42, 1) 100%);
+  background: linear-gradient(90deg, rgba(7, 8, 31, 1) 0%, rgba(40, 11, 42, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#07081f",endColorstr="#280b2a",GradientType=1);
   color: rgba($color: rgb(255, 255, 255), $alpha: 1);
   transition: all 0.3s;
 
@@ -137,7 +138,8 @@ button {
   }
 
   input:focus,
-  textarea:focus {
+  textarea:focus,
+  button:focus {
     box-shadow: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1),
       0 0 1rem rgba(255, 255, 0, 1), 0 0 0.1rem rgba(255, 255, 0, 1),
       0 0 0.2rem rgba(255, 255, 0, 1), inset 0 0 1rem rgba(255, 255, 0, 1);
@@ -234,7 +236,8 @@ button {
   // }
 
   input:focus,
-  textarea:focus {
+  textarea:focus,
+  button:focus {
     -webkit-box-shadow: 0px 0px 6px 0px rgba(255, 255, 0, 1);
     -moz-box-shadow: 0px 0px 6px 0px rgba(255, 255, 0, 1);
     box-shadow: 0px 0px 6px 0px rgba(255, 255, 0, 1);
@@ -267,7 +270,6 @@ button {
     -webkit-box-shadow: 0px 0px 6px 0px rgba(1, 254, 9, 1);
     -moz-box-shadow: 0px 0px 6px 0px rgba(1, 254, 9, 1);
     box-shadow: 0px 0px 6px 0px rgba(1, 254, 9, 1);
-    background-color: rgba(1, 254, 9, 1);
   }
 
   .icon {

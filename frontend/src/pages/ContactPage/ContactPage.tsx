@@ -19,7 +19,8 @@ const initialInputValue: InputValueInterface = {
 
 const ContactPage = () => {
   const [inputValue, setInputValue] = useState(initialInputValue)
-  const [copySuccess, setCopySuccess] = useState('')
+  const [copySuccess, setCopySuccess] = useState<string>('')
+  const [emailSuccess, setEmailSuccess] = useState<boolean>(false)
   const emailRef = useRef<HTMLHeadingElement>(null)
 
   // Dark Mode // Light Mode
@@ -41,10 +42,12 @@ const ContactPage = () => {
     event.preventDefault()
     console.log(inputValue)
     handleClickClear()
+    setEmailSuccess((prev) => !prev)
   }
 
   const handleClickClear = (): void => {
     setInputValue(initialInputValue)
+    setEmailSuccess(false)
   }
 
   const handleCopyToClipboard = async () => {
@@ -156,6 +159,7 @@ const ContactPage = () => {
             </div>
           </div>
           {/* <InfiniteSquare /> */}
+          <p>{emailSuccess && 'Email sent successfully, I will get to you shortly :)'}</p>
         </div>
       </div>
     </div>
