@@ -12,6 +12,7 @@ import { yearsArraySorted } from '../../utilities/helper/helper'
 // have a button that takes you to a crazy page (crazy art)
 // Cannot scroll on ResumePage
 // Have skills, etc, etc. boxes fade in sideways
+// WTF do I put on the blank section?
 
 const MainPage = (): JSX.Element => {
   const dataCVSliced = dataCV.slice(2)

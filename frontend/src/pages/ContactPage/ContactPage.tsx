@@ -155,7 +155,7 @@ const ContactPage = () => {
               </div>
             </div>
           </div>
-          <InfiniteSquare />
+          {/* <InfiniteSquare /> */}
         </div>
       </div>
     </div>
