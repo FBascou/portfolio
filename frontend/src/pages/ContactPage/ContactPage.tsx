@@ -137,7 +137,7 @@ const ContactPage = () => {
               <p>Submit</p>
             </button>
             <button type="reset" className="button-reset">
-              <p>Clear</p>
+              <p>Clear All</p>
             </button>
           </div>
         </form>

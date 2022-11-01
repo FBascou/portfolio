@@ -71,8 +71,7 @@ main {
 // when switching to dark mode, the neon boxes could flash as if they were turning on
 
 input,
-textarea,
-button {
+textarea {
   font-family: inherit;
   color: inherit;
   max-width: 100rem;
@@ -81,9 +80,13 @@ button {
 }
 
 button {
+  font-family: inherit;
+  color: inherit;
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 20px;
+  // padding: 1.7rem;
   cursor: pointer;
 }
 

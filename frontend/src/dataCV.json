@@ -86,7 +86,7 @@
       {
         "id": 3,
         "name": "KW-Commerce GmbH",
-        "header": 2018,
+        "header": 2018.2,
         "date": "2018/12 - 2019/09",
         "location": "Berlin, Germany",
         "position": "Product Data Management Intern",
@@ -119,7 +119,7 @@
       {
         "id": 5,
         "name": "Arden University",
-        "header": 2018,
+        "header": 2018.1,
         "date": "2018/04 - 2019/09",
         "location": "Berlin, Germany",
         "degree": "MSc. Data Analysis & Marketing",
@@ -146,7 +146,11 @@
         "header": 2012,
         "date": "2012 - 2013",
         "location": "Beijing, China",
-        "position": "Marketing Assistant Manager"
+        "position": "Marketing Assistant Manager",
+        "tasks": [
+          "Planned and promoted events (Halloween, Christmas, Sports Tournaments, etc.)",
+          "Created and analysed student surveys regarding student, university and event satisfaction"
+        ]
       }
     ]
   }

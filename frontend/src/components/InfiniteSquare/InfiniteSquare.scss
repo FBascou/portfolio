@@ -18,10 +18,21 @@
   box-shadow: 0px 0px 20px #00ccff, inset 0px 0px 20px #00ccff, 0px 0px 60px #ff00c8,
     inset 0px 0px 60px #ff00c8;
   filter: brightness(1.5) contrast(2);
-  animation: flickering 10s ease alternate, breathing 3s ease-out infinite;
+  animation: flickering 8s ease alternate, breathing 3s ease-out infinite;
+  // entering 10s ease-in alternate;
 }
 
 //scss loop through nth:child
+// @mixin transition {
+//   @for $i from 1 through 10 {
+//     &:nth-child(#{$i}) {
+//       transition: all .2s #{$i * .1}s ease-in;
+//       transform: rotate(40deg) translateY(0) translateZ(0);
+//   opacity: 1;
+//   animation-delay: 0.1s;
+//     }
+//   }
+// }
 
 .square:nth-child(1) {
   transform: rotate(40deg) translateY(0) translateZ(0);
@@ -83,18 +94,6 @@
   animation-delay: 1.9s;
 }
 
-@keyframes breathing {
-  0% {
-    filter: brightness(1.5) contrast(3);
-  }
-  50% {
-    filter: brightness(1.2) contrast(2);
-  }
-  100% {
-    filter: brightness(1.5) contrast(3);
-  }
-}
-
 @keyframes flickering {
   0% {
     box-shadow: none;
@@ -144,6 +143,27 @@
   100% {
     box-shadow: 0px 0px 20px #00ccff, inset 0px 0px 20px #00ccff, 0px 0px 60px #ff00c8,
       inset 0px 0px 60px #ff00c8;
+  }
+}
+
+@keyframes breathing {
+  0% {
+    filter: brightness(1.5) contrast(3);
+  }
+  50% {
+    filter: brightness(1.2) contrast(2);
+  }
+  100% {
+    filter: brightness(1.5) contrast(3);
+  }
+}
+
+@keyframes entering {
+  0% {
+    scale: 1;
+  }
+  100% {
+    scale: 10;
   }
 }
 
