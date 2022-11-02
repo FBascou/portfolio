@@ -22,10 +22,8 @@ const Carousel = ({ data, component }: CarouselInterface): JSX.Element => {
           ))}
         </ul>
       </div>
-      <div className="carousel-content">
-        <div className="carousel-content-items" ref={scrollRef}>
-          {component}
-        </div>
+      <div className="carousel-content" ref={scrollRef}>
+        {component}
       </div>
     </div>
   )

@@ -85,19 +85,23 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  // max-height: 20px;
-  // padding: 1.7rem;
+  height: 20px;
+  padding: 1.7rem;
   cursor: pointer;
 }
 
+// .button-primary,
+// .button-reset {
+// }
+
 .dark-theme {
   // background-color: rgb(16, 13, 30);
-  // background-color: rgb(33, 33, 33, 1);
-  background: rgb(7, 8, 31);
-  background: -moz-linear-gradient(90deg, rgba(7, 8, 31, 1) 0%, rgba(40, 11, 42, 1) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(7, 8, 31, 1) 0%, rgba(40, 11, 42, 1) 100%);
-  background: linear-gradient(90deg, rgba(7, 8, 31, 1) 0%, rgba(40, 11, 42, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#07081f",endColorstr="#280b2a",GradientType=1);
+  background-color: rgb(56, 56, 56);
+  // background: rgb(7, 8, 31);
+  // background: -moz-linear-gradient(90deg, rgba(7, 8, 31, 1) 0%, rgba(40, 11, 42, 1) 100%);
+  // background: -webkit-linear-gradient(90deg, rgba(7, 8, 31, 1) 0%, rgba(40, 11, 42, 1) 100%);
+  // background: linear-gradient(90deg, rgba(7, 8, 31, 1) 0%, rgba(40, 11, 42, 1) 100%);
+  // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#07081f",endColorstr="#280b2a",GradientType=1);
   color: rgba($color: rgb(255, 255, 255), $alpha: 1);
   transition: all 0.3s;
 

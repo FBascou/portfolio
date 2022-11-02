@@ -1,0 +1,44 @@
+// General
+$font-size1: 0;
+$font-size2: 0;
+$font-size3: 0;
+$line-height: 1.5rem;
+$letter-spacing: 0.05rem;
+$clr-error: rgba(255, 0, 0, 1);
+
+// General Animations
+$animation-input-invalid: shake 0.65s;
+$animation-theme-transition: all 0.3s;
+
+// Light Theme
+$clr-primary-light: rgba(0, 0, 0, 1);
+$clr-secondary-light: rgba(150, 150, 150, 1);
+$bg-clr-light: rgba(255, 255, 255, 1);
+$box-shadow-light: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+$clr-focus-light: 0px 0px 6px 0px rgba(255, 255, 0, 1);
+$clr-valid-light: 0px 0px 6px 0px rgba(1, 254, 9, 1);
+$clr-invalid-light: 0px 0px 6px 0px rgba(255, 0, 0, 1);
+$box-purple-light: 0px 0px 6px 0px rgba(188, 19, 254, 1);
+$box-blue-light: 0 0 6px 0 rgb(0, 204, 255);
+
+// Dark Theme
+$clr-primary-dark: rgba(255, 255, 255, 1);
+$clr-secondary-dark: rgba(150, 150, 150, 1);
+$bg-clr-dark: rgba(56, 56, 56, 1);
+$clr-initial-dark: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1),
+  0 0 1rem #b7b7b7, 0 0 0.1rem #b7b7b7, 0 0 0.2rem #b7b7b7, inset 0 0 1rem #b7b7b7;
+$clr-focus-dark: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1),
+  0 0 1rem rgba(255, 255, 0, 1), 0 0 0.1rem rgba(255, 255, 0, 1), 0 0 0.2rem rgba(255, 255, 0, 1),
+  inset 0 0 1rem rgba(255, 255, 0, 1);
+$clr-valid-dark: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1),
+  0 0 1rem rgba(1, 254, 9, 1), 0 0 0.1rem rgba(1, 254, 9, 1), 0 0 0.2rem rgba(1, 254, 9, 1),
+  inset 0 0 1rem rgba(1, 254, 9, 1);
+$clr-invalid-dark: 0 0 0.2rem rgb(255, 255, 255, 0.5), 0 0 0.2rem rgb(255, 255, 255, 0.5),
+  0 0 1rem rgba(255, 0, 0, 1), 0 0 0.1rem rgba(255, 0, 0, 1), 0 0 0.2rem rgba(255, 0, 0, 1),
+  inset 0 0 1rem rgba(255, 0, 0, 1);
+$box-purple-dark: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1),
+  0 0 1rem rgba(188, 19, 254, 1), 0 0 0.1rem rgba(188, 19, 254, 1), 0 0 0.2rem rgba(188, 19, 254, 1),
+  inset 0 0 1rem rgba(188, 19, 254, 1);
+$box-blue-dark: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1),
+  0 0 1rem rgb(10, 155, 191), 0 0 0.1rem rgb(10, 155, 191), 0 0 0.2rem rgb(10, 155, 191),
+  inset 0 0 1rem rgb(10, 155, 191);

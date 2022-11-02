@@ -46,9 +46,10 @@
         "location": "Seoul, South Korea",
         "position": "Digital Transformation Manager (Frontend Developer & Marketing Team Leader)",
         "tasks": [
-          "Wordpress admin and content creator",
-          "Created a marketing campaign and strategy. Created and analysed Facebook, LinkedIn, Youtube, and MailChimp ads, Surveys, Customer Buyer Personas, Customer Journeys, Content, Data Analysis & Reports",
           "Frontend Developer (Typescript, React, SCSS, Formik, Github). Created Careers, Events, News, and Job Application pages",
+          "Created a marketing campaign and strategy. Created and analysed Facebook, LinkedIn, Youtube, and MailChimp ads, Surveys, Customer Buyer Personas, Customer Journeys, Content, Data Analysis & Reports",
+          "Wordpress admin and content creator",
+          "Salesforce admin",
           "Automated tasks with Python and Google Sheets Macros (Javascript/Google Script)"
         ]
       },
@@ -60,11 +61,11 @@
         "location": "Seoul, South Korea",
         "position": "Global Business Alliance Manager",
         "tasks": [
-          "Organized and  administered offline and online global events with Colombia, Chile, GIGF, Seoul National University Program and AKVCC",
+          "Organized and managed offline and online global events with Colombia, Chile, GIGF, Seoul National University Program and AKVCC",
           "Conducted Deep Tech South Korean and Latin American Market reports and analysis",
           "Supported the creation of 5 joint-ventures between South Korean and foreign companies",
-          "Created and maintained a database with Google Sheets (Javascript/Google Script) and Salesforce (NoSQL)",
           "Salesforce admin",
+          "Created and maintained a database with Google Sheets (Javascript/Google Script) and Salesforce (NoSQL)",
           "Automated tasks with Python and Google Sheets Macros (Javascript/Google Script)"
         ]
       },

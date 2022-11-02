@@ -8,7 +8,6 @@ interface ResumePageInterface {
 }
 
 //Download is not well aligned, maybe ResumePage gap must be changed?
-// DownloadResume has yellow focus button:focus
 
 const ResumePage = ({ data, component }: ResumePageInterface): JSX.Element => {
   return (
@@ -18,8 +17,8 @@ const ResumePage = ({ data, component }: ResumePageInterface): JSX.Element => {
       </div>
       <Carousel data={data} component={component} />
       <div className="resume-download">
-        <button>
-          <Box item={'Download Resume'} color={'purple'} />
+        <button className="button-primary">
+          <p>Download Resume</p>
         </button>
       </div>
     </div>
