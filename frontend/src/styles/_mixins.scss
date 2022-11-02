@@ -1,0 +1,22 @@
+@use 'variables';
+
+@mixin flex-dir-ai-jc-gap($dir: row, $ai: initial, $jc: initial, $gap: 0) {
+  display: flex;
+  flex-direction: $dir;
+  align-items: $ai;
+  justify-content: $jc;
+  gap: $gap;
+}
+
+@mixin width-height($w-property, $h-property, $w-size: 0, $h-size: 0) {
+  #{$w-property}-width: $w-size;
+  #{$h-property}-height: $h-size;
+}
+
+@mixin box {
+  font-family: inherit;
+  color: inherit;
+  @include flex-dir-ai-jc-gap(row, center, center);
+  @include width-height(min, max, 50px, 20px);
+  padding: variables.$padding-input;
+}

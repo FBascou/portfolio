@@ -8,7 +8,7 @@ interface ResumePageInterface {
 }
 
 //Download is not well aligned, maybe ResumePage gap must be changed?
-
+// add section content
 const ResumePage = ({ data, component }: ResumePageInterface): JSX.Element => {
   return (
     <div className="resume-container">

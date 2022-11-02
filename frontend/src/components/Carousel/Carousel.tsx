@@ -6,6 +6,8 @@ interface CarouselInterface {
   component?: JSX.Element
 }
 
+// improve carousel scroll
+
 const Carousel = ({ data, component }: CarouselInterface): JSX.Element => {
   const scrollRef = useHorizontalScroll()
 

@@ -1,16 +1,13 @@
+@use '../../styles/mixins';
+@use '../../styles/variables';
+
 .navbar-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  @include mixins.flex-dir-ai-jc-gap(row, center, space-between, 0);
   width: 100%;
 }
 
 .navbar-links {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  gap: 5rem;
+  @include mixins.flex-dir-ai-jc-gap(row, center, space-between, 5rem);
 }
 
 .navbar-link,
@@ -26,14 +23,12 @@
 }
 
 .icon-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgb(255, 255, 255);
+  @include mixins.flex-dir-ai-jc-gap(row, center, center, 0);
+  background-color: variables.$bg-clr-white;
 }
 
 .navbar-theme {
-  transition: all 0.5s;
+  transition: variables.$animation-theme-transition;
 }
 
 @media screen and (max-width: 600px) {

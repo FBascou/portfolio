@@ -7,6 +7,8 @@ export interface BoxInterface {
   color: string
 }
 
+// add color theme on general - dark theme {.box{...}}
+
 const Box = ({ item, color }: BoxInterface): JSX.Element => {
   const { theme } = useContext(ThemeContext)
 

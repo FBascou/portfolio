@@ -1,25 +1,24 @@
+@use '../../styles/mixins';
+@use '../../styles/variables';
+
 .infinite-square-container {
-  width: 100%;
-  height: 100%;
+  @include mixins.width-height(max, min, 100%, 100%);
+  @include mixins.flex-dir-ai-jc-gap(row, center, center, 0);
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   perspective: 50px;
-  animation: zooming 10s ease-in-out infinite;
+  animation: variables.$animation-infinite-square-zooming;
 }
 
 .square {
-  width: 300px;
-  height: 300px;
+  @include mixins.width-height(min, min, 300px, 300px);
   position: absolute;
   border-radius: 10px;
   border: 3px solid #087be6; // orignally 5px
   box-shadow: 0px 0px 20px #00ccff, inset 0px 0px 20px #00ccff, 0px 0px 60px #ff00c8,
     inset 0px 0px 60px #ff00c8;
   filter: brightness(1.5) contrast(2);
-  animation: flickering 8s ease alternate, breathing 3s ease-out infinite;
-  // entering 10s ease-in alternate;
+  animation: variables.$animation-infinite-square-flickering,
+    variables.$animation-infinite-square-breathing;
 }
 
 // @mixin transition {

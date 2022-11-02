@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import OldNavBar from '../NavBar/OldNavBar'
 import './Layout.scss'
-import Form from '../Form/Form'
+import OldForm from '../Form/OldForm'
 import Close from '../../../assets/icons/Close.png'
 import Message from '../../../assets/icons/Message.png'
 import MenuBar from '../../../assets/icons/MenuBar.png'
@@ -33,7 +33,7 @@ const Layout: React.FC<LayoutProps> = ({ page }): JSX.Element => {
         <button className="modal-btn" onClick={handleToggleNav}>
           {toggleNav ? <Icon icon={Close} /> : <Icon icon={MenuBar} />}
         </button>
-        {toggleForm ? <Form /> : null}
+        {toggleForm ? <OldForm /> : null}
         <button className="modal-btn" onClick={handleToggleForm}>
           {toggleForm ? <Icon icon={Close} /> : <Icon icon={Message} />}
         </button>

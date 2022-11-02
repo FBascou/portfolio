@@ -1,59 +1,45 @@
+@use '../../styles/mixins';
+@use '../../styles/variables';
+
 .contact-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
   width: 100%;
+  @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 2rem);
 }
 
 .contact-content {
-  display: flex;
-  gap: 3rem;
+  @include mixins.flex-dir-ai-jc-gap(row, initial, initial, 3rem);
 }
 
 .contact-form-container {
   width: 50%;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
+  @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 3rem);
 }
 
 .form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 2rem);
 }
 
 .form-btn-group {
-  display: flex;
-  gap: 2rem;
+  @include mixins.flex-dir-ai-jc-gap(row, initial, initial, 2rem);
 }
 
 .contact-extra-info {
   width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
+  @include mixins.flex-dir-ai-jc-gap(column, center, center, 2rem);
 }
 
 .contact-email-container {
-  display: flex;
-  align-items: flex-end;
-  gap: 2rem;
+  @include mixins.flex-dir-ai-jc-gap(row, flex-end, initial, 2rem);
 }
 
 .contact-icon {
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
+  @include mixins.flex-dir-ai-jc-gap(row, center, center, 1rem);
   position: relative;
 }
 
 .contact-icon .active {
-  color: rgba(1, 254, 9, 1);
+  color: variables.$clr-valid;
   animation: scaled 2000ms ease;
 }
 

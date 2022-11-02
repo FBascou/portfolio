@@ -158,7 +158,7 @@ const ContactPage = () => {
               </div>
             </div>
           </div>
-          {/* <InfiniteSquare /> */}
+          <InfiniteSquare />
           <p>{emailSuccess && 'Email sent successfully, I will get to you shortly :)'}</p>
         </div>
       </div>

@@ -1,13 +1,12 @@
+@use '../../styles/mixins';
+
 .main-page-container {
-  display: flex;
-  gap: 2rem;
   width: 100rem;
+  @include mixins.flex-dir-ai-jc-gap(row, initial, initial, 2rem);
 }
 
 .experience-group {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 2rem);
 }
 
 @media screen and (max-width: 600px) {

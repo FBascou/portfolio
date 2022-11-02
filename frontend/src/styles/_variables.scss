@@ -5,10 +5,26 @@ $font-size3: 0;
 $line-height: 1.5rem;
 $letter-spacing: 0.05rem;
 $clr-error: rgba(255, 0, 0, 1);
+$clr-valid: rgba(1, 254, 9, 1);
+$padding-input: 1.7rem;
+$bg-clr-white: rgba(255, 255, 255, 1);
 
 // General Animations
 $animation-input-invalid: shake 0.65s;
 $animation-theme-transition: all 0.3s;
+$animation-infinite-square-zooming: zooming 10s ease-in-out infinite;
+$animation-infinite-square-flickering: flickering 8s ease alternate;
+$animation-infinite-square-breathing: breathing 3s ease-out infinite;
+$animation-infinite-square-entering: entering 10s ease-in alternate;
+
+// Breakpoints
+$breakpoints: (
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px,
+  'xxl': 1400px,
+);
 
 // Light Theme
 $clr-primary-light: rgba(0, 0, 0, 1);

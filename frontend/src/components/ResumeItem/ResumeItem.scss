@@ -1,9 +1,8 @@
+@use '../../styles/mixins';
+
 .resume-item-container {
-  display: flex;
-  // flex-direction: column;
+  @include mixins.flex-dir-ai-jc-gap(row, initial, initial, 3rem);
   // flex: 0 0 auto;
-  gap: 3rem;
-  // width: 80rem;
   height: auto;
   // padding: 2rem 0;
   // scroll-snap-type: x proximity;
@@ -12,24 +11,19 @@
 }
 
 .resume-item-wrapper {
-  display: flex;
-  flex-direction: column;
+  @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 2rem);
   width: 107rem;
-  gap: 2rem;
   // scroll-snap-align: center;
   // scroll-snap-stop: always;
 }
 
 .resume-item-overview {
-  display: flex;
-  flex-direction: column;
+  @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 1rem);
   flex-wrap: wrap;
-  gap: 1rem;
 }
 
 .resume-item-section {
-  display: flex;
-  flex-direction: column;
+  @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 0);
 }
 
 .resume-item-location {
@@ -41,9 +35,7 @@
 }
 
 .resume-item-list {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 2rem);
   margin-left: 1.5rem;
 }
 

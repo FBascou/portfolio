@@ -1,5 +1,5 @@
+@use '../../styles/mixins';
+
 .resume-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 2rem);
 }

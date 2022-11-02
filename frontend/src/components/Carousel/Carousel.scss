@@ -1,8 +1,8 @@
+@use '../../styles/mixins';
+
 .carousel-container {
-  display: flex;
-  flex-direction: column;
+  @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 2rem);
   max-width: 107rem;
-  gap: 2rem;
 }
 
 .carousel-header {
@@ -11,18 +11,11 @@
 }
 
 .carousel-header-items {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
+  @include mixins.flex-dir-ai-jc-gap(row, center, space-between, 2rem);
 }
 
 .carousel-content {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 14rem;
+  @include mixins.flex-dir-ai-jc-gap(row, flex-start, space-between, 14rem);
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
