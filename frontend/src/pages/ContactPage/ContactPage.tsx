@@ -23,13 +23,7 @@ const ContactPage = () => {
   const [emailSuccess, setEmailSuccess] = useState<boolean>(false)
   const emailRef = useRef<HTMLHeadingElement>(null)
 
-  // Dark Mode // Light Mode
-  // normal color: white / black shadow
-  // focus color: purple / purple shadow
-  // correct color: green / green shadow
-  // incorrect color: red / red shadow
-  // submit color: blue? white? white fill? blue fill?
-  // clear color: yellow/orange?
+  // Change Company placeholder to Email domain - make it dynamic
 
   const handleInputValue = (
     event: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>,

@@ -6,25 +6,17 @@
 }
 
 .box-blue {
-  -webkit-box-shadow: variables.$box-blue-dark;
-  -moz-box-shadow: variables.$box-blue-dark;
-  box-shadow: variables.$box-blue-dark;
+  @include mixins.box-shadow-multi-browsers(variables.$box-blue-dark);
 }
 
 .box-purple {
-  -webkit-box-shadow: variables.$box-purple-dark;
-  -moz-box-shadow: variables.$box-purple-dark;
-  box-shadow: variables.$box-purple-dark;
+  @include mixins.box-shadow-multi-browsers(variables.$box-purple-dark);
 }
 
 .box-light-theme {
-  -webkit-box-shadow: variables.$box-shadow-light;
-  -moz-box-shadow: variables.$box-shadow-light;
-  box-shadow: variables.$box-shadow-light;
+  @include mixins.box-shadow-multi-browsers(variables.$clr-initial-light);
 }
 
 .box-light-theme:hover {
-  -webkit-box-shadow: variables.$box-blue-light;
-  -moz-box-shadow: variables.$box-blue-light;
-  box-shadow: variables.$box-blue-light;
+  @include mixins.box-shadow-multi-browsers(variables.$box-blue-light);
 }

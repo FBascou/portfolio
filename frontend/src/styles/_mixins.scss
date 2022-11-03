@@ -1,34 +1,77 @@
 @use 'variables';
 
+// LIGHT MODE WILL HAVE ROUNDED CORNERS, DARK MODE SQUARE CORNERS
+// LIGHT MODE GLASSMORPHISM, DARK MODE LIKE FACEBOOK DARK
+
+@mixin box-shadow-multi-browsers($color) {
+  box-shadow: $color;
+  -moz-box-shadow: $color;
+  -webkit-box-shadow: $color;
+}
+
 @mixin theme-light {
-  background-color: '';
-  color: '';
+  background-color: variables.$bg-clr-light;
+  color: variables.$clr-primary-light;
 
   input,
-  textarea {
-    box-shadow: '';
+  textarea,
+  button {
+    @include box-shadow-multi-browsers(variables.$clr-initial-light);
   }
 
   input:invalid,
   textarea:invalid {
-    box-shadow: '';
+    @include box-shadow-multi-browsers(variables.$clr-invalid-light);
   }
 
   input:focus,
   textarea:focus,
   button:focus {
-    box-shadow: '';
+    @include box-shadow-multi-browsers(variables.$clr-focus-light);
   }
 
   input:valid,
   textarea:valid,
   form:valid [type='submit'] {
-    box-shadow: '';
+    @include box-shadow-multi-browsers(variables.$clr-valid-light);
   }
 
   input:placeholder-shown,
   textarea:placeholder-shown {
-    box-shadow: '';
+    @include box-shadow-multi-browsers(variables.$clr-initial-light);
+  }
+}
+
+@mixin theme-dark {
+  background-color: variables.$bg-clr-dark;
+  color: variables.$clr-primary-dark;
+
+  input,
+  textarea,
+  button {
+    @include box-shadow-multi-browsers(variables.$clr-initial-dark);
+  }
+
+  input:invalid,
+  textarea:invalid {
+    @include box-shadow-multi-browsers(variables.$clr-invalid-dark);
+  }
+
+  input:focus,
+  textarea:focus,
+  button:focus {
+    @include box-shadow-multi-browsers(variables.$clr-focus-dark);
+  }
+
+  input:valid,
+  textarea:valid,
+  form:valid [type='submit'] {
+    @include box-shadow-multi-browsers(variables.$clr-valid-dark);
+  }
+
+  input:placeholder-shown,
+  textarea:placeholder-shown {
+    @include box-shadow-multi-browsers(variables.$clr-initial-dark);
   }
 }
 
@@ -58,4 +101,5 @@
   @include flex-dir-ai-jc-gap(row, center, center);
   @include width-height(min, max, 50px, 20px);
   padding: variables.$padding-input;
+  border-radius: 15px;
 }

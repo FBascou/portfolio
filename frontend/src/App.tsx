@@ -31,6 +31,10 @@ const App = (): JSX.Element => {
       <main className="main-container" id="main-content">
         <MainPage />
       </main>
+      <div className="shape shape1"></div>
+      <div className="shape shape2"></div>
+      <div className="shape shape3"></div>
+      <div className="shape shape4"></div>
     </div>
   )
 }
