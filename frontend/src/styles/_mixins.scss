@@ -13,10 +13,25 @@
   background-color: variables.$bg-clr-light;
   color: variables.$clr-primary-light;
 
+  .skills-container,
+  .main-page-container {
+    padding: 3rem;
+  }
+
+  .main-page-container {
+    background: rgba(255, 255, 255, 0.055);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 9999;
+  }
+
   input,
   textarea,
   button {
     @include box-shadow-multi-browsers(variables.$clr-initial-light);
+    border-radius: 15px;
   }
 
   input:invalid,
@@ -40,11 +55,23 @@
   textarea:placeholder-shown {
     @include box-shadow-multi-browsers(variables.$clr-initial-light);
   }
+
+  .box-container {
+    background-color: variables.$bg-clr-white;
+    border-radius: 15px;
+  }
 }
 
 @mixin theme-dark {
   background-color: variables.$bg-clr-dark;
   color: variables.$clr-primary-dark;
+
+  .skills-container,
+  .main-page-container {
+    background-color: rgb(74, 74, 74);
+    box-shadow: 0px 0px 6px 6px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+  }
 
   input,
   textarea,
@@ -99,7 +126,6 @@
   font-family: inherit;
   color: inherit;
   @include flex-dir-ai-jc-gap(row, center, center);
-  @include width-height(min, max, 50px, 20px);
-  padding: variables.$padding-input;
-  border-radius: 15px;
+  @include width-height(min, max, 50px, 0px);
+  padding: variables.$padding-box;
 }

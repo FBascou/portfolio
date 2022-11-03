@@ -1,16 +1,8 @@
 @use '../../styles/mixins';
 
 .main-page-container {
-  width: 100rem;
+  width: 100%;
   @include mixins.flex-dir-ai-jc-gap(row, initial, initial, 2rem);
-  background: rgba(255, 255, 255, 0.055);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  border-radius: 30px;
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  position: relative;
-  height: 100%;
-  z-index: 9999;
 }
 
 .experience-group {

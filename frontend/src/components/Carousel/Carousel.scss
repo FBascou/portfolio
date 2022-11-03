@@ -2,7 +2,7 @@
 
 .carousel-container {
   @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 2rem);
-  max-width: 107rem;
+  max-width: 100rem;
 }
 
 .carousel-header {

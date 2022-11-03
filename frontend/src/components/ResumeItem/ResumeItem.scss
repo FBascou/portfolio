@@ -12,7 +12,7 @@
 
 .resume-item-wrapper {
   @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 2rem);
-  width: 107rem;
+  width: 100rem;
   // scroll-snap-align: center;
   // scroll-snap-stop: always;
 }
@@ -35,7 +35,7 @@
 }
 
 .resume-item-list {
-  @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 2rem);
+  @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 1rem);
   margin-left: 1.5rem;
 }
 

@@ -1,8 +1,8 @@
 [
   {
     "id": 0,
-    "header": "Born2Global Website",
-    "name": "Born2Global Website",
+    "header": "Born2Global",
+    "name": "Born2Global",
     "description": "Frontend teamleader for the main website. Worked on the Careers, Job Application, Events, and News page.",
     "features": ["API calls", "Responsive", "Forms", "Search Bar"],
     "tech": ["React", "Typescript", "SCSS", "Axios", "MaterialUI", "Formik", "AdobeXD"],
@@ -23,8 +23,8 @@
   },
   {
     "id": 2,
-    "header": "Saint Patrick Online Homebanking",
-    "name": "Saint Patrick Online Homebanking",
+    "header": "St. Patrick Online Bank",
+    "name": "St. Patrick Online Bank",
     "description": "Community project for online homebanking where users can manage their accounts, transfers, favourites, etc. I was in charge of developing the Home, Account Transactions, Transaction History, and Confirmation pages.",
     "features": ["API calls", "Responsive", "Animations"],
     "tech": ["Javascript", "React", "Styled-Components", "JIRA", "Postman"],
@@ -34,8 +34,8 @@
   },
   {
     "id": 3,
-    "header": "NASA API Cosmic Events",
-    "name": "NASA API Cosmic Events",
+    "header": "Space Event Calendar",
+    "name": "Space Event Calendar",
     "description": "Website that displays multiple cosmic events from different NASA APIs on a tabular format.",
     "features": ["API Calls"],
     "tech": ["Javascript", "React", "Regex"],

@@ -20,49 +20,12 @@ body {
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr);
-  column-gap: 8rem;
+  column-gap: 4rem;
   row-gap: 2rem;
-  padding: 0 4rem;
+  padding: 2rem 4rem;
   height: 100vh;
   transition: variables.$animation-theme-transition;
   position: relative;
-}
-
-.shape {
-  background: rgb(0, 220, 255);
-  background: -moz-linear-gradient(90deg, rgba(0, 220, 255, 1) 0%, rgba(255, 0, 198, 1) 100%);
-  background: -webkit-linear-gradient(90deg, rgba(0, 220, 255, 1) 0%, rgba(255, 0, 198, 1) 100%);
-  background: linear-gradient(90deg, rgba(0, 220, 255, 1) 0%, rgba(255, 0, 198, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00dcff",endColorstr="#ff00c6",GradientType=1);
-  position: absolute;
-}
-
-.shape1 {
-  width: 100px;
-  height: 100px;
-  left: 35rem;
-  top: 15rem;
-}
-
-.shape2 {
-  width: 200px;
-  height: 200px;
-  right: 5rem;
-  bottom: 10rem;
-}
-
-.shape3 {
-  width: 200px;
-  height: 200px;
-  right: 10rem;
-  bottom: 40rem;
-}
-
-.shape4 {
-  width: 400px;
-  height: 400px;
-  right: 50rem;
-  bottom: 5rem;
 }
 
 .header-container {
@@ -78,6 +41,12 @@ body {
 header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+main {
+  display: flex;
+  align-items: flex-start;
   justify-content: space-between;
 }
 
@@ -97,16 +66,15 @@ header {
   translate: 0;
 }
 
-main {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-}
-
 .section-content {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+}
+
+.skills-container,
+.main-page-container {
+  min-height: 570px;
 }
 
 // when switching to dark mode, the neon boxes could flash as if they were turning on
@@ -115,7 +83,6 @@ input,
 textarea,
 button {
   @include mixins.input-textarea-btn;
-  border-radius: 15px;
 }
 
 input,
@@ -125,7 +92,6 @@ textarea {
 
 textarea {
   height: auto;
-  border-radius: 15px;
 }
 
 button {
@@ -183,7 +149,7 @@ form:invalid [type='submit'] {
 ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 2rem 1rem;
   // padding: 1rem 0;
 }
 

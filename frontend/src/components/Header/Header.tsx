@@ -1,6 +1,5 @@
 import NavBar from '../../components/NavBar/NavBar'
 import { PageTitleInterface } from '../../utilities/interfaces/page-title.interface'
-
 import './Header.scss'
 
 const Header = ({ pageTitle }: PageTitleInterface) => {
