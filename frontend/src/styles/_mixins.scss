@@ -1,5 +1,44 @@
 @use 'variables';
 
+@mixin theme-light {
+  background-color: '';
+  color: '';
+
+  input,
+  textarea {
+    box-shadow: '';
+  }
+
+  input:invalid,
+  textarea:invalid {
+    box-shadow: '';
+  }
+
+  input:focus,
+  textarea:focus,
+  button:focus {
+    box-shadow: '';
+  }
+
+  input:valid,
+  textarea:valid,
+  form:valid [type='submit'] {
+    box-shadow: '';
+  }
+
+  input:placeholder-shown,
+  textarea:placeholder-shown {
+    box-shadow: '';
+  }
+}
+
+@mixin input-textarea-btn {
+  font-family: inherit;
+  color: inherit;
+  height: 20px;
+  padding: 1.7rem;
+}
+
 @mixin flex-dir-ai-jc-gap($dir: row, $ai: initial, $jc: initial, $gap: 0) {
   display: flex;
   flex-direction: $dir;
