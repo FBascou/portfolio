@@ -28,6 +28,37 @@ body {
   position: relative;
 }
 
+.shape {
+  border: 100px solid dodgerblue;
+  border-radius: 50%;
+  height: 600px;
+  width: 600px;
+}
+
+.shape1 {
+  position: absolute;
+  left: 30rem;
+  top: 10rem;
+}
+
+.shape2 {
+  position: absolute;
+  left: 60rem;
+  top: 40rem;
+}
+
+.shape3 {
+  position: absolute;
+  left: 100rem;
+  top: 40rem;
+}
+
+.shape4 {
+  position: absolute;
+  left: 120rem;
+  top: 10rem;
+}
+
 .header-container {
   grid-area: 1 / 1 / 2 / 9;
 }

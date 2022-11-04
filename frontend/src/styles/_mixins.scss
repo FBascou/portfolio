@@ -10,7 +10,54 @@
 }
 
 @mixin theme-light {
-  background-color: variables.$bg-clr-light;
+  // background-color: variables.$bg-clr-light;
+  background: rgb(240, 240, 240);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(240, 240, 240, 1) 40%,
+    rgba(0, 215, 255, 1) 40%,
+    rgba(234, 0, 255, 1) 61%,
+    rgba(240, 240, 240, 1) 61%,
+    rgba(240, 240, 240, 1) 70%,
+    rgba(255, 0, 254, 1) 70%,
+    rgba(255, 0, 206, 1) 80%,
+    rgba(240, 240, 240, 1) 80%,
+    rgba(240, 240, 240, 1) 85%,
+    rgba(255, 0, 185, 1) 85%,
+    rgba(252, 0, 0, 1) 95%,
+    rgba(240, 240, 240, 1) 95%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(240, 240, 240, 1) 40%,
+    rgba(0, 215, 255, 1) 40%,
+    rgba(234, 0, 255, 1) 61%,
+    rgba(240, 240, 240, 1) 61%,
+    rgba(240, 240, 240, 1) 70%,
+    rgba(255, 0, 254, 1) 70%,
+    rgba(255, 0, 206, 1) 80%,
+    rgba(240, 240, 240, 1) 80%,
+    rgba(240, 240, 240, 1) 85%,
+    rgba(255, 0, 185, 1) 85%,
+    rgba(252, 0, 0, 1) 95%,
+    rgba(240, 240, 240, 1) 95%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(240, 240, 240, 1) 40%,
+    rgba(0, 215, 255, 1) 40%,
+    rgba(234, 0, 255, 1) 61%,
+    rgba(240, 240, 240, 1) 61%,
+    rgba(240, 240, 240, 1) 70%,
+    rgba(255, 0, 254, 1) 70%,
+    rgba(255, 0, 206, 1) 80%,
+    rgba(240, 240, 240, 1) 80%,
+    rgba(240, 240, 240, 1) 85%,
+    rgba(255, 0, 185, 1) 85%,
+    rgba(252, 0, 0, 1) 95%,
+    rgba(240, 240, 240, 1) 95%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f0f0f0",endColorstr="#f0f0f0",GradientType=1);
   color: variables.$clr-primary-light;
 
   .skills-container,
