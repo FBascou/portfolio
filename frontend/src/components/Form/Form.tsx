@@ -5,6 +5,8 @@ interface FormInterface {
   setEmailSuccess: (param: any) => void
 }
 
+// setEmailSuccess should be on this component with success/error next to btn group
+
 interface InputValueInterface {
   name: string
   email: string
@@ -31,14 +33,12 @@ const Form = ({ setEmailSuccess }: FormInterface) => {
 
   const handleClickSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
     event.preventDefault()
-    console.log(inputValue)
     handleClickClear()
-    setEmailSuccess((prev: boolean) => !prev)
   }
 
   const handleClickClear = (): void => {
     setInputValue(initialInputValue)
-    setEmailSuccess(false)
+    setEmailSuccess((prev: boolean) => !prev)
   }
 
   return (

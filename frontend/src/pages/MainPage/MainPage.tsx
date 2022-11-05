@@ -20,7 +20,7 @@ const MainPage = (): JSX.Element => {
   const dataArraySorted = dataArrayMerged.sort((a: any, b: any) => b.header - a.header)
 
   return (
-    <div className="main-page-container">
+    <main className="main-container" id="main-content">
       <Routes>
         <Route
           path="projects"
@@ -37,7 +37,7 @@ const MainPage = (): JSX.Element => {
         />
         <Route path="contact" element={<ContactPage />} />
       </Routes>
-    </div>
+    </main>
   )
 }
 

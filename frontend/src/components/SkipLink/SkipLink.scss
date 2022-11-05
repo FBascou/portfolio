@@ -1,0 +1,14 @@
+.skip-link-container a {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  padding: 1.5rem;
+  translate: 0 -100%;
+  transition: translate 150ms ease-in-out;
+}
+
+.skip-link-container a:focus {
+  translate: 0;
+}
