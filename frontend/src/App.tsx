@@ -16,6 +16,8 @@ import LandingPage from './pages/LandingPage/LandingPage'
 const App = (): JSX.Element => {
   const { theme } = useContext(ThemeContext)
 
+  // for mobile project/resume pages they can be select/dropdown
+
   return (
     <div className={`App ${theme ? 'dark-theme' : 'light-theme'}`}>
       {/* <LandingPage /> */}
@@ -31,10 +33,6 @@ const App = (): JSX.Element => {
       <main className="main-container" id="main-content">
         <MainPage />
       </main>
-      {/* <div className="shape shape1"></div>
-      <div className="shape shape2"></div>
-      <div className="shape shape3"></div>
-      <div className="shape shape4"></div> */}
     </div>
   )
 }

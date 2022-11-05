@@ -11,7 +11,7 @@ interface ResumePageInterface {
 // add section content
 const ResumePage = ({ data, component }: ResumePageInterface): JSX.Element => {
   return (
-    <div className="resume-container">
+    <div className="content-container">
       <div className="resume-title">
         <h2>Resume</h2>
       </div>

@@ -1,26 +1,8 @@
 @use '../../styles/mixins';
 @use '../../styles/variables';
 
-.contact-container {
-  width: 100%;
-  @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 2rem);
-}
-
 .contact-content {
   @include mixins.flex-dir-ai-jc-gap(row, initial, initial, 3rem);
-}
-
-.contact-form-container {
-  width: 50%;
-  @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 3rem);
-}
-
-.form-group {
-  @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 2rem);
-}
-
-.form-btn-group {
-  @include mixins.flex-dir-ai-jc-gap(row, initial, initial, 2rem);
 }
 
 .contact-extra-info {
@@ -84,8 +66,7 @@
     flex-direction: column;
   }
 
-  .contact-extra-info,
-  .contact-form-container {
+  .contact-extra-info {
     width: 100%;
   }
 }

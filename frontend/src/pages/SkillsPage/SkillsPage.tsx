@@ -2,7 +2,7 @@ import Box from '../../components/Box/Box'
 import './SkillsPage.scss'
 const SkillsPage = (): JSX.Element => {
   return (
-    <div className="skills-container">
+    <div className="content-container skills-container">
       <div className="section-title">
         <h2>Skills</h2>
       </div>

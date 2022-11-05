@@ -18,64 +18,28 @@ body {
 
 .App {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
   column-gap: 4rem;
   row-gap: 2rem;
-  padding: 2rem 4rem;
+  padding: 2rem;
   height: 100vh;
   transition: variables.$animation-theme-transition;
-  position: relative;
-}
-
-.shape {
-  border: 100px solid dodgerblue;
-  border-radius: 50%;
-  height: 600px;
-  width: 600px;
-}
-
-.shape1 {
-  position: absolute;
-  left: 30rem;
-  top: 10rem;
-}
-
-.shape2 {
-  position: absolute;
-  left: 60rem;
-  top: 40rem;
-}
-
-.shape3 {
-  position: absolute;
-  left: 100rem;
-  top: 40rem;
-}
-
-.shape4 {
-  position: absolute;
-  left: 120rem;
-  top: 10rem;
 }
 
 .header-container {
-  grid-area: 1 / 1 / 2 / 9;
-}
-.aside-container {
-  grid-area: 2 / 1 / 9 / 3;
-}
-.main-container {
-  grid-area: 2 / 3 / 9 / 9;
-}
-
-header {
+  grid-area: 1 / 1 / 2 / 13;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-main {
+.aside-container {
+  grid-area: 2 / 1 / 9 / 4;
+}
+
+.main-container {
+  grid-area: 2 / 4 / 9 / 13;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -105,7 +69,12 @@ main {
 
 .skills-container,
 .main-page-container {
-  min-height: 570px;
+  min-height: 600px;
+}
+
+.content-container {
+  @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 3rem);
+  width: 100%;
 }
 
 // when switching to dark mode, the neon boxes could flash as if they were turning on
@@ -188,27 +157,6 @@ ul {
   color: rgba(255, 0, 0, 1);
   font-size: 1.2rem;
 }
-
-// @keyframes lightToDarkTheme {
-//   0% {
-//     background-color: rgba(255, 255, 255, 1);
-//   }
-//   20% {
-//     background-color: rgb(30, 144, 255);
-//   }
-//   40% {
-//     background-color: rgb(0, 0, 255);
-//   }
-//   60% {
-//     background-color: rgb(0, 0, 139);
-//   }
-//   80% {
-//     background-color: rgb(73, 73, 73);
-//   }
-//   100% {
-//     background-color: rgba(66, 66, 69, 1);
-//   }
-// }
 
 @keyframes shake {
   10%,

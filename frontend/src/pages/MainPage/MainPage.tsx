@@ -10,8 +10,7 @@ import ContactPage from '../../pages/ContactPage/ContactPage'
 import { yearsArraySorted } from '../../utilities/helper/helper'
 
 // have a button that takes you to a crazy page (crazy art)
-// Cannot scroll on ResumePage
-// Have skills, etc, etc. boxes fade in sideways
+// standardize all the div classes in Project, Resume, Contact, Skills
 // WTF do I put on the blank section?
 
 const MainPage = (): JSX.Element => {

@@ -1,20 +1,15 @@
 @use '../../styles/mixins';
 
 .resume-item-container {
-  @include mixins.flex-dir-ai-jc-gap(row, initial, initial, 3rem);
-  // flex: 0 0 auto;
+  @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 3rem);
+  min-width: 105rem;
   height: auto;
-  // padding: 2rem 0;
+  white-space: pre-wrap;
+  // flex: 0 0 auto;
   // scroll-snap-type: x proximity;
   scroll-snap-align: center;
   scroll-snap-stop: always;
-}
-
-.resume-item-wrapper {
-  @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 2rem);
-  width: 100rem;
-  // scroll-snap-align: center;
-  // scroll-snap-stop: always;
+  -webkit-overflow-scrolling: touch;
 }
 
 .resume-item-overview {

@@ -1,5 +1,0 @@
-@use '../../styles/mixins';
-
-.projects-container {
-  @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 2rem);
-}

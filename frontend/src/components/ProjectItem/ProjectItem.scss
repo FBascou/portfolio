@@ -1,27 +1,23 @@
 @use '../../styles/mixins';
 
 .project-item-container {
-  @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 0);
-  display: flex;
-  flex-direction: column;
-  flex: none;
-  gap: 3rem;
-  width: 100rem;
-  height: 100%;
+  @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 3rem);
+  min-width: 105rem;
+  height: auto;
   white-space: pre-wrap;
-  // padding: 0 1rem;
-  // scroll-snap-align: start;
-  // scroll-snap-stop: always;
+  // flex: none;
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
   -webkit-overflow-scrolling: touch;
 }
 
 .project-item-overview {
   @include mixins.flex-dir-ai-jc-gap(row, flex-start, space-between, 4rem);
+  // flex-wrap: wrap;
 }
 
 .project-item-overview-section {
   @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 2rem);
-  // flex-wrap: wrap;
 }
 
 .project-item-section {

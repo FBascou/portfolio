@@ -1,12 +1,5 @@
 @use '../../styles/mixins';
 
-.skills-container,
 .skill-section {
   @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 2rem);
-}
-
-@media screen and (max-width: 600px) {
-  .skills-container {
-    width: 100%;
-  }
 }

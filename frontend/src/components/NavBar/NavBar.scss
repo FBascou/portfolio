@@ -4,7 +4,7 @@
 .navbar-container {
   @include mixins.flex-dir-ai-jc-gap(row, center, space-between, 0);
   width: 100%;
-  // padding: 0 2rem;
+  padding: 0 3rem;
   overflow: hidden;
 }
 
