@@ -1,8 +1,30 @@
-import Box from '../../components/Box/Box'
-import './SkillsPage.scss'
+import Box from '../../components/Box/Box';
+import fr from '../../assets/icons/fr.svg';
+import gb from '../../assets/icons/gb.svg';
+import es from '../../assets/icons/es.svg';
+import cn from '../../assets/icons/cn.svg';
+import dataCV from '../../dataCV.json';
+import './SkillsPage.scss';
+
+interface BoxColorInterface {
+  boxColor: boolean;
+}
+
+interface DataInterface {
+  [key: string]: any;
+}
+
 const SkillsPage = (): JSX.Element => {
+  const dataSkillsFrontend: DataInterface = dataCV[1].list[0]['frontend'];
+  const dataSkillsTools: DataInterface = [
+    ...dataCV[1].list[1]['backend'],
+    ...dataCV[1].list[2]['tools'],
+  ];
+  const dataSkillsLanguages: DataInterface = dataCV[1].list[3]['languages'];
+  const languageFlags = [gb, es, fr, cn];
+
   return (
-    <div className="content-container skills-container">
+    <aside className="aside-container content-container">
       <div className="section-title">
         <h2>Skills</h2>
       </div>
@@ -13,24 +35,11 @@ const SkillsPage = (): JSX.Element => {
           </div>
           <div className="skill-content">
             <ul className="skill-list">
-              <li>
-                <Box color="blue" item={'Javascript'} />
-              </li>
-              <li>
-                <Box color="blue" item={'Typescript'} />
-              </li>
-              <li>
-                <Box color="blue" item={'React'} />
-              </li>
-              <li>
-                <Box color="blue" item={'HTML'} />
-              </li>
-              <li>
-                <Box color="blue" item={'CSS'} />
-              </li>
-              <li>
-                <Box color="blue" item={'SASS'} />
-              </li>
+              {dataSkillsFrontend.map((item: string, index: number) => (
+                <li key={index}>
+                  <Box color={false ? 'blue' : 'none'} item={item} />
+                </li>
+              ))}
             </ul>
           </div>
         </div>
@@ -40,33 +49,11 @@ const SkillsPage = (): JSX.Element => {
           </div>
           <div className="skill-content">
             <ul className="skill-list">
-              <li>
-                <Box color="blue" item={'Python 3'} />
-              </li>
-              <li>
-                <Box color="blue" item={'MySQL'} />
-              </li>
-              <li>
-                <Box color="blue" item={'MongoDB'} />
-              </li>
-              <li>
-                <Box color="blue" item={'GIT'} />
-              </li>
-              <li>
-                <Box color="blue" item={'JIRA'} />
-              </li>
-              <li>
-                <Box color="blue" item={'Salesforce'} />
-              </li>
-              <li>
-                <Box color="blue" item={'Figma'} />
-              </li>
-              <li>
-                <Box color="blue" item={'AdobeXD'} />
-              </li>
-              <li>
-                <Box color="blue" item={'Postman'} />
-              </li>
+              {dataSkillsTools.map((item: string, index: number) => (
+                <li key={index}>
+                  <Box color={false ? 'blue' : 'none'} item={item} />
+                </li>
+              ))}
             </ul>
           </div>
         </div>
@@ -76,28 +63,17 @@ const SkillsPage = (): JSX.Element => {
           </div>
           <div className="skill-content">
             <ul className="skill-list">
-              <li>
-                <Box color="blue" item={'English (Native)'} />
-                {/* <IconSkills icon={gb} /> */}
-              </li>
-              <li>
-                <Box color="blue" item={'Spanish (Native)'} />
-                {/* <IconSkills icon={es} /> */}
-              </li>
-              <li>
-                <Box color="blue" item={'French (Fluent)'} />
-                {/* <IconSkills icon={fr} /> */}
-              </li>
-              <li>
-                <Box color="blue" item={'Chinese (Intermediate)'} />
-                {/* <IconSkills icon={cn} /> */}
-              </li>
+              {dataSkillsLanguages.map((item: any, index: number) => (
+                <li key={item.id}>
+                  <img src={languageFlags[index]} alt={item.language} className="img-language" />
+                </li>
+              ))}
             </ul>
           </div>
         </div>
       </div>
-    </div>
-  )
-}
+    </aside>
+  );
+};
 
-export default SkillsPage
+export default SkillsPage;

@@ -8,15 +8,15 @@
 
 @mixin theme-light {
   background-color: variables.$bg-clr-light;
-  background: -moz-linear-gradient(90deg, variables.$bg-clr-light 75%, rgba(240, 240, 240, 1) 75%);
-  background: -webkit-linear-gradient(
-    90deg,
-    variables.$bg-clr-light 75%,
-    rgba(240, 240, 240, 1) 75%
-  );
-  background: linear-gradient(90deg, variables.$bg-clr-light 75%, rgba(240, 240, 240, 1) 75%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#757575",GradientType=1);
-  color: variables.$clr-primary-light;
+  // background: -moz-linear-gradient(90deg, variables.$bg-clr-light 75%, rgba(240, 240, 240, 1) 75%);
+  // background: -webkit-linear-gradient(
+  //   90deg,
+  //   variables.$bg-clr-light 75%,
+  //   rgba(240, 240, 240, 1) 75%
+  // );
+  // background: linear-gradient(90deg, variables.$bg-clr-light 75%, rgba(240, 240, 240, 1) 75%);
+  // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#757575",GradientType=1);
+  // color: variables.$clr-primary-light;
 
   .skip-link-container a {
     background-color: rgba(240, 240, 240, 1);
@@ -55,6 +55,10 @@
   textarea:valid,
   form:valid [type='submit'] {
     @include box-shadow-multi-browsers(variables.$clr-valid-light);
+  }
+
+  form:invalid [type='submit'] {
+    color: variables.$clr-secondary-light;
   }
 
   input:placeholder-shown,
@@ -134,9 +138,10 @@
 }
 
 @mixin box {
+  font-size: 1.2rem;
   font-family: inherit;
   color: inherit;
   @include flex-dir-ai-jc-gap(row, center, center);
-  @include width-height(min, max, 50px, 0px);
+  @include width-height(min, max, 50px, 20px);
   padding: variables.$padding-box;
 }

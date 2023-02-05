@@ -3,3 +3,9 @@
 .skill-section {
   @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 2rem);
 }
+
+.img-language {
+  width: 30px;
+  height: auto;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
+}

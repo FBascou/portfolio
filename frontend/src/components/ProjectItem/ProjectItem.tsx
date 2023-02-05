@@ -1,8 +1,8 @@
-import './ProjectItem.scss'
-import Box from '../Box/Box'
+import './ProjectItem.scss';
+import Box from '../Box/Box';
 
 interface ProjectItemInterface {
-  data: any[]
+  data: any[];
 }
 
 const ProjectItem = ({ data }: ProjectItemInterface): JSX.Element => {
@@ -66,14 +66,19 @@ const ProjectItem = ({ data }: ProjectItemInterface): JSX.Element => {
                 </a>
               </div>
               <div className="project-item-img">
-                <video src={item.media} controls></video>
+                <video
+                  src={item.media}
+                  preload="none"
+                  poster="https://static.vecteezy.com/system/resources/thumbnails/007/926/257/small/futuristic-hud-interface-technology-background-vector.jpg"
+                  controls
+                ></video>
               </div>
             </div>
           </div>
         </article>
       ))}
     </>
-  )
-}
+  );
+};
 
-export default ProjectItem
+export default ProjectItem;

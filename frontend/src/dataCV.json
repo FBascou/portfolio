@@ -20,16 +20,16 @@
     "id": 1,
     "category": "Skills",
     "list": [
-      { "id": 0, "frontend": ["Javascript", "Typescript", "ReactJS", "HTML/CSS/SASS"] },
-      { "id": 1, "backend": ["Python 3", "MySQL", "MongoDB"] },
-      { "id": 2, "tools": ["Salesforce", "GIT", "Jira", "AdobeXD", "Figma"] },
+      { "id": 0, "frontend": ["Javascript", "Typescript", "React", "HTML", "CSS", "SASS"] },
+      { "id": 1, "backend": ["Python3", "MySQL"] },
+      { "id": 2, "tools": ["Salesforce", "GIT", "Docker", "Jira", "Figma", "AdobeXD", "Postman"] },
       {
         "id": 3,
         "languages": [
-          "English (Native)",
-          "Spanish (Native)",
-          "French (Fluent)",
-          "Chinese Mandarin (Intermediate)"
+          { "id": 0, "code": "en", "language": "English (Native)" },
+          { "id": 1, "code": "es", "language": "Spanish (Native)" },
+          { "id": 2, "code": "fr", "language": "French (Fluent)" },
+          { "id": 3, "code": "cn", "language": "Chinese Mandarin (Intermediate)" }
         ]
       }
     ]
@@ -40,6 +40,7 @@
     "list": [
       {
         "id": 0,
+        "category": "Work",
         "name": "Born2Global Centre",
         "header": 2022,
         "date": "2022/01 - 2022/09",
@@ -47,14 +48,16 @@
         "position": "Digital Transformation Manager (Frontend Developer & Marketing Team Leader)",
         "tasks": [
           "Frontend Developer (Typescript, React, SCSS, Formik, Github). Created Careers, Events, News, and Job Application pages",
-          "Created a marketing campaign and strategy. Created and analysed Facebook, LinkedIn, Youtube, and MailChimp ads, Surveys, Customer Buyer Personas, Customer Journeys, Content, Data Analysis & Reports",
-          "Wordpress admin and content creator",
-          "Salesforce admin",
-          "Automated tasks with Python and Google Sheets Macros (Javascript/Google Script)"
+          "Created a digital marketing campaign and strategy (surveys, customer buyer personas, content, data analysis & reports)",
+          "Create and managed Facebook, LinkedIn, YouTube, and MailChimp campaign ads ",
+          "Evaluated company channels’ performance with Google Analytics ",
+          "WordPress admin (created and managed posts, products, templates, WPForms, Oxygen) ",
+          "Automated tasks with Python using Google, Naver, and Salesforce APIs "
         ]
       },
       {
         "id": 1,
+        "category": "Work",
         "name": "Born2Global Centre",
         "header": 2021,
         "date": "2021/04 - 2021/12",
@@ -64,7 +67,7 @@
           "Organized and managed offline and online global events with Colombia, Chile, GIGF, Seoul National University Program and AKVCC",
           "Conducted Deep Tech South Korean and Latin American Market reports and analysis",
           "Supported the creation of 5 joint-ventures between South Korean and foreign companies",
-          "Salesforce admin",
+          "Salesforce admin (update forms, connected Gmail with Salesforce, created Salesforce APIs) ",
           "Created and maintained a database with Google Sheets (Javascript/Google Script) and Salesforce (NoSQL)",
           "Automated tasks with Python and Google Sheets Macros (Javascript/Google Script)"
         ]
@@ -72,6 +75,7 @@
 
       {
         "id": 2,
+        "category": "Work",
         "name": "Applause GmbH",
         "header": 2020,
         "date": "2020/03 - 2020/09",
@@ -86,6 +90,7 @@
       },
       {
         "id": 3,
+        "category": "Work",
         "name": "KW-Commerce GmbH",
         "header": 2018.2,
         "date": "2018/12 - 2019/09",
@@ -99,6 +104,7 @@
       },
       {
         "id": 4,
+        "category": "Work",
         "name": "PowerChina LTD.",
         "header": 2015,
         "date": "2015/10 - 2017/09",
@@ -119,6 +125,7 @@
     "list": [
       {
         "id": 5,
+        "category": "Education",
         "name": "Arden University",
         "header": 2018.1,
         "date": "2018/04 - 2019/09",
@@ -128,6 +135,7 @@
       },
       {
         "id": 6,
+        "category": "Education",
         "name": "Beijing Foreign Studies University",
         "header": 2011,
         "date": "2011/09 - 2015/07",
@@ -143,6 +151,7 @@
     "list": [
       {
         "id": 7,
+        "category": "Volunteering",
         "name": "BFSU International Business School Union",
         "header": 2012,
         "date": "2012 - 2013",

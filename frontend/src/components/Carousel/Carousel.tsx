@@ -1,15 +1,13 @@
-import './Carousel.scss'
-import { useHorizontalScroll } from '../../utilities/hooks/useHorizontalScroll'
+import './Carousel.scss';
+import { useHorizontalScroll } from '../../utilities/hooks/useHorizontalScroll';
 
 interface CarouselInterface {
-  data: any[]
-  component?: JSX.Element
+  data: any[];
+  component?: JSX.Element;
 }
 
-// improve carousel scroll
-
 const Carousel = ({ data, component }: CarouselInterface): JSX.Element => {
-  const scrollRef = useHorizontalScroll()
+  const scrollRef = useHorizontalScroll();
 
   return (
     <div className="carousel-container">
@@ -28,7 +26,7 @@ const Carousel = ({ data, component }: CarouselInterface): JSX.Element => {
         {component}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Carousel
+export default Carousel;

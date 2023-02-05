@@ -14,6 +14,10 @@
   @include mixins.box-shadow-multi-browsers(variables.$box-purple-dark);
 }
 
+.box-none {
+  @include mixins.box-shadow-multi-browsers(variables.$box-none-dark);
+}
+
 .box-light-theme {
   @include mixins.box-shadow-multi-browsers(variables.$clr-initial-light);
 }

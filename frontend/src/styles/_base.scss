@@ -9,9 +9,9 @@ html {
   // color: variables.$primaryFont;
   // font-family: variables.$roboto;
   font-size: 62.5%;
-  letter-spacing: 0.05rem;
+  letter-spacing: variables.$letter-spacing;
   font-family: 'Montserrat', sans-serif;
-  // scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -24,7 +24,7 @@ body {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(6, 1fr);
   column-gap: 4rem;
-  row-gap: 2rem;
+  row-gap: 3rem;
   padding: 2rem;
   height: 100vh;
   transition: variables.$animation-theme-transition;
@@ -76,6 +76,7 @@ textarea {
 
 textarea {
   height: auto;
+  resize: none;
 }
 
 button {
@@ -137,9 +138,24 @@ ul {
   // padding: 1rem 0;
 }
 
-.error {
-  color: rgba(255, 0, 0, 1);
-  font-size: 1.2rem;
+@keyframes clip-path-dark {
+  0% {
+    clip-path: variables.$bg-transition-left;
+    background-color: variables.$bg-clr-light;
+  }
+  100% {
+    clip-path: variables.$bg-transition-initial;
+    background-color: variables.$bg-clr-dark;
+  }
+}
+
+@keyframes clip-path-light {
+  0% {
+    clip-path: variables.$bg-transition-right;
+  }
+  100% {
+    clip-path: variables.$bg-transition-initial;
+  }
 }
 
 @keyframes shake {

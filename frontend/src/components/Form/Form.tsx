@@ -1,17 +1,17 @@
-import React, { useState } from 'react'
-import './Form.scss'
+import React, { useState } from 'react';
+import './Form.scss';
 
 interface FormInterface {
-  setEmailSuccess: (param: any) => void
+  setEmailSuccess: (param: any) => void;
 }
 
 // setEmailSuccess should be on this component with success/error next to btn group
 
 interface InputValueInterface {
-  name: string
-  email: string
-  company: string
-  message: string
+  name: string;
+  email: string;
+  company: string;
+  message: string;
 }
 
 const initialInputValue: InputValueInterface = {
@@ -19,27 +19,27 @@ const initialInputValue: InputValueInterface = {
   email: '',
   company: '',
   message: '',
-}
+};
 
 const Form = ({ setEmailSuccess }: FormInterface) => {
-  const [inputValue, setInputValue] = useState(initialInputValue)
+  const [inputValue, setInputValue] = useState(initialInputValue);
 
   const handleInputValue = (
     event: React.ChangeEvent<HTMLInputElement> | React.ChangeEvent<HTMLTextAreaElement>,
   ): void => {
-    const { name, value } = event.currentTarget
-    setInputValue((prev) => ({ ...prev, [name]: value }))
-  }
+    const { name, value } = event.currentTarget;
+    setInputValue((prev) => ({ ...prev, [name]: value }));
+  };
 
   const handleClickSubmit = (event: React.FormEvent<HTMLFormElement>): void => {
-    event.preventDefault()
-    handleClickClear()
-  }
+    event.preventDefault();
+    handleClickClear();
+    setEmailSuccess((prev: boolean) => !prev);
+  };
 
   const handleClickClear = (): void => {
-    setInputValue(initialInputValue)
-    setEmailSuccess((prev: boolean) => !prev)
-  }
+    setInputValue(initialInputValue);
+  };
 
   return (
     <form className="form-container" onSubmit={handleClickSubmit} onReset={handleClickClear}>
@@ -67,7 +67,7 @@ const Form = ({ setEmailSuccess }: FormInterface) => {
           name="email"
           id="email"
           required
-          placeholder="felipe.bascou@gmail.com"
+          placeholder="felipe@bascou.com"
           minLength={5}
           maxLength={50}
           onChange={handleInputValue}
@@ -81,7 +81,7 @@ const Form = ({ setEmailSuccess }: FormInterface) => {
           type="text"
           name="company"
           id="company"
-          placeholder="X Company"
+          placeholder="Lego A/S"
           minLength={2}
           maxLength={20}
           onChange={handleInputValue}
@@ -112,7 +112,7 @@ const Form = ({ setEmailSuccess }: FormInterface) => {
         </button>
       </div>
     </form>
-  )
-}
+  );
+};
 
-export default Form
+export default Form;

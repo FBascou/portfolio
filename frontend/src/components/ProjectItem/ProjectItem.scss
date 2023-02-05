@@ -12,7 +12,10 @@
 }
 
 .project-item-overview {
-  @include mixins.flex-dir-ai-jc-gap(row, flex-start, space-between, 4rem);
+  // @include mixins.flex-dir-ai-jc-gap(row, flex-start, space-between, 4rem);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
   // flex-wrap: wrap;
 }
 
@@ -48,6 +51,7 @@
 
 .project-item-img video {
   width: 100%;
+  aspect-ratio: 19 / 9;
   object-fit: cover;
 }
 

@@ -1,29 +1,29 @@
-import React, { useState } from 'react'
-import OldNavBar from '../NavBar/OldNavBar'
-import './Layout.scss'
-import OldForm from '../Form/OldForm'
-import Close from '../../../assets/icons/Close.png'
-import Message from '../../../assets/icons/Message.png'
-import MenuBar from '../../../assets/icons/MenuBar.png'
-import Icon from '../Icon/Icon'
+import React, { useState } from 'react';
+import OldNavBar from '../NavBar/OldNavBar';
+import './Layout.scss';
+import OldForm from '../Form/OldForm';
+import Close from '../../../assets/icons/Close.png';
+import Message from '../../../assets/icons/Message.png';
+import MenuBar from '../../../assets/icons/MenuBar.png';
+import Icon from '../Icon/Icon';
 
 interface LayoutProps {
-  page: JSX.Element
+  page: JSX.Element;
 }
 
-const Layout: React.FC<LayoutProps> = ({ page }): JSX.Element => {
-  const [toggleNav, setToggleNav] = useState<boolean>(false)
-  const [toggleForm, setToggleForm] = useState<boolean>(false)
+const Layout = ({ page }: LayoutProps): JSX.Element => {
+  const [toggleNav, setToggleNav] = useState<boolean>(false);
+  const [toggleForm, setToggleForm] = useState<boolean>(false);
 
   const handleToggleNav = () => {
-    setToggleNav((toggleNav) => !toggleNav)
-    setToggleForm(false)
-  }
+    setToggleNav((toggleNav) => !toggleNav);
+    setToggleForm(false);
+  };
 
   const handleToggleForm = () => {
-    setToggleForm((toggleForm) => !toggleForm)
-    setToggleNav(false)
-  }
+    setToggleForm((toggleForm) => !toggleForm);
+    setToggleNav(false);
+  };
 
   return (
     <div className="layout-container">
@@ -39,7 +39,7 @@ const Layout: React.FC<LayoutProps> = ({ page }): JSX.Element => {
         </button>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Layout
+export default Layout;

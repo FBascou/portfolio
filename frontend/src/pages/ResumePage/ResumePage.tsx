@@ -1,10 +1,11 @@
-import Box from '../../components/Box/Box'
-import Carousel from '../../components/Carousel/Carousel'
-import './ResumePage.scss'
+import { Link } from 'react-router-dom';
+import Carousel from '../../components/Carousel/Carousel';
+import PDF from '../../../public/files/felipe_bascou_frontend_resume_2023.pdf';
+import './ResumePage.scss';
 
 interface ResumePageInterface {
-  data: any[]
-  component?: JSX.Element
+  data: any[];
+  component?: JSX.Element;
 }
 
 //Download is not well aligned, maybe ResumePage gap must be changed?
@@ -17,12 +18,14 @@ const ResumePage = ({ data, component }: ResumePageInterface): JSX.Element => {
       </div>
       <Carousel data={data} component={component} />
       <div className="resume-download">
-        <button className="button-primary">
-          <p>Download Resume</p>
-        </button>
+        <Link to={PDF} target="_blank" download>
+          <button className="button-primary" type="button">
+            <p>Download Resume</p>
+          </button>
+        </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ResumePage
+export default ResumePage;

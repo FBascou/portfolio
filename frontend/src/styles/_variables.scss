@@ -1,14 +1,22 @@
 // General
-$font-size1: 0;
-$font-size2: 0;
-$font-size3: 0;
-$line-height: 1.5rem;
+$line-height: 2rem;
 $letter-spacing: 0.05rem;
 $clr-error: rgba(255, 0, 0, 1);
 $clr-valid: rgba(1, 254, 9, 1);
 $padding-input: 1.7rem;
 $padding-box: 1.5rem;
 $bg-clr-white: rgba(255, 255, 255, 1);
+$bg-transition-initial: inset(0% 0% 0% 0%);
+$bg-transition-right: inset(0% 0% 0% 100%);
+$bg-transition-left: inset(0% 100% 0% 0%);
+
+// Font
+$font-size-sm: clamp(1.2rem, 3.58vw + -3.69rem, 1.6rem);
+$font-size-base: clamp(1.2rem, 3.61vw + -3.43rem, 1.6rem);
+$font-size-md: clamp(1.6rem, 3.56vw + -2.99rem, 1.8rem);
+$font-size-lg: clamp(1.8rem, 3.41vw + -2.32rem, 2rem);
+$font-size-xl: clamp(2rem, 2.64vw + 0.06rem, 2.5rem);
+$font-size-xxl: clamp(3rem, 1.91vw + 1.97rem, 3.5rem);
 
 // General Animations
 $animation-theme-transition: all 0.3s;
@@ -17,10 +25,12 @@ $animation-infinite-square-zooming: zooming 10s ease-in-out infinite;
 $animation-infinite-square-flickering: flickering 8s ease alternate;
 $animation-infinite-square-breathing: breathing 3s ease-out infinite;
 $animation-infinite-square-entering: entering 10s ease-in alternate;
+$animation-bg-transition-dark: clip-path-dark 3s ease;
+$animation-bg-transition-light: clip-path-light 3s ease;
 
 // Breakpoints
 $breakpoints: (
-  'sm': 576px,
+  'sm': 600px,
   'md': 768px,
   'lg': 992px,
   'xl': 1200px,
@@ -36,7 +46,7 @@ $clr-focus-light: 0px 0px 6px 0px rgba(255, 255, 0, 1);
 $clr-valid-light: 0px 0px 6px 0px rgba(1, 254, 9, 1);
 $clr-invalid-light: 0px 0px 6px 0px rgba(255, 0, 0, 1);
 $box-purple-light: 0px 0px 6px 0px rgba(188, 19, 254, 1);
-$box-blue-light: 0 0 6px 0 rgb(0, 204, 255);
+$box-blue-light: 0 0 6px 0 rgb(0, 204, 255, 1);
 
 // Dark Theme
 $clr-primary-dark: rgba(255, 255, 255, 1);
@@ -62,3 +72,4 @@ $box-purple-dark: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255
 $box-blue-dark: 0 0 0.2rem rgb(255, 255, 255, 1), 0 0 0.2rem rgb(255, 255, 255, 1),
   0 0 1rem rgb(10, 155, 191), 0 0 0.1rem rgb(10, 155, 191), 0 0 0.2rem rgb(10, 155, 191),
   inset 0 0 1rem rgb(10, 155, 191);
+$box-none-dark: 0 0 8px 0 rgb(0, 0, 0, 0.3);

@@ -1,0 +1,22 @@
+{
+  "short_name": "Felipe Bascou",
+  "name": "Felipe Bascou's Portfolio",
+  "icons": [
+    {
+      "src": "./src/favicon.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "./src/favicon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "id": "/",
+  "start_url": "/",
+  "display": "standalone",
+  "scope": "/",
+  "description": "Felipe Bascou's portolio website, showcasing his skills, projects and experience.",
+  "prefer_related_applications": false
+}

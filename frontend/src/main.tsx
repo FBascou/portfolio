@@ -1,13 +1,14 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App'
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
-import ThemeProvider from '../../frontend/src/utilities/context/themeContext'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import './styles/main.scss';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import ThemeProvider from '../../frontend/src/utilities/context/themeContext';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <BrowserRouter>
-      <ThemeProvider theme={false}>
+      <ThemeProvider theme>
         <Routes>
           <Route path="/*" element={<App />} />
           {/* <Route path="projects" element={<ProjectsPage data={[]} />} />
@@ -17,4 +18,4 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
       </ThemeProvider>
     </BrowserRouter>
   </React.StrictMode>,
-)
+);

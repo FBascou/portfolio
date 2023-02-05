@@ -1,5 +1,5 @@
-import { ThemeContextInterface } from 'utilities/interfaces/theme-context.interface'
 import React, { createContext, useState } from 'react'
+import { ThemeContextInterface } from 'utilities/interfaces/theme-context.interface'
 
 const defaultTheme = {
   theme: false,

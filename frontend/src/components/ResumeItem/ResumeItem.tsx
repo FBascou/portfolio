@@ -1,10 +1,12 @@
-import './ResumeItem.scss'
+import './ResumeItem.scss';
 
 interface ResumeItemInterface {
-  data: any[]
+  data: any[];
 }
 
 // Have the bullet list style types to be square
+// Add if its work experience, education, or volunteering
+// Category
 
 const ResumeItem = ({ data }: ResumeItemInterface): JSX.Element => {
   return (
@@ -13,7 +15,9 @@ const ResumeItem = ({ data }: ResumeItemInterface): JSX.Element => {
         <article className="resume-item-container" key={item.id} id={item.header}>
           {item.date ? (
             <div className="resume-item-title">
-              <h4>{item.date}</h4>
+              <h4>
+                {item.date} <span>({item.category})</span>
+              </h4>
             </div>
           ) : null}
           <div className="resume-item-overview">
@@ -47,7 +51,7 @@ const ResumeItem = ({ data }: ResumeItemInterface): JSX.Element => {
         </article>
       ))}
     </>
-  )
-}
+  );
+};
 
-export default ResumeItem
+export default ResumeItem;
