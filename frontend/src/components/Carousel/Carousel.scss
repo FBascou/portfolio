@@ -42,8 +42,18 @@
     display: none;
   }
 
-  .carousel-content {
+  .carousel-container {
+    display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+
+  .carousel-content {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
     padding: 0;
   }
 }

@@ -18,6 +18,10 @@
   @include mixins.box-shadow-multi-browsers(variables.$box-none-dark);
 }
 
+.box-none:hover {
+  @include mixins.box-shadow-multi-browsers(variables.$box-blue-dark);
+}
+
 .box-light-theme {
   @include mixins.box-shadow-multi-browsers(variables.$clr-initial-light);
 }

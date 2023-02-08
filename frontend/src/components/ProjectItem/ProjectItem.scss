@@ -56,21 +56,41 @@
 }
 
 @media screen and (max-width: 600px) {
-  // .project-item-container,
+  .project-item-title,
   .project-item-overview,
-  .project-item-overview-section {
+  .project-item-overview-section,
+  .project-item-section,
+  .project-item-section-content {
+    display: flex;
     flex-direction: column;
-    width: 100%;
+    align-items: center;
+    // justify-content: center;
     padding: 0;
+    gap: 4rem;
   }
 
   .project-item-container {
-    flex: none;
-    white-space: normal;
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
+    padding: 3rem 0;
   }
 
-  .project-item-overview {
-    overflow-x: none;
-    overflow-y: none;
+  .project-item-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    gap: 2rem 1rem;
+  }
+
+  .project-item-list,
+  .project-item-title,
+  .project-item-section-content > p {
+    text-align: center;
+    padding: 0 2rem;
   }
 }

@@ -6,9 +6,11 @@ import dataProjects from '../../dataProjects.json';
 import ResumeItem from '../../components/ResumeItem/ResumeItem';
 // import ProjectsPage from '../../pages/ProjectsPage/ProjectsPage';
 import ProjectItem from '../../components/ProjectItem/ProjectItem';
-import ContactPage from '../../pages/ContactPage/ContactPage';
 import { yearsArraySorted } from '../../utilities/helper/helper';
 import React from 'react';
+import ContactPage from '../../pages/ContactPage/ContactPage';
+import AboutPage from '../../pages/AboutPage/AboutPage';
+import Spinner from '../../components/Spinner/Spinner';
 
 // have a button that takes you to a crazy page (crazy art)
 // standardize all the div classes in Project, Resume, Contact, Skills
@@ -26,11 +28,11 @@ const MainPage = (): JSX.Element => {
   return (
     <main className="main-container" id="main-content">
       <Routes>
+        <Route path="/" index element={<AboutPage />} />
         <Route
           path="projects"
-          index //not sure about this
           element={
-            <React.Suspense fallback={<>...</>}>
+            <React.Suspense fallback={<Spinner />}>
               <ProjectsPage data={dataProjects} component={<ProjectItem data={dataProjects} />} />
             </React.Suspense>
           }
@@ -38,7 +40,7 @@ const MainPage = (): JSX.Element => {
         <Route
           path="resume"
           element={
-            <React.Suspense fallback={<>...</>}>
+            <React.Suspense fallback={<Spinner />}>
               <ResumePage
                 data={yearsArraySorted}
                 component={<ResumeItem data={dataArraySorted} />}

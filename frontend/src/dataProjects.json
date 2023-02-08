@@ -45,8 +45,8 @@
   },
   {
     "id": 3,
-    "header": "Space Event Calendar (Personal Project)",
-    "name": "Space Event Calendar",
+    "header": "Space Event Calendar",
+    "name": "Space Event Calendar (Personal Project)",
     "description": "Website that displays multiple cosmic events from different NASA APIs on a tabular format.",
     "features": ["Multiple API Calls", "Pagination"],
     "tech": ["Javascript", "React", "Axios", "Regex"],

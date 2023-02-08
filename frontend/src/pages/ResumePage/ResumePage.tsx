@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import Carousel from '../../components/Carousel/Carousel';
-import PDF from '../../../public/files/felipe_bascou_frontend_resume_2023.pdf';
+import PDF from '/files/felipe_bascou_frontend_resume_2023.pdf';
 import './ResumePage.scss';
 
 interface ResumePageInterface {
@@ -8,7 +8,6 @@ interface ResumePageInterface {
   component?: JSX.Element;
 }
 
-//Download is not well aligned, maybe ResumePage gap must be changed?
 // add section content?
 const ResumePage = ({ data, component }: ResumePageInterface): JSX.Element => {
   return (

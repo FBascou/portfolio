@@ -1,0 +1,33 @@
+@use '../../styles/variables';
+
+.spinner-parent {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid transparent;
+  aspect-ratio: 1;
+  animation: load 10s linear infinite;
+}
+
+.spinner-child {
+  width: 70px;
+  height: 70px;
+  border: 1px solid transparent;
+  aspect-ratio: 1;
+}
+
+.spinner-light {
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3), inset 0 0 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+.spinner-dark {
+  box-shadow: variables.$box-blue-dark;
+}
+
+@keyframes load {
+  to {
+    transform: rotate(1turn);
+  }
+}

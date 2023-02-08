@@ -1,1 +1,11 @@
-
+@media screen and (max-width: 40em) {
+  .header-container {
+    position: fixed;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
+    width: 100%;
+    overflow: hidden;
+    padding: 1rem;
+    z-index: 9999;
+  }
+}

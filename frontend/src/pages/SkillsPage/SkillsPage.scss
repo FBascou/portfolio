@@ -6,6 +6,21 @@
 
 .img-language {
   width: 30px;
-  height: auto;
+  max-height: 30px;
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 600px) {
+  .skill-section,
+  .skill-content,
+  .skill-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .skill-section,
+  .skill-content {
+    gap: 3rem;
+  }
 }

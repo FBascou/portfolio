@@ -1,6 +1,6 @@
 import './NavBar.scss';
 import { ThemeContext } from '../../utilities/context/themeContext';
-import { useState, useContext } from 'react';
+import { useState, useContext, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import CloseIcon from '@mui/icons-material/Close';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -14,6 +14,7 @@ import MainPage from '../../pages/MainPage/MainPage';
 import ProjectsPage from '../../pages/ProjectsPage/ProjectsPage';
 import ResumePage from '../../pages/ResumePage/ResumePage';
 import { PageTitleInterface } from '../../utilities/interfaces/page-title.interface';
+import { BoxColorContext } from '../../utilities/context/boxColorContext';
 
 // Animate theme so it goes from daylight to night with different colors
 // IE: Light > Yellow > Orange > Purple > Dark
@@ -29,31 +30,44 @@ import { PageTitleInterface } from '../../utilities/interfaces/page-title.interf
 const NavBar = ({ pageTitle }: PageTitleInterface) => {
   const { theme, toggleTheme } = useContext(ThemeContext);
   const [menu, setMenu] = useState<boolean>(false);
+  const { setBoxColor } = useContext(BoxColorContext);
 
   const toggleMenu = () => {
     setMenu((prev) => !prev);
   };
 
+  const toggleSkillsBoxColor = (boolean: boolean) => {
+    if (theme) {
+      setBoxColor(boolean);
+    } else return;
+  };
+
   return (
     <nav className="navbar-container">
       <div className="navbar-logo">
-        <Link to="/">
+        <Link to="/" onClick={() => toggleSkillsBoxColor(true)}>
           <h4>{pageTitle}</h4>
         </Link>
       </div>
+      {menu ? <div className="menu">MENU</div> : null}
       <ul className="navbar-links">
+        {/* <li className="navbar-link">
+          <Link to="about" onClick={() => toggleSkillsBoxColor(true)}>
+            <h5>About</h5>
+          </Link>
+        </li> */}
         <li className="navbar-link">
-          <Link to="projects">
+          <Link to="projects" onClick={() => toggleSkillsBoxColor(false)}>
             <h5>Projects</h5>
           </Link>
         </li>
         <li className="navbar-link">
-          <Link to="resume">
+          <Link to="resume" onClick={() => toggleSkillsBoxColor(false)}>
             <h5>Resume</h5>
           </Link>
         </li>
         <li className="navbar-link">
-          <Link to="contact">
+          <Link to="contact" onClick={() => setBoxColor(false)}>
             <h5 style={{ color: theme ? 'yellow' : 'dodgerblue' }}>Contact</h5>
           </Link>
         </li>
@@ -73,8 +87,13 @@ const NavBar = ({ pageTitle }: PageTitleInterface) => {
             </div> */}
           </a>
         </li>
-        <li className="navbar-theme" onClick={toggleTheme}>
-          <button type="button" className="navbar-theme-btn">
+        <li className="navbar-theme">
+          <button
+            type="button"
+            className="navbar-theme-btn"
+            style={{ all: 'unset' }}
+            onClick={toggleTheme}
+          >
             {theme ? (
               <LightbulbIcon sx={{ fontSize: 25 }} />
             ) : (
@@ -82,8 +101,10 @@ const NavBar = ({ pageTitle }: PageTitleInterface) => {
             )}
           </button>
         </li>
-        <li className="navbar-toggle" onClick={toggleMenu}>
-          {menu ? <CloseIcon sx={{ fontSize: 25 }} /> : <MenuIcon sx={{ fontSize: 25 }} />}
+        <li className="navbar-menu">
+          <button className="navbar-menu-btn" style={{ all: 'unset' }} onClick={toggleMenu}>
+            {menu ? <CloseIcon sx={{ fontSize: 25 }} /> : <MenuIcon sx={{ fontSize: 25 }} />}
+          </button>
         </li>
       </ul>
     </nav>

@@ -14,12 +14,12 @@
 
 .navbar-link,
 .navbar-mode,
-.navbar-toggle,
+.navbar-menu,
 .navbar-theme {
   cursor: pointer;
 }
 
-.navbar-toggle {
+.navbar-menu {
   display: none;
 }
 
@@ -54,13 +54,21 @@
 //   box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
 // }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 40em) {
+  .navbar-container {
+    padding: 0;
+  }
+
+  // .navbar-links,
   .navbar-link,
   .navbar-theme {
     display: none;
   }
 
-  .navbar-toggle {
+  .navbar-menu {
     display: block;
+  }
+
+  .menu {
   }
 }

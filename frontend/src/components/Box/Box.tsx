@@ -8,7 +8,6 @@ export interface BoxInterface {
 }
 
 // add color theme on general - dark theme {.box{...}}
-// when Projects or Resume page is selected, turn off skills, but let it be hovered on.
 
 const Box = ({ item, color }: BoxInterface): JSX.Element => {
   const { theme } = useContext(ThemeContext);

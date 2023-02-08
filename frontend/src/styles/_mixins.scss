@@ -111,6 +111,10 @@
     @include box-shadow-multi-browsers(variables.$clr-valid-dark);
   }
 
+  form:invalid [type='submit'] {
+    color: variables.$clr-secondary-light;
+  }
+
   input:placeholder-shown,
   textarea:placeholder-shown {
     @include box-shadow-multi-browsers(variables.$clr-initial-dark);

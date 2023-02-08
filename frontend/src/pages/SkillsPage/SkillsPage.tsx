@@ -5,10 +5,8 @@ import es from '../../assets/icons/es.svg';
 import cn from '../../assets/icons/cn.svg';
 import dataCV from '../../dataCV.json';
 import './SkillsPage.scss';
-
-interface BoxColorInterface {
-  boxColor: boolean;
-}
+import { BoxColorContext } from '../../utilities/context/boxColorContext';
+import { useContext } from 'react';
 
 interface DataInterface {
   [key: string]: any;
@@ -22,6 +20,7 @@ const SkillsPage = (): JSX.Element => {
   ];
   const dataSkillsLanguages: DataInterface = dataCV[1].list[3]['languages'];
   const languageFlags = [gb, es, fr, cn];
+  const { boxColor } = useContext(BoxColorContext);
 
   return (
     <aside className="aside-container content-container">
@@ -37,7 +36,7 @@ const SkillsPage = (): JSX.Element => {
             <ul className="skill-list">
               {dataSkillsFrontend.map((item: string, index: number) => (
                 <li key={index}>
-                  <Box color={false ? 'blue' : 'none'} item={item} />
+                  <Box color={boxColor ? 'blue' : 'none'} item={item} />
                 </li>
               ))}
             </ul>
@@ -51,7 +50,7 @@ const SkillsPage = (): JSX.Element => {
             <ul className="skill-list">
               {dataSkillsTools.map((item: string, index: number) => (
                 <li key={index}>
-                  <Box color={false ? 'blue' : 'none'} item={item} />
+                  <Box color={boxColor ? 'blue' : 'none'} item={item} />
                 </li>
               ))}
             </ul>
