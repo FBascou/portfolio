@@ -1,14 +1,11 @@
 import './Carousel.scss';
-import { useHorizontalScroll } from '../../utilities/hooks/useHorizontalScroll';
 
 interface CarouselInterface {
   data: any[];
-  component?: JSX.Element;
+  children?: JSX.Element;
 }
 
-const Carousel = ({ data, component }: CarouselInterface): JSX.Element => {
-  const scrollRef = useHorizontalScroll();
-
+const Carousel = ({ data, children }: CarouselInterface): JSX.Element => {
   return (
     <div className="carousel-container">
       <div className="carousel-header">
@@ -22,9 +19,7 @@ const Carousel = ({ data, component }: CarouselInterface): JSX.Element => {
           ))}
         </ul>
       </div>
-      <div className="carousel-content" ref={scrollRef}>
-        {component}
-      </div>
+      <div className="carousel-content">{children}</div>
     </div>
   );
 };

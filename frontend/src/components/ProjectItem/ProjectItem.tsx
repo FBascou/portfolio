@@ -9,47 +9,35 @@ const ProjectItem = ({ data }: ProjectItemInterface): JSX.Element => {
   return (
     <>
       {data.map((item: any) => (
-        <article className="project-item-container" key={item.id} id={item.header}>
-          <div className="project-item-title">
+        <article className="item-container" key={item.id} id={item.header}>
+          <div className="item-title">
             <h4>{item.name}</h4>
           </div>
           <div className="project-item-overview">
             <div className="project-item-overview-section project-item-info">
-              <div className="project-item-section">
-                <div className="project-item-section-header">
-                  <h3>Description</h3>
-                </div>
-                <div className="project-item-section-content">
-                  <p>{item.description}</p>
-                </div>
+              <div className="item-section">
+                <h3>Description</h3>
+                <p>{item.description}</p>
               </div>
-              <div className="project-item-section">
-                <div className="project-item-section-header">
-                  <h3>Features</h3>
-                </div>
-                <div className="project-item-section-content">
-                  <ul className="project-item-list">
-                    {item.features.map((item: string) => (
-                      <li key={item}>
-                        <Box item={item} color="purple" />
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+              <div className="item-section">
+                <h3>Features</h3>
+                <ul className="item-list">
+                  {item.features.map((item: string) => (
+                    <li key={item}>
+                      <Box item={item} color="purple" />
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <div className="project-item-section">
-                <div className="project-item-section-header">
-                  <h3>Tech</h3>
-                </div>
-                <div className="project-item-section-content">
-                  <ul className="project-item-list">
-                    {item.tech.map((item: string) => (
-                      <li key={item}>
-                        <Box item={item} color="purple" />
-                      </li>
-                    ))}
-                  </ul>
-                </div>
+              <div className="item-section">
+                <h3>Tech</h3>
+                <ul className="item-list">
+                  {item.tech.map((item: string) => (
+                    <li key={item}>
+                      <Box item={item} color="purple" />
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
             <div className="project-item-overview-section project-item-media">
@@ -66,12 +54,13 @@ const ProjectItem = ({ data }: ProjectItemInterface): JSX.Element => {
                 </a>
               </div>
               <div className="project-item-img">
-                <video
+                <img src={item.media} alt="" width="320px" />
+                {/* <video
                   src={item.media}
                   preload="none"
                   poster="https://static.vecteezy.com/system/resources/thumbnails/007/926/257/small/futuristic-hud-interface-technology-background-vector.jpg"
                   controls
-                ></video>
+                ></video> */}
               </div>
             </div>
           </div>

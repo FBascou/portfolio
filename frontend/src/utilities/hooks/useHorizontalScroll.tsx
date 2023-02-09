@@ -19,7 +19,7 @@ export const useHorizontalScroll = (): React.RefObject<HTMLDivElement> => {
         });
       };
 
-      el.addEventListener('wheel', onWheel, { passive: true });
+      el.addEventListener('wheel', onWheel);
       return () => el.removeEventListener('wheel', onWheel);
     }
   }, []);

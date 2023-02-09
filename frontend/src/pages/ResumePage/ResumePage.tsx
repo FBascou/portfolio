@@ -5,17 +5,17 @@ import './ResumePage.scss';
 
 interface ResumePageInterface {
   data: any[];
-  component?: JSX.Element;
+  children?: JSX.Element;
 }
 
 // add section content?
-const ResumePage = ({ data, component }: ResumePageInterface): JSX.Element => {
+const ResumePage = ({ data, children }: ResumePageInterface): JSX.Element => {
   return (
     <div className="content-container">
       <div className="resume-title">
         <h2>Resume</h2>
       </div>
-      <Carousel data={data} component={component} />
+      <Carousel data={data} children={children} />
       <div className="resume-download">
         <Link to={PDF} target="_blank" download>
           <button className="button-primary" type="button">

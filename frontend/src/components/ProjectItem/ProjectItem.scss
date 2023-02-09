@@ -1,35 +1,18 @@
 @use '../../styles/mixins';
 
-.project-item-container {
-  @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 3rem);
-  min-width: 105rem;
-  height: auto;
-  white-space: pre-wrap;
-  // flex: none;
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
-  -webkit-overflow-scrolling: touch;
-}
+// center all text
+// make image responsive
+// contact page, center everything, add side padding
 
 .project-item-overview {
-  // @include mixins.flex-dir-ai-jc-gap(row, flex-start, space-between, 4rem);
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  // flex-wrap: wrap;
+  padding-bottom: 1rem;
 }
 
 .project-item-overview-section {
   @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 2rem);
-}
-
-.project-item-section {
-  @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 2rem);
-}
-
-.project-item-list {
-  @include mixins.flex-dir-ai-jc-gap(row, initial, initial, 2rem);
-  margin-left: 0.5rem;
 }
 
 .project-item-links {
@@ -37,7 +20,6 @@
 }
 
 .link-disabled {
-  // text-decoration: line-through;
   pointer-events: none;
 }
 
@@ -45,9 +27,11 @@
   cursor: not-allowed;
 }
 
-// .project-item-img {
-//   @include mixins.width-height(min, min, 100%, 100%);
-// }
+.project-item-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .project-item-img video {
   width: 100%;
@@ -56,41 +40,13 @@
 }
 
 @media screen and (max-width: 600px) {
-  .project-item-title,
   .project-item-overview,
   .project-item-overview-section,
-  .project-item-section,
   .project-item-section-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    // justify-content: center;
     padding: 0;
     gap: 4rem;
-  }
-
-  .project-item-container {
-    all: unset;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4rem;
-    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
-    padding: 3rem 0;
-  }
-
-  .project-item-list {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    gap: 2rem 1rem;
-  }
-
-  .project-item-list,
-  .project-item-title,
-  .project-item-section-content > p {
-    text-align: center;
-    padding: 0 2rem;
   }
 }

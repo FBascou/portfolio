@@ -1,20 +1,20 @@
-import Carousel from '../../components/Carousel/Carousel'
-import './ProjectsPage.scss'
+import Carousel from '../../components/Carousel/Carousel';
+import './ProjectsPage.scss';
 
 interface ProjectsPageInterface {
-  data: any[]
-  component?: JSX.Element
+  data: any[];
+  children?: JSX.Element;
 }
 
-const ProjectsPage = ({ data, component }: ProjectsPageInterface): JSX.Element => {
+const ProjectsPage = ({ data, children }: ProjectsPageInterface): JSX.Element => {
   return (
     <div className="content-container">
       <div className="projects-title">
-        <h2>Projects</h2>
+        <h2>Selected Projects</h2>
       </div>
-      <Carousel data={data} component={component} />
+      <Carousel data={data} children={children} />
     </div>
-  )
-}
+  );
+};
 
-export default ProjectsPage
+export default ProjectsPage;

@@ -33,7 +33,7 @@ const SkillsPage = (): JSX.Element => {
             <h3>Frontend</h3>
           </div>
           <div className="skill-content">
-            <ul className="skill-list">
+            <ul className="item-list">
               {dataSkillsFrontend.map((item: string, index: number) => (
                 <li key={index}>
                   <Box color={boxColor ? 'blue' : 'none'} item={item} />
@@ -47,7 +47,7 @@ const SkillsPage = (): JSX.Element => {
             <h3>Tools</h3>
           </div>
           <div className="skill-content">
-            <ul className="skill-list">
+            <ul className="item-list">
               {dataSkillsTools.map((item: string, index: number) => (
                 <li key={index}>
                   <Box color={boxColor ? 'blue' : 'none'} item={item} />
@@ -61,7 +61,7 @@ const SkillsPage = (): JSX.Element => {
             <h3>Languages</h3>
           </div>
           <div className="skill-content">
-            <ul className="skill-list">
+            <ul className="item-list">
               {dataSkillsLanguages.map((item: any, index: number) => (
                 <li key={item.id}>
                   <img src={languageFlags[index]} alt={item.language} className="img-language" />

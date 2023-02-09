@@ -33,7 +33,7 @@ const MainPage = (): JSX.Element => {
           path="projects"
           element={
             <React.Suspense fallback={<Spinner />}>
-              <ProjectsPage data={dataProjects} component={<ProjectItem data={dataProjects} />} />
+              <ProjectsPage data={dataProjects} children={<ProjectItem data={dataProjects} />} />
             </React.Suspense>
           }
         />
@@ -43,7 +43,7 @@ const MainPage = (): JSX.Element => {
             <React.Suspense fallback={<Spinner />}>
               <ResumePage
                 data={yearsArraySorted}
-                component={<ResumeItem data={dataArraySorted} />}
+                children={<ResumeItem data={dataArraySorted} />}
               />
             </React.Suspense>
           }

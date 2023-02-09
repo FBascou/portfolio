@@ -23,9 +23,10 @@ body {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(6, 1fr);
-  column-gap: 4rem;
+  align-items: center;
+  column-gap: 3rem;
   row-gap: 3rem;
-  padding: 2rem;
+  padding: 3rem;
   height: 100vh;
   transition: variables.$animation-theme-transition;
 }
@@ -61,6 +62,24 @@ body {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+}
+
+.item-container {
+  @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 2rem);
+  min-width: 100%;
+  height: auto;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  -webkit-overflow-scrolling: touch;
+}
+
+.item-section {
+  @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 2rem);
+}
+
+.item-list {
+  @include mixins.flex-dir-ai-jc-gap(row, initial, initial, 1rem);
+  margin-left: 0.5rem;
 }
 
 input,
@@ -217,5 +236,47 @@ ul {
 
   .content-container {
     gap: 4rem;
+  }
+
+  .item-container {
+    all: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3);
+    padding: 3rem 0;
+  }
+
+  .item-section,
+  .item-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 4rem;
+  }
+
+  .item-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    gap: 2rem 1rem;
+  }
+
+  .item-list,
+  .item-title,
+  .project-item-section-content > p {
+    text-align: center;
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .App {
+    display: grid;
+    row-gap: 0;
+    padding: 0 30rem;
   }
 }

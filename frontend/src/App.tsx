@@ -13,7 +13,6 @@ import Header from './components/Header/Header';
 
 const App = (): JSX.Element => {
   const { theme } = useContext(ThemeContext);
-  const [boxColor, setBoxColor] = useState<boolean>(false);
 
   // for mobile project/resume pages they can be select/dropdown
 

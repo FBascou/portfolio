@@ -1,24 +1,12 @@
 @use '../../styles/mixins';
 
-.resume-item-container {
-  @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 3rem);
-  min-width: 105rem;
-  height: auto;
-  white-space: pre-wrap;
-  // flex: 0 0 auto;
-  // scroll-snap-type: x proximity;
-  scroll-snap-align: center;
-  scroll-snap-stop: always;
-  -webkit-overflow-scrolling: touch;
-}
+// Align everything (titles, text, download button)
+// Remove bullet points
+// Center Resume page title
 
 .resume-item-overview {
-  @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 1rem);
+  @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 2rem);
   flex-wrap: wrap;
-}
-
-.resume-item-section {
-  @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 0);
 }
 
 .resume-item-location {
@@ -29,12 +17,8 @@
   font-weight: 600;
 }
 
-.resume-item-list {
-  @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 1rem);
+.resume-list-item {
   margin-left: 1.5rem;
-}
-
-.resume-item-list-item {
   display: list-item;
   white-space: pre-wrap;
   list-style: initial;
@@ -42,20 +26,10 @@
 }
 
 @media screen and (max-width: 600px) {
-  .resume-item-container,
-  .resume-item-overview,
-  .resume-item-container {
+  .resume-item-overview {
     flex-direction: column;
     padding: 0;
     width: 100%;
-  }
-
-  .resume-item-container {
-    flex: none;
-    white-space: normal;
-  }
-
-  .resume-item-overview {
     overflow-x: none;
     overflow-y: none;
   }

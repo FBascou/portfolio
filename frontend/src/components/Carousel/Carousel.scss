@@ -16,21 +16,15 @@
 
 .carousel-content {
   @include mixins.flex-dir-ai-jc-gap(row, flex-start, space-between, 14rem);
-  overflow-x: scroll;
-  overflow-y: hidden;
-  white-space: nowrap;
+  // overflow-x: scroll;
+  // overflow-y: hidden;
+  overflow: hidden;
+  // white-space: nowrap;
   -ms-overflow-style: none; /* Internet Explorer 10+ */
   scrollbar-width: none;
   overflow: -moz-scrollbars-none; /* Firefox */
   scroll-snap-type: x proximity;
-  padding-bottom: 1rem;
 }
-
-// .carousel-content > article {
-//   scroll-snap-align: start;
-//   scroll-snap-stop: always;
-//   -webkit-overflow-scrolling: touch;
-// }
 
 /* Safari and Chrome */
 .carousel-content::-webkit-scrollbar {
