@@ -33,13 +33,13 @@
   align-items: center;
 }
 
-.project-item-img video {
+.project-item-img img {
   width: 100%;
-  aspect-ratio: 19 / 9;
+  // aspect-ratio: 19 / 9;
   object-fit: cover;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   .project-item-overview,
   .project-item-overview-section,
   .project-item-section-content {

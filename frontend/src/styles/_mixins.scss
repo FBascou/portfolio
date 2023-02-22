@@ -146,6 +146,6 @@
   font-family: inherit;
   color: inherit;
   @include flex-dir-ai-jc-gap(row, center, center);
-  @include width-height(min, max, 50px, 20px);
+  @include width-height(min, max, 50px, auto);
   padding: variables.$padding-box;
 }

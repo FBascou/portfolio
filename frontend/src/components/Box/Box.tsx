@@ -14,7 +14,7 @@ const Box = ({ item, color }: BoxInterface): JSX.Element => {
 
   return (
     <div className={`box-container ${theme ? `box-dark-theme box-${color}` : `box-light-theme`} `}>
-      {item}
+      <h6>{item}</h6>
     </div>
   );
 };

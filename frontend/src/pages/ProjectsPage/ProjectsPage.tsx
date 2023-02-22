@@ -9,7 +9,7 @@ interface ProjectsPageInterface {
 const ProjectsPage = ({ data, children }: ProjectsPageInterface): JSX.Element => {
   return (
     <div className="content-container">
-      <div className="projects-title">
+      <div className="content-title">
         <h2>Selected Projects</h2>
       </div>
       <Carousel data={data} children={children} />

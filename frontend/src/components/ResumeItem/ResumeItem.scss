@@ -21,16 +21,24 @@
   margin-left: 1.5rem;
   display: list-item;
   white-space: pre-wrap;
-  list-style: initial;
-  list-style-type: initial;
+  list-style: square;
+  list-style-type: square;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   .resume-item-overview {
     flex-direction: column;
     padding: 0;
     width: 100%;
     overflow-x: none;
     overflow-y: none;
+  }
+
+  .resume-item-description {
+    text-align: center;
+  }
+
+  .resume-list-item {
+    text-align: left;
   }
 }

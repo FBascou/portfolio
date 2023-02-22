@@ -15,7 +15,7 @@
   @include mixins.flex-dir-ai-jc-gap(column, initial, initial, 2rem);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   .main-page-container,
   .experience-container {
     margin: 0;

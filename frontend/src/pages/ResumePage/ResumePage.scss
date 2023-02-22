@@ -1,3 +1,14 @@
 .resume-download {
   width: max-content;
 }
+
+@media screen and (max-width: 1024px) {
+  .resume-download {
+    width: auto;
+  }
+
+  .resume-download button {
+    width: 100%;
+    font-weight: 600;
+  }
+}

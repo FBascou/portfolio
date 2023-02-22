@@ -1,3 +1,4 @@
+import Box from '../../components/Box/Box';
 import './AboutPage.scss';
 
 const AboutPage = (): JSX.Element => {
@@ -5,10 +6,10 @@ const AboutPage = (): JSX.Element => {
     <div className="about-container">
       <div className="about-title">
         <h1>
-          Hi, I'm{' '}
-          <span id="header-span" className="header-span">
+          Hi, I'm <Box item={'Felipe'} color={'purple'} />
+          {/* <span id="header-span" className="header-span">
             Felipe
-          </span>
+          </span> */}
           !
         </h1>
       </div>

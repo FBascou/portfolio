@@ -1,6 +1,6 @@
 import './NavBar.scss';
 import { ThemeContext } from '../../utilities/context/themeContext';
-import { useState, useContext, useEffect } from 'react';
+import { useState, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import CloseIcon from '@mui/icons-material/Close';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -53,27 +53,23 @@ const NavBar = ({ pageTitle }: PageTitleInterface) => {
       <ul className="navbar-links">
         {/* <li className="navbar-link">
           <Link to="about" onClick={() => toggleSkillsBoxColor(true)}>
-            <h5>About</h5>
+            <p>About</p>
           </Link>
         </li> */}
         <li className="navbar-link">
           <Link to="projects" onClick={() => toggleSkillsBoxColor(false)}>
-            <h5>Projects</h5>
+            <p>Projects</p>
           </Link>
         </li>
         <li className="navbar-link">
           <Link to="resume" onClick={() => toggleSkillsBoxColor(false)}>
-            <h5>Resume</h5>
+            <p>Resume</p>
           </Link>
         </li>
-        <li className="navbar-link">
-          <Link to="contact" onClick={() => setBoxColor(false)}>
-            <h5 style={{ color: theme ? 'yellow' : 'dodgerblue' }}>Contact</h5>
-          </Link>
-        </li>
+
         <li className="navbar-link">
           <a target="_blank" href="https://github.com/FBascou">
-            <h5>Github</h5>
+            <p>Github</p>
             {/* <div className="icon-container">
               <img className="icon" src={GithubNav} alt="Github Profile" />
             </div> */}
@@ -81,11 +77,16 @@ const NavBar = ({ pageTitle }: PageTitleInterface) => {
         </li>
         <li className="navbar-link">
           <a target="_blank" href="https://www.linkedin.com/in/felipebascou/">
-            <h5>LinkedIn</h5>
+            <p>LinkedIn</p>
             {/* <div className="icon-container">
               <img className="icon" src={LinkedInNav} alt="LinkedIn Profile" />
             </div> */}
           </a>
+        </li>
+        <li className="navbar-link">
+          <Link to="contact" onClick={() => setBoxColor(false)}>
+            <p style={{ color: theme ? 'yellow' : 'dodgerblue' }}>Contact</p>
+          </Link>
         </li>
         <li className="navbar-theme">
           <button

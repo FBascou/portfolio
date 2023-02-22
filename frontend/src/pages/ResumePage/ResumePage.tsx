@@ -12,7 +12,7 @@ interface ResumePageInterface {
 const ResumePage = ({ data, children }: ResumePageInterface): JSX.Element => {
   return (
     <div className="content-container">
-      <div className="resume-title">
+      <div className="content-title">
         <h2>Resume</h2>
       </div>
       <Carousel data={data} children={children} />

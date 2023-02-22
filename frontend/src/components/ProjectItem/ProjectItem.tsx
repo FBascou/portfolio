@@ -54,7 +54,7 @@ const ProjectItem = ({ data }: ProjectItemInterface): JSX.Element => {
                 </a>
               </div>
               <div className="project-item-img">
-                <img src={item.media} alt="" width="320px" />
+                <img src={item.media} alt={item.name} />
                 {/* <video
                   src={item.media}
                   preload="none"

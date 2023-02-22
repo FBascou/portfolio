@@ -2,7 +2,7 @@
 @use '../../styles/mixins';
 
 .about-container {
-  height: 100%;
+  height: 500px;
   @include mixins.flex-dir-ai-jc-gap(column, center, center, 3rem);
   color: variables.$clr-primary-light;
 

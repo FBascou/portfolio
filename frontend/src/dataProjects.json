@@ -8,13 +8,13 @@
     "tech": ["React", "Typescript", "SCSS", "Axios", "MaterialUI", "Formik", "Yup", "AdobeXD"],
     "github": "",
     "url": "https://www.service.born2global.com/careers",
-    "media": "../../../public/images/devices/devices_born2global.png"
+    "media": "/images/devices/devices_born2global.png"
   },
   {
     "id": 1,
-    "header": "St. Patrick Online Bank",
-    "name": "St. Patrick Online Bank (Community Project)",
-    "description": "Online homebanking where users can register, login, make transfers, and manage their accounts. Worked on Home, Transactions, Transaction History, and Confirmation pages.",
+    "header": "Online Bank",
+    "name": "Online Bank (Community Project)",
+    "description": "Online banking where users can register, login, make transfers, and manage their accounts. Worked on Home, Transactions, Transaction History, and Confirmation pages.",
     "features": ["Animations", "API calls", "Authentication", "Forms", "Responsive"],
     "tech": [
       "Typescript",
